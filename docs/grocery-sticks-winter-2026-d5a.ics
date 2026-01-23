@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//bond-hockey-ics//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Grocery Sticks
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:64477c0109e4d97ed20dc7a0@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260119T013000Z
+DTEND:20260119T025000Z
+SUMMARY:Grocery Sticks @ Cobra Kai
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Cobra Kai | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:485d6718bcf70c21ac2d4b14@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260126T013000Z
+DTEND:20260126T025000Z
+SUMMARY:Grocery Sticks @ Peter McManus
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Peter McManus | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:b550db2cc3e0ca98ae611f56@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260212T030000Z
+DTEND:20260212T042000Z
+SUMMARY:Grocery Sticks @ Homer's Heroes
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Homer's Heroes | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:ccf9baa41f462ac1438e3ab4@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260226T030000Z
+DTEND:20260226T042000Z
+SUMMARY:Grocery Sticks @ Molar Bears
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Molar Bears | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:13951b23257e7028eca46031@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260305T030000Z
+DTEND:20260305T042000Z
+SUMMARY:Grocery Sticks @ Rhinos
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Rhinos | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:9d6455c00a139a90a71d9aed@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260309T033000Z
+DTEND:20260309T045000Z
+SUMMARY:Grocery Sticks vs Cougars
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Grocery Sticks | Away: Cougars
+END:VEVENT
+BEGIN:VEVENT
+UID:76ffc094e162707fa3610838@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260316T033000Z
+DTEND:20260316T045000Z
+SUMMARY:Grocery Sticks vs The Hanson Brothers
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Grocery Sticks | Away: The Hanson Brothers
+END:VEVENT
+BEGIN:VEVENT
+UID:3a2a3da28dfd797d2b955e77@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260326T020000Z
+DTEND:20260326T032000Z
+SUMMARY:Grocery Sticks vs Les Boys
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Grocery Sticks | Away: Les Boys
+END:VEVENT
+BEGIN:VEVENT
+UID:33c9d47b2622379c2ef041f8@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260330T033000Z
+DTEND:20260330T045000Z
+SUMMARY:Grocery Sticks vs Ice Dogs
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Grocery Sticks | Away: Ice Dogs
+END:VEVENT
+BEGIN:VEVENT
+UID:1093948a2b40e34026b4f201@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260412T230000Z
+DTEND:20260413T002000Z
+SUMMARY:Grocery Sticks @ Peter McManus
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Peter McManus | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:68ec0b27434d87987c4ced4b@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260423T003000Z
+DTEND:20260423T015000Z
+SUMMARY:Grocery Sticks @ Homer's Heroes
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Homer's Heroes | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:6a48693e0d7763766dee5c5f@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260427T020000Z
+DTEND:20260427T032000Z
+SUMMARY:Grocery Sticks @ Molar Bears
+LOCATION:East Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Molar Bears | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:7a549be103fc7cf330af3bb3@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260507T003000Z
+DTEND:20260507T015000Z
+SUMMARY:Grocery Sticks @ Rhinos
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Rhinos | Away: Grocery Sticks
+END:VEVENT
+BEGIN:VEVENT
+UID:620314527484a56e36f845b5@bond-hockey-ics
+DTSTAMP:20260123T233234Z
+DTSTART:20260511T003000Z
+DTEND:20260511T015000Z
+SUMMARY:Grocery Sticks vs Cougars
+LOCATION:West Rink
+DESCRIPTION:Winter 2026 Division 5A | Stage: Regular Season | Status: scheduled | Home: Grocery Sticks | Away: Cougars
+END:VEVENT
+END:VCALENDAR
