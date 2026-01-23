@@ -15,3 +15,10 @@ teams:
     api_url: "https://api.bondsports.co/v4/competitions/180251ce-9fbc-4153-b7f6-ce3530a2c7f9/stages/153/game-scores"
     my_team_ids: [1254]
     my_team_names: ["Alligator Skinners"]
+
+  - name: "Grocery Sticks"
+    slug: "grocery-sticks-winter-2026-d5a"
+    league_name: "Winter 2026 Division 5A"
+    api_url: "https://api.bondsports.co/v4/competitions/00d2c916-8370-463c-8d83-01c9ce2de443/stages/158/game-scores"
+    my_team_ids: [1295]
+    my_team_names: ["Grocery Sticks"]
