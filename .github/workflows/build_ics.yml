@@ -3,7 +3,7 @@ name: Build ICS feeds
 
 on:
   schedule:
-    - cron: "50 * * * *"
+    - cron: "22 */6 * * *"
   workflow_dispatch:
   push:
     branches: [ "main" ]    # remove later if you want
