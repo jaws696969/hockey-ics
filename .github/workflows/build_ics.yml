@@ -3,7 +3,7 @@ name: Build ICS feeds
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "22 */6 * * *"
   workflow_dispatch:
 
 permissions:
