@@ -436,7 +436,18 @@ def save_state(path: Path, state: Dict[str, Any]) -> None:
     path.write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
 
 def freeze_for_game(game: Game, now: datetime) -> bool:
-    return now >= game.start
+    """
+    Freeze standings only when the game is truly complete.
+
+    This prevents a moved/rescheduled game from staying "frozen" just because its
+    original start time passed, and avoids freezing games where the league is late
+    posting results.
+    """
+    if game.is_final:
+        return True
+    if game.has_result:
+        return True
+    return False
 
 
 # -------------------------
