@@ -28,8 +28,8 @@ teams:
     standings_api_url: ... standings   # recommended
     my_team_ids: [ ... ]               # supports multiple IDs
     my_team_names: [ ... ]             # same length as ids
-    opponent_recent_max: 12            # optional
-    head_to_head_max: 5                # optional
+    opponent_recent_max: 20            # optional
+    head_to_head_max: 20               # optional
 """
 
 from __future__ import annotations
@@ -222,7 +222,7 @@ def opponent_games_lines_compact(
     opponent_id: int,
     cutoff_start: datetime,
     tz: timezone,
-    max_lines: int = 12,
+    max_lines: int = 20,
 ) -> List[str]:
     """
     Include ALL opponent games with start < cutoff_start (regardless of status).
@@ -260,7 +260,7 @@ def head_to_head_lines(
     opponent_id: int,
     cutoff_start: datetime,
     tz: timezone,
-    max_lines: int = 5,
+    max_lines: int = 20,
 ) -> List[str]:
     """
     Prior matchups between my team and opponent, before cutoff_start.
@@ -325,7 +325,7 @@ def pick_division_standings(raw: Any, my_team_id: int) -> List[Dict[str, Any]]:
 
     return []
 
-def format_standings_lines(rows: List[Dict[str, Any]], max_rows: int = 12) -> List[str]:
+def format_standings_lines(rows: List[Dict[str, Any]], max_rows: int = 20) -> List[str]:
     def key(r: Dict[str, Any]) -> Tuple[int, str]:
         try:
             rk = int(r.get("rank", 9999))
@@ -489,8 +489,8 @@ def main() -> None:
         slug = str(team_entry.get("slug", slugify(team_entry.get("name", league_name))))
         games_url = str(team_entry["api_url"])
         standings_url = team_entry.get("standings_api_url")
-        max_recent = int(team_entry.get("opponent_recent_max", 12))
-        h2h_max = int(team_entry.get("head_to_head_max", 5))
+        max_recent = int(team_entry.get("opponent_recent_max", 20))
+        h2h_max = int(team_entry.get("head_to_head_max", 20))
 
         my_ids: List[int] = [int(x) for x in (team_entry.get("my_team_ids") or [])]
         my_names: List[str] = [str(x) for x in (team_entry.get("my_team_names") or [])]
