@@ -1,134 +1,147 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//bond-hockey-ics//EN
+PRODID:-//hockey-ics//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Orcas
-X-WR-TIMEZONE:UTC
+X-WR-CALNAME:Orcas — Winter 2026 Division 6A
 BEGIN:VEVENT
-UID:78e346a866fb953852283e3b@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:075b59581d1b35627c7f9272@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260130T013000Z
 DTEND:20260130T025000Z
 SUMMARY:Orcas @ Blizzard (W 5-4)
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: final | Home: Blizzard | Away: Orcas | Score (Away-Home): 5-4
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: final\nStart (UTC): 2026-01-30 01:30\nRink: West Rink\nResult: W 5-4\n\nBlizzard recent games (before this matchup):\nBlizzard vs Instinct Bombers (2026-01-24) L 4-8\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:43e4044901651f5aa75499ce@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:43e4044901651f5aa75499ce@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260207T030000Z
 DTEND:20260207T042000Z
 SUMMARY:Orcas @ Michigan
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Michigan | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-02-07 03:00\nRink: East Rink\n\nMichigan recent games (before this matchup):\nMichigan @ Slainte Ice Dragons (2026-01-23) W 8-0\nMichigan vs BNP (2026-01-30) W 5-4\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:ff574ec86db1532622a6858e@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:ff574ec86db1532622a6858e@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260221T030000Z
 DTEND:20260221T042000Z
 SUMMARY:Orcas vs Slainte Ice Dragons
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: Slainte Ice Dragons
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-02-21 03:00\nRink: West Rink\n\nSlainte Ice Dragons recent games (before this matchup):\nSlainte Ice Dragons vs Michigan (2026-01-23) L 0-8\nSlainte Ice Dragons vs Instinct Bombers (2026-01-30) L 2-6\nSlainte Ice Dragons @ Blizzard (2026-02-07)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:d95df525f5978ba3e8fbbd70@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:d95df525f5978ba3e8fbbd70@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260228T013000Z
 DTEND:20260228T025000Z
 SUMMARY:Orcas @ BNP
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: BNP | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-02-28 01:30\nRink: West Rink\n\nBNP recent games (before this matchup):\nBNP @ Michigan (2026-01-30) L 4-5\nBNP vs Instinct Bombers (2026-02-06)\nBNP @ Blizzard (2026-02-21)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:62137c9cd43606f33c0dd4e9@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:62137c9cd43606f33c0dd4e9@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260307T013000Z
 DTEND:20260307T025000Z
 SUMMARY:Orcas vs Blizzard
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: Blizzard
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-07 01:30\nRink: West Rink\n\nBlizzard recent games (before this matchup):\nBlizzard vs Instinct Bombers (2026-01-24) L 4-8\nBlizzard vs Orcas (2026-01-30) L 4-5\nBlizzard vs Slainte Ice Dragons (2026-02-07)\nBlizzard vs BNP (2026-02-21)\nBlizzard @ Instinct Bombers (2026-02-27)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:c427ada1731693d6ad6ebd90@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:c427ada1731693d6ad6ebd90@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260314T033000Z
 DTEND:20260314T045000Z
 SUMMARY:Orcas vs Michigan
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: Michigan
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-14 03:30\nRink: East Rink\n\nMichigan recent games (before this matchup):\nMichigan @ Slainte Ice Dragons (2026-01-23) W 8-0\nMichigan vs BNP (2026-01-30) W 5-4\nMichigan vs Orcas (2026-02-07)\nMichigan @ Instinct Bombers (2026-02-21)\nMichigan vs Slainte Ice Dragons (2026-02-27)\nMichigan @ BNP (2026-03-07)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:f430712e1bc63444b1018bbe@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:f430712e1bc63444b1018bbe@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260321T033000Z
 DTEND:20260321T045000Z
 SUMMARY:Orcas vs Instinct Bombers
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: Instinct Bombers
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-21 03:30\nRink: West Rink\n\nInstinct Bombers recent games (before this matchup):\nInstinct Bombers @ Blizzard (2026-01-24) W 8-4\nInstinct Bombers @ Slainte Ice Dragons (2026-01-30) W 6-2\nInstinct Bombers @ BNP (2026-02-06)\nInstinct Bombers vs Michigan (2026-02-21)\nInstinct Bombers vs Blizzard (2026-02-27)\nInstinct Bombers vs Slainte Ice Dragons (2026-03-07)\nInstinct Bombers vs BNP (2026-03-14)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:631e383c741622dc3a58079c@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:631e383c741622dc3a58079c@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260325T033000Z
 DTEND:20260325T045000Z
 SUMMARY:Orcas vs BNP
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: BNP
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-25 03:30\nRink: West Rink\n\nBNP recent games (before this matchup):\nBNP @ Michigan (2026-01-30) L 4-5\nBNP vs Instinct Bombers (2026-02-06)\nBNP @ Blizzard (2026-02-21)\nBNP vs Orcas (2026-02-28)\nBNP vs Michigan (2026-03-07)\nBNP @ Instinct Bombers (2026-03-14)\nBNP @ Slainte Ice Dragons (2026-03-20)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:b727b17d1542f257c8ff6715@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:b727b17d1542f257c8ff6715@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260327T003000Z
 DTEND:20260327T015000Z
 SUMMARY:Orcas @ Slainte Ice Dragons
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Slainte Ice Dragons | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-27 00:30\nRink: West Rink\n\nSlainte Ice Dragons recent games (before this matchup):\nSlainte Ice Dragons vs Michigan (2026-01-23) L 0-8\nSlainte Ice Dragons vs Instinct Bombers (2026-01-30) L 2-6\nSlainte Ice Dragons @ Blizzard (2026-02-07)\nSlainte Ice Dragons @ Orcas (2026-02-21)\nSlainte Ice Dragons @ Michigan (2026-02-27)\nSlainte Ice Dragons @ Instinct Bombers (2026-03-07)\nSlainte Ice Dragons vs Blizzard (2026-03-13)\nSlainte Ice Dragons vs BNP (2026-03-20)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:b55baca37a061d5db0d34efb@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:b55baca37a061d5db0d34efb@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260411T020000Z
 DTEND:20260411T032000Z
 SUMMARY:Orcas vs BNP
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: BNP
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-11 02:00\nRink: East Rink\n\nBNP recent games (before this matchup):\nBNP vs Instinct Bombers (2026-02-06)\nBNP @ Blizzard (2026-02-21)\nBNP vs Orcas (2026-02-28)\nBNP vs Michigan (2026-03-07)\nBNP @ Instinct Bombers (2026-03-14)\nBNP @ Slainte Ice Dragons (2026-03-20)\nBNP @ Orcas (2026-03-25)\nBNP vs Blizzard (2026-03-28)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:a368c02c69f82c60098cee65@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:a368c02c69f82c60098cee65@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260418T033000Z
 DTEND:20260418T045000Z
 SUMMARY:Orcas @ Blizzard
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Blizzard | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-18 03:30\nRink: West Rink\n\nBlizzard recent games (before this matchup):\nBlizzard vs Slainte Ice Dragons (2026-02-07)\nBlizzard vs BNP (2026-02-21)\nBlizzard @ Instinct Bombers (2026-02-27)\nBlizzard @ Orcas (2026-03-07)\nBlizzard @ Slainte Ice Dragons (2026-03-13)\nBlizzard @ Michigan (2026-03-21)\nBlizzard @ BNP (2026-03-28)\nBlizzard vs Instinct Bombers (2026-04-11)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:eb18b7d928e42b0f7dfb1f87@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:eb18b7d928e42b0f7dfb1f87@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260425T033000Z
 DTEND:20260425T045000Z
 SUMMARY:Orcas @ Michigan
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Michigan | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-25 03:30\nRink: East Rink\n\nMichigan recent games (before this matchup):\nMichigan @ Instinct Bombers (2026-02-21)\nMichigan vs Slainte Ice Dragons (2026-02-27)\nMichigan @ BNP (2026-03-07)\nMichigan @ Orcas (2026-03-14)\nMichigan vs Blizzard (2026-03-21)\nMichigan vs Instinct Bombers (2026-03-28)\nMichigan @ Slainte Ice Dragons (2026-04-10)\nMichigan vs BNP (2026-04-18)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:fcdebda0879c412b9da2b457@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:fcdebda0879c412b9da2b457@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260502T020000Z
 DTEND:20260502T032000Z
 SUMMARY:Orcas @ Instinct Bombers
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Instinct Bombers | Away: Orcas
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-05-02 02:00\nRink: West Rink\n\nInstinct Bombers recent games (before this matchup):\nInstinct Bombers vs Blizzard (2026-02-27)\nInstinct Bombers vs Slainte Ice Dragons (2026-03-07)\nInstinct Bombers vs BNP (2026-03-14)\nInstinct Bombers @ Orcas (2026-03-21)\nInstinct Bombers @ Michigan (2026-03-28)\nInstinct Bombers @ Blizzard (2026-04-11)\nInstinct Bombers @ Slainte Ice Dragons (2026-04-17)\nInstinct Bombers @ BNP (2026-04-25)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:1f9c391297c5d4939bea4d6c@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:1f9c391297c5d4939bea4d6c@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260508T020000Z
 DTEND:20260508T032000Z
 SUMMARY:Orcas vs Slainte Ice Dragons
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 6A | Stage: Regular Season | Status: scheduled | Home: Orcas | Away: Slainte Ice Dragons
+DESCRIPTION:League: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-05-08 02:00\nRink: West Rink\n\nSlainte Ice Dragons recent games (before this matchup):\nSlainte Ice Dragons @ Instinct Bombers (2026-03-07)\nSlainte Ice Dragons vs Blizzard (2026-03-13)\nSlainte Ice Dragons vs BNP (2026-03-20)\nSlainte Ice Dragons vs Orcas (2026-03-27)\nSlainte Ice Dragons vs Michigan (2026-04-10)\nSlainte Ice Dragons vs Instinct Bombers (2026-04-17)\nSlainte Ice Dragons @ Blizzard (2026-04-24)\nSlainte Ice Dragons @ BNP (2026-05-01)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Michigan (2-0\, 4 pts)\n2. Instinct Bombers (2-0\, 4 pts)\n3. Orcas (1-0\, 2 pts)\n4. BNP (0-1\, 1 pts)\n5. Blizzard (0-2\, 0 pts)\n6. Slainte Ice Dragons (0-2\, 0 pts)
 END:VEVENT
 END:VCALENDAR

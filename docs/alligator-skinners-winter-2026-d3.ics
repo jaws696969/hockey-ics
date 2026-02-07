@@ -1,134 +1,147 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//bond-hockey-ics//EN
+PRODID:-//hockey-ics//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Alligator Skinners
-X-WR-TIMEZONE:UTC
+X-WR-CALNAME:Alligator Skinners — Winter 2026 Division 3
 BEGIN:VEVENT
-UID:6ec96288feb9f5a523163b83@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:3d7b22354d9af65d8675fa10@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260120T013000Z
 DTEND:20260120T025000Z
 SUMMARY:Alligator Skinners vs Dirty Mike and the Boys (W 6-3)
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: final | Home: Alligator Skinners | Away: Dirty Mike and the Boys | Score (Away-Home): 3-6
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: final\nStart (UTC): 2026-01-20 01:30\nRink: West Rink\nResult: W 6-3\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:56e3c9f80edccce6b6a71cff@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:70d7c380c4866161e5827d36@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260127T043000Z
 DTEND:20260127T055000Z
 SUMMARY:Alligator Skinners @ Yeti (W 3-1)
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: final | Home: Yeti | Away: Alligator Skinners | Score (Away-Home): 3-1
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: final\nStart (UTC): 2026-01-27 04:30\nRink: West Rink\nResult: W 3-1\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:75f6e4be7fe45307fb630535@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:31543f2a247cb0a53225f26e@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260204T030000Z
 DTEND:20260204T042000Z
 SUMMARY:Alligator Skinners @ Naughty Otters (L 2-9)
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: final | Home: Naughty Otters | Away: Alligator Skinners | Score (Away-Home): 2-9
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: final\nStart (UTC): 2026-02-04 03:00\nRink: East Rink\nResult: L 2-9\n\nNaughty Otters recent games (before this matchup):\nNaughty Otters vs Bulldogs (2026-01-20) W 6-1\nNaughty Otters vs Dirty Mike and the Boys (2026-01-28) L 6-10\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:715a903719a1caf9babeff56@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:715a903719a1caf9babeff56@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260210T043000Z
 DTEND:20260210T055000Z
 SUMMARY:Alligator Skinners @ Proberts Selects
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Proberts Selects | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-02-10 04:30\nRink: East Rink\n\nProberts Selects recent games (before this matchup):\nProberts Selects vs Backdoor Bandits (2026-01-20) W 10-5\nProberts Selects vs Bulldogs (2026-01-27) W 1-0\nProberts Selects vs Dirty Mike and the Boys (2026-02-03) W 8-6\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:f3404a08620a99e21d2d2cc2@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:f3404a08620a99e21d2d2cc2@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260224T030000Z
 DTEND:20260224T042000Z
 SUMMARY:Alligator Skinners @ Crusaders
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Crusaders | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-02-24 03:00\nRink: East Rink\n\nCrusaders recent games (before this matchup):\nCrusaders @ The Pigeons (2026-01-20) W 5-4\nCrusaders @ Hellfish (2026-01-27) W 4-2\nCrusaders @ Backdoor Bandits (2026-02-03) W 5-4\nCrusaders @ Bulldogs (2026-02-10)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:d8c04392e160212b8f7afe26@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:d8c04392e160212b8f7afe26@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260304T030000Z
 DTEND:20260304T042000Z
 SUMMARY:Alligator Skinners @ Psycho Jackpot
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Psycho Jackpot | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-04 03:00\nRink: West Rink\n\nPsycho Jackpot recent games (before this matchup):\nPsycho Jackpot @ The Pigeons (2026-01-27) L 3-4\nPsycho Jackpot @ Hellfish (2026-02-03) W 7-2\nPsycho Jackpot @ Backdoor Bandits (2026-02-10)\nPsycho Jackpot @ Dirty Mike and the Boys (2026-02-24)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:670efe0765a623486f4177fa@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:670efe0765a623486f4177fa@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260310T020000Z
 DTEND:20260310T032000Z
 SUMMARY:Alligator Skinners vs The Pigeons
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Alligator Skinners | Away: The Pigeons
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-10 02:00\nRink: West Rink\n\nThe Pigeons recent games (before this matchup):\nThe Pigeons vs Crusaders (2026-01-20) L 4-5\nThe Pigeons vs Psycho Jackpot (2026-01-27) W 4-3\nThe Pigeons @ Yeti (2026-02-03) L 3-4\nThe Pigeons @ Hellfish (2026-02-10)\nThe Pigeons @ Bulldogs (2026-02-24)\nThe Pigeons @ Dirty Mike and the Boys (2026-03-03)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:2c1852789c6713e6cef2a557@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:2c1852789c6713e6cef2a557@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260317T033000Z
 DTEND:20260317T045000Z
 SUMMARY:Alligator Skinners vs Hellfish
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Alligator Skinners | Away: Hellfish
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-17 03:30\nRink: West Rink\n\nHellfish recent games (before this matchup):\nHellfish vs Mighty Bucks (2026-01-20) L 2-9\nHellfish vs Crusaders (2026-01-27) L 2-4\nHellfish vs Psycho Jackpot (2026-02-03) L 2-7\nHellfish vs The Pigeons (2026-02-10)\nHellfish @ Backdoor Bandits (2026-02-25)\nHellfish @ Bulldogs (2026-03-03)\nHellfish @ Dirty Mike and the Boys (2026-03-11)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:ba313d22eaebef8ab2823a6f@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:ba313d22eaebef8ab2823a6f@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260325T003000Z
 DTEND:20260325T015000Z
 SUMMARY:Alligator Skinners vs Backdoor Bandits
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Alligator Skinners | Away: Backdoor Bandits
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-25 00:30\nRink: West Rink\n\nBackdoor Bandits recent games (before this matchup):\nBackdoor Bandits @ Proberts Selects (2026-01-20) L 5-10\nBackdoor Bandits vs Mighty Bucks (2026-01-27) L 3-11\nBackdoor Bandits vs Crusaders (2026-02-03) L 4-5\nBackdoor Bandits vs Psycho Jackpot (2026-02-10)\nBackdoor Bandits vs Hellfish (2026-02-25)\nBackdoor Bandits @ Yeti (2026-03-03)\nBackdoor Bandits @ Bulldogs (2026-03-11)\nBackdoor Bandits @ Dirty Mike and the Boys (2026-03-17)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:e96f75bb1b6bb72b7ee4af08@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:e96f75bb1b6bb72b7ee4af08@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260331T003000Z
 DTEND:20260331T015000Z
 SUMMARY:Alligator Skinners vs Bulldogs
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Alligator Skinners | Away: Bulldogs
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-03-31 00:30\nRink: West Rink\n\nBulldogs recent games (before this matchup):\nBulldogs @ Proberts Selects (2026-01-27) L 0-1\nBulldogs @ Mighty Bucks (2026-02-03) L 5-7\nBulldogs vs Crusaders (2026-02-10)\nBulldogs vs The Pigeons (2026-02-24)\nBulldogs vs Hellfish (2026-03-03)\nBulldogs vs Backdoor Bandits (2026-03-11)\nBulldogs @ Yeti (2026-03-18)\nBulldogs @ Dirty Mike and the Boys (2026-03-24)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:3e3a77462865a7acbf235508@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:3e3a77462865a7acbf235508@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260407T020000Z
 DTEND:20260407T032000Z
 SUMMARY:Alligator Skinners vs Dirty Mike and the Boys
 LOCATION:East Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Alligator Skinners | Away: Dirty Mike and the Boys
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-07 02:00\nRink: East Rink\n\nDirty Mike and the Boys recent games (before this matchup):\nDirty Mike and the Boys @ Proberts Selects (2026-02-03) L 6-8\nDirty Mike and the Boys @ Mighty Bucks (2026-02-11)\nDirty Mike and the Boys vs Psycho Jackpot (2026-02-24)\nDirty Mike and the Boys vs The Pigeons (2026-03-03)\nDirty Mike and the Boys vs Hellfish (2026-03-11)\nDirty Mike and the Boys vs Backdoor Bandits (2026-03-17)\nDirty Mike and the Boys vs Bulldogs (2026-03-24)\nDirty Mike and the Boys @ Yeti (2026-03-31)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:cf7c0dc512632e85e14d3dca@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:cf7c0dc512632e85e14d3dca@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260414T020000Z
 DTEND:20260414T032000Z
 SUMMARY:Alligator Skinners @ Yeti
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Yeti | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-14 02:00\nRink: West Rink\n\nYeti recent games (before this matchup):\nYeti vs Naughty Otters (2026-02-10)\nYeti vs Proberts Selects (2026-02-24)\nYeti vs Backdoor Bandits (2026-03-03)\nYeti vs Mighty Bucks (2026-03-10)\nYeti vs Bulldogs (2026-03-18)\nYeti vs Crusaders (2026-03-24)\nYeti vs Dirty Mike and the Boys (2026-03-31)\nYeti vs Psycho Jackpot (2026-04-08)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:26dc9fa72c8be984e2ee50e8@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:26dc9fa72c8be984e2ee50e8@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260421T033000Z
 DTEND:20260421T045000Z
 SUMMARY:Alligator Skinners @ Naughty Otters
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Naughty Otters | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-21 03:30\nRink: West Rink\n\nNaughty Otters recent games (before this matchup):\nNaughty Otters @ Mighty Bucks (2026-02-24)\nNaughty Otters @ Crusaders (2026-03-03)\nNaughty Otters @ Psycho Jackpot (2026-03-10)\nNaughty Otters @ The Pigeons (2026-03-17)\nNaughty Otters vs Hellfish (2026-03-24)\nNaughty Otters vs Backdoor Bandits (2026-03-31)\nNaughty Otters vs Bulldogs (2026-04-07)\nNaughty Otters vs Dirty Mike and the Boys (2026-04-15)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
-UID:213ebf67216bf323523821f2@bond-hockey-ics
-DTSTAMP:20260207T193520Z
+UID:213ebf67216bf323523821f2@hockey-ics
+DTSTAMP:20260207T224808Z
+LAST-MODIFIED:20260207T224807Z
 DTSTART:20260428T003000Z
 DTEND:20260428T015000Z
 SUMMARY:Alligator Skinners @ Mighty Bucks
 LOCATION:West Rink
-DESCRIPTION:Winter 2026 Division 3 | Stage: Regular Season | Status: scheduled | Home: Mighty Bucks | Away: Alligator Skinners
+DESCRIPTION:League: Winter 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (UTC): 2026-04-28 00:30\nRink: West Rink\n\nMighty Bucks recent games (before this matchup):\nMighty Bucks vs Proberts Selects (2026-03-03)\nMighty Bucks @ Yeti (2026-03-10)\nMighty Bucks @ Crusaders (2026-03-18)\nMighty Bucks @ Psycho Jackpot (2026-03-24)\nMighty Bucks @ The Pigeons (2026-04-01)\nMighty Bucks @ Hellfish (2026-04-07)\nMighty Bucks @ Backdoor Bandits (2026-04-14)\nMighty Bucks vs Bulldogs (2026-04-21)\n\nStandings (as of 2026-02-07 22:48 UTC):\n1. Mighty Bucks (3-0\, 6 pts)\n2. Proberts Selects (3-0\, 6 pts)\n3. Crusaders (3-0\, 6 pts)\n4. Naughty Otters (2-1\, 4 pts)\n5. Alligator Skinners (2-1\, 4 pts)\n6. The Pigeons (1-2\, 4 pts)\n7. Psycho Jackpot (1-1\, 2 pts)\n8. Yeti (1-1\, 2 pts)\n9. Dirty Mike and the Boys (1-2\, 2 pts)\n10. Bulldogs (0-3\, 1 pts)\n11. Hellfish (0-3\, 0 pts)\n12. Backdoor Bandits (0-3\, 0 pts)
 END:VEVENT
 END:VCALENDAR
