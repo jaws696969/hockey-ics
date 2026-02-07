@@ -185,18 +185,23 @@ def opponent_recent_lines(
     opponent_id: int,
     opponent_name: str,
     cutoff_start: datetime,
-    max_lines: int = 8,
+    max_lines: int = 12,
 ) -> List[str]:
     """
-    Include opponent games before cutoff that are likely completed.
-    Rule:
-      - If status == final: include (with result if available)
-      - If status != final: exclude (it hasn't happened yet)
-      - If status == final but scores missing: include line, no result
+    Include ALL opponent games with start time < cutoff_start.
+
+    - Past games: if scores exist => append W/L/T and score
+    - Upcoming games (between now and cutoff): no scores yet => include line without result
+    - We do NOT filter by status at all (per latest requirement).
+
+    Format:
+      "<Opponent> vs <Other> (YYYY-MM-DD) W 5-3"
+      "<Opponent> @ <Other> (YYYY-MM-DD)"
     """
+
     prior = [
         g for g in all_games
-        if g.involves_team_id(opponent_id) and g.start < cutoff_start and (g.status or "").lower() == "final"
+        if g.involves_team_id(opponent_id) and g.start < cutoff_start
     ]
     prior.sort(key=lambda g: g.start)
 
@@ -210,11 +215,9 @@ def opponent_recent_lines(
         if res:
             lines.append(f"{opponent_name} {at_vs} {other.name} ({fmt_date(g.start)}) {res}")
         else:
-            # include game but omit result
             lines.append(f"{opponent_name} {at_vs} {other.name} ({fmt_date(g.start)})")
 
     return lines
-
 
 # -------------------------
 # Feature 2: standings parsing & formatting
