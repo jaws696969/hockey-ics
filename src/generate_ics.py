@@ -2,16 +2,22 @@
 """
 hockey-ics: generate .ics feeds from Bond Sports API.
 
-Adds:
-Feature 1) Opponent "recent results" (completed games before this matchup).
-  - If league hasn't posted a result yet, INCLUDE the game line but omit result text.
+Feature 1) Opponent games before this matchup:
+  - Include ALL opponent games whose start < this matchup start (even future games between now and matchup).
+  - If scores exist: include W/L/T X-Y
+  - If scores missing: include the game line but omit the result.
 
 Feature 2) Standings snapshot per event:
   - Future events: standings updated each run (as-of timestamp included)
   - Past events (game start passed): standings frozen (kept as it was first time it crossed into the past)
-  - Snapshots persisted under: docs/_state/<team-slug>.json
+  - Snapshots persisted under: docs/_state/<calendar-namespace>.json
 
-Config expected (your current format):
+Formatting improvements:
+  - ASCII separators for sections
+  - Compact opponent list lines with local (config) timezone display
+  - Head-to-head section vs opponent
+
+Config expected:
 output_dir: "docs"
 default_timezone: "America/New_York"
 teams:
@@ -19,10 +25,11 @@ teams:
     slug: ...
     league_name: ...
     api_url: ... game-scores
-    standings_api_url: ... standings   # <-- new (recommended)
+    standings_api_url: ... standings   # recommended
     my_team_ids: [ ... ]               # supports multiple IDs
     my_team_names: [ ... ]             # same length as ids
-    opponent_recent_max: 8             # optional
+    opponent_recent_max: 12            # optional
+    head_to_head_max: 5                # optional
 """
 
 from __future__ import annotations
@@ -37,6 +44,11 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 import yaml
+
+try:
+    from zoneinfo import ZoneInfo
+except Exception:  # pragma: no cover
+    ZoneInfo = None  # type: ignore
 
 
 # -------------------------
@@ -55,9 +67,6 @@ def parse_iso_z(dt_str: str) -> datetime:
 def fmt_dt_utc_for_ics(dt: datetime) -> str:
     dt = dt.astimezone(timezone.utc)
     return dt.strftime("%Y%m%dT%H%M%SZ")
-
-def fmt_date(dt: datetime) -> str:
-    return dt.astimezone(timezone.utc).strftime("%Y-%m-%d")
 
 def ics_escape(text: str) -> str:
     text = text.replace("\\", "\\\\")
@@ -81,6 +90,29 @@ def fetch_json(url: str, timeout: int = 30) -> Any:
     r = requests.get(url, timeout=timeout)
     r.raise_for_status()
     return r.json()
+
+def ascii_rule(title: str, width: int = 40) -> List[str]:
+    line = "-" * width
+    return [line, title, line]
+
+def ordinal(n: int) -> str:
+    # 1st/2nd/3rd/4th...
+    if 10 <= (n % 100) <= 20:
+        suf = "th"
+    else:
+        suf = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suf}"
+
+def fmt_month_day_local(dt: datetime, tz: timezone) -> str:
+    # e.g. "Jan 20th"
+    d = dt.astimezone(tz)
+    mon = d.strftime("%b")
+    day = int(d.strftime("%d"))
+    return f"{mon} {ordinal(day)}"
+
+def fmt_start_local(dt: datetime, tz: timezone) -> str:
+    # e.g. "2026-01-19 20:30 EST"
+    return dt.astimezone(tz).strftime("%Y-%m-%d %H:%M %Z")
 
 
 # -------------------------
@@ -154,7 +186,7 @@ def parse_games(raw_games: List[Dict[str, Any]]) -> List[Game]:
 
 
 # -------------------------
-# Feature 1: recent opponent results (with missing-results allowed)
+# Feature: results helpers
 # -------------------------
 
 def result_for_team(game: Game, team_id: int) -> Optional[str]:
@@ -180,29 +212,26 @@ def result_for_team(game: Game, team_id: int) -> Optional[str]:
         prefix = "T"
     return f"{prefix} {gf}-{ga}"
 
-def opponent_recent_lines(
+
+# -------------------------
+# Feature 1: opponent games (compact, local dates)
+# -------------------------
+
+def opponent_games_lines_compact(
     all_games: List[Game],
     opponent_id: int,
-    opponent_name: str,
     cutoff_start: datetime,
+    tz: timezone,
     max_lines: int = 12,
 ) -> List[str]:
     """
-    Include ALL opponent games with start time < cutoff_start.
+    Include ALL opponent games with start < cutoff_start (regardless of status).
 
-    - Past games: if scores exist => append W/L/T and score
-    - Upcoming games (between now and cutoff): no scores yet => include line without result
-    - We do NOT filter by status at all (per latest requirement).
-
-    Format:
-      "<Opponent> vs <Other> (YYYY-MM-DD) W 5-3"
-      "<Opponent> @ <Other> (YYYY-MM-DD)"
+    Compact format (no repeating opponent name):
+        "    Jan 20th vs Backdoor Bandits (W 10-5)"
+        "    Feb 3rd @ Dirty Mike and the Boys"
     """
-
-    prior = [
-        g for g in all_games
-        if g.involves_team_id(opponent_id) and g.start < cutoff_start
-    ]
+    prior = [g for g in all_games if g.involves_team_id(opponent_id) and g.start < cutoff_start]
     prior.sort(key=lambda g: g.start)
 
     lines: List[str] = []
@@ -212,12 +241,54 @@ def opponent_recent_lines(
         at_vs = "vs" if opp_is_home else "@"
 
         res = result_for_team(g, opponent_id)
-        if res:
-            lines.append(f"{opponent_name} {at_vs} {other.name} ({fmt_date(g.start)}) {res}")
-        else:
-            lines.append(f"{opponent_name} {at_vs} {other.name} ({fmt_date(g.start)})")
+        date_str = fmt_month_day_local(g.start, tz)
 
+        if res:
+            lines.append(f"    {date_str} {at_vs} {other.name} ({res})")
+        else:
+            lines.append(f"    {date_str} {at_vs} {other.name}")
     return lines
+
+
+# -------------------------
+# Feature: head-to-head vs opponent (compact, local dates)
+# -------------------------
+
+def head_to_head_lines(
+    all_games: List[Game],
+    my_team_id: int,
+    opponent_id: int,
+    cutoff_start: datetime,
+    tz: timezone,
+    max_lines: int = 5,
+) -> List[str]:
+    """
+    Prior matchups between my team and opponent, before cutoff_start.
+    Compact formatting from my team perspective.
+    """
+    h2h = [
+        g for g in all_games
+        if g.start < cutoff_start
+        and g.involves_team_id(my_team_id)
+        and g.involves_team_id(opponent_id)
+    ]
+    h2h.sort(key=lambda g: g.start)
+
+    lines: List[str] = []
+    for g in h2h[-max_lines:]:
+        my_is_home = (g.home.id == my_team_id)
+        at_vs = "vs" if my_is_home else "@"
+        opp_name = g.away.name if my_is_home else g.home.name
+
+        res = result_for_team(g, my_team_id)
+        date_str = fmt_month_day_local(g.start, tz)
+
+        if res:
+            lines.append(f"    {date_str} {at_vs} {opp_name} ({res})")
+        else:
+            lines.append(f"    {date_str} {at_vs} {opp_name}")
+    return lines
+
 
 # -------------------------
 # Feature 2: standings parsing & formatting
@@ -237,7 +308,6 @@ def pick_division_standings(raw: Any, my_team_id: int) -> List[Dict[str, Any]]:
     if not isinstance(raw, list) or not raw:
         return []
 
-    # try find division containing my team
     for div in raw:
         if not isinstance(div, dict):
             continue
@@ -249,7 +319,6 @@ def pick_division_standings(raw: Any, my_team_id: int) -> List[Dict[str, Any]]:
             if isinstance(team, dict) and int(team.get("id", -1)) == my_team_id:
                 return rows
 
-    # fallback: first division with standings list
     for div in raw:
         if isinstance(div, dict) and isinstance(div.get("standings"), list):
             return div["standings"]
@@ -276,7 +345,6 @@ def format_standings_lines(rows: List[Dict[str, Any]], max_rows: int = 12) -> Li
         losses = r.get("losses")
         points = r.get("points")
 
-        # Example line: "5. Alligator Skinners (2-1, 4 pts)"
         bits = []
         if rank is not None:
             bits.append(f"{rank}.")
@@ -387,6 +455,17 @@ def main() -> None:
     state_dir = output_dir / "_state"
     state_dir.mkdir(parents=True, exist_ok=True)
 
+    tz_name = str(cfg.get("default_timezone", "America/New_York"))
+    if ZoneInfo is not None:
+        try:
+            local_tz = ZoneInfo(tz_name)
+        except Exception:
+            local_tz = timezone.utc
+            tz_name = "UTC"
+    else:
+        local_tz = timezone.utc
+        tz_name = "UTC"
+
     teams = cfg.get("teams", [])
     if not teams:
         raise SystemExit("No teams found in config.yaml under 'teams'.")
@@ -398,8 +477,9 @@ def main() -> None:
         league_name = str(team_entry.get("league_name", team_entry.get("name", "League")))
         slug = str(team_entry.get("slug", slugify(team_entry.get("name", league_name))))
         games_url = str(team_entry["api_url"])
-        standings_url = team_entry.get("standings_api_url")  # NEW
-        max_recent = int(team_entry.get("opponent_recent_max", 8))
+        standings_url = team_entry.get("standings_api_url")
+        max_recent = int(team_entry.get("opponent_recent_max", 12))
+        h2h_max = int(team_entry.get("head_to_head_max", 5))
 
         my_ids: List[int] = [int(x) for x in (team_entry.get("my_team_ids") or [])]
         my_names: List[str] = [str(x) for x in (team_entry.get("my_team_names") or [])]
@@ -407,22 +487,18 @@ def main() -> None:
         if len(my_ids) != len(my_names) or not my_ids:
             raise SystemExit(f"Config error for {slug}: my_team_ids and my_team_names must exist and be same length.")
 
-        # Fetch schedule once per league/team entry
         raw_games = fetch_json(games_url)
         all_games = parse_games(raw_games)
 
-        # Output one ICS per my team id (supports multi-team configs)
         for my_team_id, my_team_name in zip(my_ids, my_names):
             cal_name = f"{my_team_name} — {league_name}"
             out_file = f"{slug}-{slugify(my_team_name)}.ics" if len(my_ids) > 1 else f"{slug}.ics"
             namespace = slugify(out_file.replace(".ics", ""))
 
-            # Load state for this calendar
             state_path = state_dir / f"{namespace}.json"
             state = load_state(state_path)
             state_events: Dict[str, Any] = state.setdefault("events", {})
 
-            # Fetch standings once per calendar run (if configured)
             standings_lines_current: List[str] = []
             if standings_url:
                 standings_raw = fetch_json(str(standings_url))
@@ -438,48 +514,60 @@ def main() -> None:
                 uid = stable_uid(namespace, g.event_id)
 
                 desc: List[str] = []
+                desc.extend(ascii_rule("GAME INFO"))
                 desc.append(f"League: {league_name}")
                 if g.stage_name:
                     desc.append(f"Stage: {g.stage_name}")
                 desc.append(f"Status: {g.status}")
-                desc.append(f"Start (UTC): {g.start.strftime('%Y-%m-%d %H:%M')}")
+                desc.append(f"Start ({tz_name}): {fmt_start_local(g.start, local_tz)}")
                 if g.space.name:
                     desc.append(f"Rink: {g.space.name}")
                 if my_res:
                     desc.append(f"Result: {my_res}")
 
-                # Feature 1: opponent recent (final status only, include even if missing result)
-                opp_lines = opponent_recent_lines(
+                # Head-to-head (prior matchups vs opponent)
+                h2h_lines = head_to_head_lines(
+                    all_games=all_games,
+                    my_team_id=my_team_id,
+                    opponent_id=opp_id,
+                    cutoff_start=g.start,
+                    tz=local_tz,
+                    max_lines=h2h_max,
+                )
+                if h2h_lines:
+                    desc.append("")
+                    desc.extend(ascii_rule(f"Head-to-head vs {opp_name}"))
+                    desc.extend(h2h_lines)
+
+                # Feature 1: opponent games before this matchup (compact)
+                opp_lines = opponent_games_lines_compact(
                     all_games=all_games,
                     opponent_id=opp_id,
-                    opponent_name=opp_name,
                     cutoff_start=g.start,
+                    tz=local_tz,
                     max_lines=max_recent,
                 )
                 if opp_lines:
                     desc.append("")
-                    desc.append(f"{opp_name} recent games (before this matchup):")
+                    desc.extend(ascii_rule(f"{opp_name} games before this matchup"))
                     desc.extend(opp_lines)
 
-                # Feature 2: standings snapshot
+                # Feature 2: standings snapshot (frozen for past games)
                 if standings_url and standings_lines_current:
                     key = str(g.event_id)
                     if freeze_for_game(g, now):
-                        # Freeze (create once if missing)
                         if key not in state_events:
                             state_events[key] = {"as_of": run_asof, "lines": standings_lines_current}
                         snap = state_events[key]
                     else:
-                        # Future game: always refresh snapshot
                         state_events[key] = {"as_of": run_asof, "lines": standings_lines_current}
                         snap = state_events[key]
 
                     snap_asof = snap.get("as_of", run_asof)
                     snap_lines = snap.get("lines", [])
-
                     if snap_lines:
                         desc.append("")
-                        desc.append(f"Standings (as of {snap_asof}):")
+                        desc.extend(ascii_rule(f"Standings (as of {snap_asof})"))
                         desc.extend([str(x) for x in snap_lines])
 
                 vevents.append(
