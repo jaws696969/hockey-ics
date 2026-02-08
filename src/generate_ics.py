@@ -547,7 +547,7 @@ def main() -> None:
                 )
                 if h2h_lines:
                     desc.append("")
-                    desc.extend(ascii_rule(f"Head-to-head vs {opp_name}"))
+                    desc.extend(ascii_rule(f"HEAD-TO-HEAD vs {opp_name}"))
                     desc.extend(h2h_lines)
 
                 # Feature 1: opponent games before this matchup (compact)
@@ -560,7 +560,7 @@ def main() -> None:
                 )
                 if opp_lines:
                     desc.append("")
-                    desc.extend(ascii_rule(f"{opp_name} games before this matchup"))
+                    desc.extend(ascii_rule(f"{opp_name.upper()} GAMES-TO-DATE"))
                     desc.extend(opp_lines)
 
                 # Feature 2: standings snapshot (frozen for past games)
@@ -578,7 +578,7 @@ def main() -> None:
                     snap_lines = snap.get("lines", [])
                     if snap_lines:
                         desc.append("")
-                        desc.extend(ascii_rule(f"Standings (as of {snap_asof})"))
+                        desc.extend(ascii_rule(f"STANDINGS (as of {snap_asof})"))
                         desc.extend([str(x) for x in snap_lines])
 
                 vevents.append(
