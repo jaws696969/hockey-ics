@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Grocery Sticks — Winter 2026 Division 5A
 BEGIN:VEVENT
 UID:b550db2cc3e0ca98ae611f56@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260212T030000Z
 DTEND:20260212T042000Z
 SUMMARY:Grocery Sticks @ Homer's Heroes (W 4-2)
@@ -16,8 +16,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:ccf9baa41f462ac1438e3ab4@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260226T030000Z
 DTEND:20260226T042000Z
 SUMMARY:Grocery Sticks @ Molar Bears (L 4-5)
@@ -26,8 +26,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:13951b23257e7028eca46031@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260305T030000Z
 DTEND:20260305T042000Z
 SUMMARY:Grocery Sticks @ Rhinos (L 2-3)
@@ -36,112 +36,112 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:9d6455c00a139a90a71d9aed@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260309T033000Z
 DTEND:20260309T045000Z
 SUMMARY:Grocery Sticks vs Cougars
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-08 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Rhinos (W 6-3)\n    Feb 11th @ The Hanson Brothers (L 3-11)\n    Feb 18th @ Cobra Kai (W 9-2)\n    Feb 22nd @ Les Boys\n    Mar 4th @ Ice Dogs (W 5-4)\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-08 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Rhinos (W 6-3)\n    Feb 11th @ The Hanson Brothers (L 3-11)\n    Feb 18th @ Cobra Kai (W 9-2)\n    Feb 22nd @ Les Boys\n    Mar 4th @ Ice Dogs (W 5-4)\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:76ffc094e162707fa3610838@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260316T033000Z
 DTEND:20260316T045000Z
 SUMMARY:Grocery Sticks vs The Hanson Brothers
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-15 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nTHE HANSON BROTHERS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Molar Bears (L 0-8)\n    Jan 28th vs Rhinos (L 2-5)\n    Feb 11th vs Cougars (W 11-3)\n    Feb 22nd @ Cobra Kai\n    Mar 4th @ Les Boys (W 6-4)\n    Mar 8th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-15 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nTHE HANSON BROTHERS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Molar Bears (L 0-8)\n    Jan 28th vs Rhinos (L 2-5)\n    Feb 11th vs Cougars (W 11-3)\n    Feb 22nd @ Cobra Kai\n    Mar 4th @ Les Boys (W 6-4)\n    Mar 8th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:3a2a3da28dfd797d2b955e77@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260326T020000Z
 DTEND:20260326T032000Z
 SUMMARY:Grocery Sticks vs Les Boys
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-25 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Rhinos (L 2-6)\n    Feb 18th @ Homer's Heroes (W 4-3)\n    Feb 22nd vs Cougars\n    Mar 4th vs The Hanson Brothers (L 4-6)\n    Mar 8th @ Cobra Kai\n    Mar 15th @ Ice Dogs\n    Mar 18th vs Molar Bears\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-25 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Rhinos (L 2-6)\n    Feb 18th @ Homer's Heroes (W 4-3)\n    Feb 22nd vs Cougars\n    Mar 4th vs The Hanson Brothers (L 4-6)\n    Mar 8th @ Cobra Kai\n    Mar 15th @ Ice Dogs\n    Mar 18th vs Molar Bears\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:33c9d47b2622379c2ef041f8@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260329T200000Z
 DTEND:20260329T212000Z
 SUMMARY:Grocery Sticks vs Ice Dogs
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-29 16:00 EDT\nRink: East Rink\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st @ Peter McManus (W 6-4)\n    Feb 4th @ Molar Bears (L 1-5)\n    Feb 22nd vs Rhinos\n    Mar 4th vs Cougars (L 4-5)\n    Mar 8th vs The Hanson Brothers\n    Mar 15th vs Les Boys\n    Mar 18th @ Homer's Heroes\n    Mar 25th @ Cobra Kai\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-03-29 16:00 EDT\nRink: East Rink\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st @ Peter McManus (W 6-4)\n    Feb 4th @ Molar Bears (L 1-5)\n    Feb 22nd vs Rhinos\n    Mar 4th vs Cougars (L 4-5)\n    Mar 8th vs The Hanson Brothers\n    Mar 15th vs Les Boys\n    Mar 18th @ Homer's Heroes\n    Mar 25th @ Cobra Kai\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:1093948a2b40e34026b4f201@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260412T230000Z
 DTEND:20260413T002000Z
 SUMMARY:Grocery Sticks @ Peter McManus
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-12 19:00 EDT\nRink: East Rink\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st vs Ice Dogs (L 4-6)\n    Feb 11th @ Cobra Kai (W 8-0)\n    Mar 1st @ Molar Bears (L 3-4)\n    Mar 8th @ Rhinos\n    Mar 15th @ Cougars\n    Mar 22nd @ Homer's Heroes\n    Mar 25th vs The Hanson Brothers\n    Mar 29th vs Les Boys\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-12 19:00 EDT\nRink: East Rink\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st vs Ice Dogs (L 4-6)\n    Feb 11th @ Cobra Kai (W 8-0)\n    Mar 1st @ Molar Bears (L 3-4)\n    Mar 8th @ Rhinos\n    Mar 15th @ Cougars\n    Mar 22nd @ Homer's Heroes\n    Mar 25th vs The Hanson Brothers\n    Mar 29th vs Les Boys\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:68ec0b27434d87987c4ced4b@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260419T213000Z
 DTEND:20260419T225000Z
 SUMMARY:Grocery Sticks @ Homer's Heroes
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-19 17:30 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Homer's Heroes\n----------------------------------------\n    Feb 11th @ Homer's Heroes (W 4-2)\n\n----------------------------------------\nHOMER'S HEROES GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Grocery Sticks (L 2-4)\n    Feb 18th vs Les Boys (L 3-4)\n    Mar 4th @ Cobra Kai (W 7-5)\n    Mar 8th @ Molar Bears\n    Mar 15th @ Rhinos\n    Mar 18th vs Ice Dogs\n    Mar 22nd vs Peter McManus\n    Mar 25th @ Cougars\n    Mar 29th @ The Hanson Brothers\n    Apr 12th vs Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-19 17:30 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Homer's Heroes\n----------------------------------------\n    Feb 11th @ Homer's Heroes (W 4-2)\n\n----------------------------------------\nHOMER'S HEROES GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Grocery Sticks (L 2-4)\n    Feb 18th vs Les Boys (L 3-4)\n    Mar 4th @ Cobra Kai (W 7-5)\n    Mar 8th @ Molar Bears\n    Mar 15th @ Rhinos\n    Mar 18th vs Ice Dogs\n    Mar 22nd vs Peter McManus\n    Mar 25th @ Cougars\n    Mar 29th @ The Hanson Brothers\n    Apr 12th vs Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:485d6718bcf70c21ac2d4b14@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260423T033000Z
 DTEND:20260423T045000Z
 SUMMARY:Grocery Sticks @ Peter McManus
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-22 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Peter McManus\n----------------------------------------\n    Apr 12th @ Peter McManus\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st vs Ice Dogs (L 4-6)\n    Feb 11th @ Cobra Kai (W 8-0)\n    Mar 1st @ Molar Bears (L 3-4)\n    Mar 8th @ Rhinos\n    Mar 15th @ Cougars\n    Mar 22nd @ Homer's Heroes\n    Mar 25th vs The Hanson Brothers\n    Mar 29th vs Les Boys\n    Apr 12th vs Grocery Sticks\n    Apr 19th @ Cobra Kai\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-22 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Peter McManus\n----------------------------------------\n    Apr 12th @ Peter McManus\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Jan 21st vs Ice Dogs (L 4-6)\n    Feb 11th @ Cobra Kai (W 8-0)\n    Mar 1st @ Molar Bears (L 3-4)\n    Mar 8th @ Rhinos\n    Mar 15th @ Cougars\n    Mar 22nd @ Homer's Heroes\n    Mar 25th vs The Hanson Brothers\n    Mar 29th vs Les Boys\n    Apr 12th vs Grocery Sticks\n    Apr 19th @ Cobra Kai\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:6a48693e0d7763766dee5c5f@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260427T020000Z
 DTEND:20260427T032000Z
 SUMMARY:Grocery Sticks @ Molar Bears
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-26 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Molar Bears\n----------------------------------------\n    Feb 25th @ Molar Bears (L 4-5)\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th @ The Hanson Brothers (W 8-0)\n    Feb 4th vs Ice Dogs (W 5-1)\n    Feb 25th vs Grocery Sticks (W 5-4)\n    Mar 1st vs Peter McManus (W 4-3)\n    Mar 8th vs Homer's Heroes\n    Mar 15th @ Cobra Kai\n    Mar 18th @ Les Boys\n    Mar 22nd @ Rhinos\n    Mar 29th @ Cougars\n    Apr 12th @ Les Boys\n    Apr 19th vs Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-04-26 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Molar Bears\n----------------------------------------\n    Feb 25th @ Molar Bears (L 4-5)\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th @ The Hanson Brothers (W 8-0)\n    Feb 4th vs Ice Dogs (W 5-1)\n    Feb 25th vs Grocery Sticks (W 5-4)\n    Mar 1st vs Peter McManus (W 4-3)\n    Mar 8th vs Homer's Heroes\n    Mar 15th @ Cobra Kai\n    Mar 18th @ Les Boys\n    Mar 22nd @ Rhinos\n    Mar 29th @ Cougars\n    Apr 12th @ Les Boys\n    Apr 19th vs Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:64477c0109e4d97ed20dc7a0@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260504T033000Z
 DTEND:20260504T045000Z
 SUMMARY:Grocery Sticks @ Cobra Kai
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-03 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nCOBRA KAI GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Peter McManus (L 0-8)\n    Feb 18th vs Cougars (L 2-9)\n    Feb 22nd vs The Hanson Brothers\n    Mar 4th vs Homer's Heroes (L 5-7)\n    Mar 8th vs Les Boys\n    Mar 15th vs Molar Bears\n    Mar 22nd vs The Hanson Brothers\n    Mar 25th vs Ice Dogs\n    Mar 29th vs Rhinos\n    Apr 12th vs Cougars\n    Apr 19th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-03 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nCOBRA KAI GAMES-TO-DATE\n----------------------------------------\n    Feb 11th vs Peter McManus (L 0-8)\n    Feb 18th vs Cougars (L 2-9)\n    Feb 22nd vs The Hanson Brothers\n    Mar 4th vs Homer's Heroes (L 5-7)\n    Mar 8th vs Les Boys\n    Mar 15th vs Molar Bears\n    Mar 22nd vs The Hanson Brothers\n    Mar 25th vs Ice Dogs\n    Mar 29th vs Rhinos\n    Apr 12th vs Cougars\n    Apr 19th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:7a549be103fc7cf330af3bb3@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260507T003000Z
 DTEND:20260507T015000Z
 SUMMARY:Grocery Sticks @ Rhinos
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-06 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Rhinos\n----------------------------------------\n    Mar 4th @ Rhinos (L 2-3)\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th @ Cougars (L 3-6)\n    Jan 28th @ The Hanson Brothers (W 5-2)\n    Feb 11th @ Les Boys (W 6-2)\n    Feb 22nd @ Ice Dogs\n    Mar 4th vs Grocery Sticks (W 3-2)\n    Mar 8th vs Peter McManus\n    Mar 15th vs Homer's Heroes\n    Mar 22nd vs Molar Bears\n    Mar 29th @ Cobra Kai\n    Apr 8th @ The Hanson Brothers\n    Apr 19th @ Les Boys\n    Apr 26th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-06 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Rhinos\n----------------------------------------\n    Mar 4th @ Rhinos (L 2-3)\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th @ Cougars (L 3-6)\n    Jan 28th @ The Hanson Brothers (W 5-2)\n    Feb 11th @ Les Boys (W 6-2)\n    Feb 22nd @ Ice Dogs\n    Mar 4th vs Grocery Sticks (W 3-2)\n    Mar 8th vs Peter McManus\n    Mar 15th vs Homer's Heroes\n    Mar 22nd vs Molar Bears\n    Mar 29th @ Cobra Kai\n    Apr 8th @ The Hanson Brothers\n    Apr 19th @ Les Boys\n    Apr 26th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:620314527484a56e36f845b5@hockey-ics
-DTSTAMP:20260310T030906Z
-LAST-MODIFIED:20260310T030904Z
+DTSTAMP:20260310T071056Z
+LAST-MODIFIED:20260310T071055Z
 DTSTART:20260511T003000Z
 DTEND:20260511T015000Z
 SUMMARY:Grocery Sticks vs Cougars
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-10 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Cougars\n----------------------------------------\n    Mar 8th vs Cougars\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Rhinos (W 6-3)\n    Feb 11th @ The Hanson Brothers (L 3-11)\n    Feb 18th @ Cobra Kai (W 9-2)\n    Feb 22nd @ Les Boys\n    Mar 4th @ Ice Dogs (W 5-4)\n    Mar 8th @ Grocery Sticks\n    Mar 15th vs Peter McManus\n    Mar 25th vs Homer's Heroes\n    Mar 29th vs Molar Bears\n    Apr 12th @ Cobra Kai\n    Apr 19th @ The Hanson Brothers\n    Apr 29th @ Les Boys\n    May 3rd @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 03:09 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 5A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-10 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Cougars\n----------------------------------------\n    Mar 8th vs Cougars\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Jan 18th vs Rhinos (W 6-3)\n    Feb 11th @ The Hanson Brothers (L 3-11)\n    Feb 18th @ Cobra Kai (W 9-2)\n    Feb 22nd @ Les Boys\n    Mar 4th @ Ice Dogs (W 5-4)\n    Mar 8th @ Grocery Sticks\n    Mar 15th vs Peter McManus\n    Mar 25th vs Homer's Heroes\n    Mar 29th vs Molar Bears\n    Apr 12th @ Cobra Kai\n    Apr 19th @ The Hanson Brothers\n    Apr 29th @ Les Boys\n    May 3rd @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-03-10 07:10 UTC)\n----------------------------------------\n1. Molar Bears (4-0\, 8 pts)\n2. Cougars (3-1\, 6 pts)\n3. Rhinos (3-1\, 6 pts)\n4. The Hanson Brothers (2-2\, 4 pts)\n5. Grocery Sticks (1-2\, 3 pts)\n6. Ice Dogs (1-2\, 3 pts)\n7. Les Boys (1-2\, 2 pts)\n8. Peter McManus (1-2\, 2 pts)\n9. Homer's Heroes (1-2\, 2 pts)\n10. Cobra Kai (0-3\, -1 pts)
 END:VEVENT
 END:VCALENDAR
