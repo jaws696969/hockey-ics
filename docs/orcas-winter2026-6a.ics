@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Orcas — Winter 2026 Division 6A
 BEGIN:VEVENT
 UID:075b59581d1b35627c7f9272@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260130T013000Z
 DTEND:20260130T025000Z
 SUMMARY:Orcas @ Blizzard (W 5-4)
@@ -16,8 +16,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:43e4044901651f5aa75499ce@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260207T030000Z
 DTEND:20260207T042000Z
 SUMMARY:Orcas @ Michigan (L 5-6)
@@ -26,8 +26,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:ff574ec86db1532622a6858e@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260221T030000Z
 DTEND:20260221T042000Z
 SUMMARY:Orcas vs Slainte Ice Dragons (W 10-2)
@@ -36,8 +36,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:d95df525f5978ba3e8fbbd70@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260228T013000Z
 DTEND:20260228T025000Z
 SUMMARY:Orcas @ BNP (W 3-2)
@@ -46,8 +46,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:62137c9cd43606f33c0dd4e9@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260307T013000Z
 DTEND:20260307T025000Z
 SUMMARY:Orcas vs Blizzard (W 8-4)
@@ -56,8 +56,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:c427ada1731693d6ad6ebd90@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260314T033000Z
 DTEND:20260314T045000Z
 SUMMARY:Orcas vs Michigan (L 3-4)
@@ -66,8 +66,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:f430712e1bc63444b1018bbe@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260321T033000Z
 DTEND:20260321T045000Z
 SUMMARY:Orcas vs Instinct Bombers (W 4-2)
@@ -76,8 +76,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:631e383c741622dc3a58079c@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260325T033000Z
 DTEND:20260325T045000Z
 SUMMARY:Orcas vs BNP (W 10-3)
@@ -86,8 +86,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:b727b17d1542f257c8ff6715@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260327T003000Z
 DTEND:20260327T015000Z
 SUMMARY:Orcas @ Slainte Ice Dragons (W 10-2)
@@ -96,8 +96,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:b55baca37a061d5db0d34efb@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260411T020000Z
 DTEND:20260411T032000Z
 SUMMARY:Orcas vs BNP (W 7-4)
@@ -106,8 +106,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:a368c02c69f82c60098cee65@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260418T033000Z
 DTEND:20260418T045000Z
 SUMMARY:Orcas @ Blizzard (W 9-8)
@@ -116,8 +116,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:eb18b7d928e42b0f7dfb1f87@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260425T033000Z
 DTEND:20260425T045000Z
 SUMMARY:Orcas @ Michigan (W 7-4)
@@ -126,8 +126,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:fcdebda0879c412b9da2b457@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260502T020000Z
 DTEND:20260502T032000Z
 SUMMARY:Orcas @ Instinct Bombers (W 7-2)
@@ -136,12 +136,12 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:1f9c391297c5d4939bea4d6c@hockey-ics
-DTSTAMP:20260508T141937Z
-LAST-MODIFIED:20260508T141936Z
+DTSTAMP:20260508T194907Z
+LAST-MODIFIED:20260508T194906Z
 DTSTART:20260508T020000Z
 DTEND:20260508T032000Z
 SUMMARY:Orcas vs Slainte Ice Dragons
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-07 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Slainte Ice Dragons\n----------------------------------------\n    Feb 20th vs Slainte Ice Dragons (W 10-2)\n    Mar 26th @ Slainte Ice Dragons (W 10-2)\n\n----------------------------------------\nSLAINTE ICE DRAGONS GAMES-TO-DATE\n----------------------------------------\n    Jan 22nd vs Michigan (L 0-8)\n    Jan 29th vs Instinct Bombers (L 2-6)\n    Feb 6th @ Blizzard (L 2-10)\n    Feb 20th @ Orcas (L 2-10)\n    Feb 26th @ Michigan (L 2-3)\n    Mar 6th @ Instinct Bombers (L 2-7)\n    Mar 12th vs Blizzard (L 2-10)\n    Mar 19th vs BNP (L 4-9)\n    Mar 26th vs Orcas (L 2-10)\n    Apr 9th vs Michigan (L 1-8)\n    Apr 16th vs Instinct Bombers (L 1-9)\n    Apr 23rd @ Blizzard (L 2-10)\n    Apr 30th @ BNP (L 0-8)\n\n----------------------------------------\nSTANDINGS (as of 2026-05-08 14:19 UTC)\n----------------------------------------\n1. Orcas (11-2\, 24 pts)\n2. Michigan (10-3\, 20 pts)\n3. Instinct Bombers (9-4\, 19 pts)\n4. Blizzard (6-7\, 13 pts)\n5. BNP (3-10\, 8 pts)\n6. Slainte Ice Dragons (0-13\, 1 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Winter 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-05-07 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Slainte Ice Dragons\n----------------------------------------\n    Feb 20th vs Slainte Ice Dragons (W 10-2)\n    Mar 26th @ Slainte Ice Dragons (W 10-2)\n\n----------------------------------------\nSLAINTE ICE DRAGONS GAMES-TO-DATE\n----------------------------------------\n    Jan 22nd vs Michigan (L 0-8)\n    Jan 29th vs Instinct Bombers (L 2-6)\n    Feb 6th @ Blizzard (L 2-10)\n    Feb 20th @ Orcas (L 2-10)\n    Feb 26th @ Michigan (L 2-3)\n    Mar 6th @ Instinct Bombers (L 2-7)\n    Mar 12th vs Blizzard (L 2-10)\n    Mar 19th vs BNP (L 4-9)\n    Mar 26th vs Orcas (L 2-10)\n    Apr 9th vs Michigan (L 1-8)\n    Apr 16th vs Instinct Bombers (L 1-9)\n    Apr 23rd @ Blizzard (L 2-10)\n    Apr 30th @ BNP (L 0-8)\n\n----------------------------------------\nSTANDINGS (as of 2026-05-08 19:49 UTC)\n----------------------------------------\n1. Orcas (11-2\, 24 pts)\n2. Michigan (10-3\, 20 pts)\n3. Instinct Bombers (9-4\, 19 pts)\n4. Blizzard (6-7\, 13 pts)\n5. BNP (3-10\, 8 pts)\n6. Slainte Ice Dragons (0-13\, 1 pts)
 END:VEVENT
 END:VCALENDAR
