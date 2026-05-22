@@ -1,5 +1,7 @@
 # Hockey Schedule → Google Calendar (.ics)
 
+<!-- last heartbeat: 2026-05-21 -->
+
 This project converts online hockey league schedules (via the **Bond Sports API**) into
 auto-updating `.ics` calendar feeds that you can subscribe to in **Google Calendar**.
 
