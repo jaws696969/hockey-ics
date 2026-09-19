@@ -1,6 +1,24 @@
 #!/usr/bin/env python3
 """
-hockey-ics: generate .ics feeds from Bond Sports API.
+hockey-ics: generate .ics feeds from multiple league data providers.
+
+Supported providers (set per team via `provider:` in config.yaml):
+  - "bondsports"  (default, for backward compatibility): Bond Sports API
+      (api_url returns a single stage's `game-scores` JSON already scoped
+      to that stage; standings_api_url returns a list of divisions).
+  - "timetoscore": Black Bear / TimeToScore API (api.blackbear.timetoscore.com).
+      Its API requests are HMAC-signed (auth_signature/auth_timestamp) by
+      client-side code on the league's own site, and this script does not
+      replicate that signing itself. Instead, `widget_url` points at the
+      league's PUBLIC schedule-widget page (e.g.
+      https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5);
+      a real headless browser (Playwright/Chromium) loads that page, and we
+      capture the get_schedule/get_standings responses its own official
+      widget code fetches -- the same data any visitor's browser receives,
+      freshly (and validly) signed on every run. One widget_url covers the
+      whole league/season, so multiple teams in the same league share one
+      browser page load. Requires `playwright install chromium` (see
+      .github/workflows/build_ics.yml).
 
 Feature 1) Opponent games before this matchup:
   - Include ALL opponent games whose start < this matchup start (even future games between now and matchup).
@@ -22,14 +40,17 @@ output_dir: "docs"
 default_timezone: "America/New_York"
 teams:
   - name: ...
+    provider: "bondsports"             # optional, defaults to "bondsports"
     slug: ...
     league_name: ...
-    api_url: ... game-scores
-    standings_api_url: ... standings   # recommended
+    api_url: ...                       # bondsports only: game-scores
+    standings_api_url: ...             # bondsports only: recommended
+    widget_url: ...                    # timetoscore only: public schedule-widget page URL
     my_team_ids: [ ... ]               # supports multiple IDs
     my_team_names: [ ... ]             # same length as ids
     opponent_recent_max: 20            # optional
     head_to_head_max: 20               # optional
+    game_length_minutes: 80            # optional, timetoscore only (no end time in API)
 """
 
 from __future__ import annotations
@@ -91,6 +112,53 @@ def fetch_json(url: str, timeout: int = 30) -> Any:
     r.raise_for_status()
     return r.json()
 
+def fetch_timetoscore_via_widget(widget_url: str, timeout_ms: int = 30000) -> Dict[str, Any]:
+    """
+    TimeToScore's API is HMAC-signed by client-side code on the league's own site;
+    this script does not replicate that signing. Instead, load the league's PUBLIC
+    schedule-widget page in a real headless browser and capture the
+    get_schedule/get_standings responses its own official widget code fetches --
+    the same data any visitor's browser receives, freshly (and validly) signed.
+
+    Requires the `playwright` package and `playwright install chromium`.
+    """
+    from playwright.sync_api import sync_playwright  # local import: optional dependency
+
+    captured: Dict[str, Any] = {}
+
+    def handle_response(response: Any) -> None:
+        url = response.url
+        if "/get_schedule" in url and "schedule" not in captured:
+            try:
+                captured["schedule"] = response.json()
+            except Exception:
+                pass
+        elif "/get_standings" in url and "standings" not in captured:
+            try:
+                captured["standings"] = response.json()
+            except Exception:
+                pass
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page()
+            page.on("response", handle_response)
+            page.goto(widget_url, wait_until="networkidle", timeout=timeout_ms)
+            # The widget's own JS fires its API calls asynchronously after the
+            # page finishes loading network-idle; give it a little more room.
+            page.wait_for_timeout(3000)
+        finally:
+            browser.close()
+
+    missing = {"schedule", "standings"} - captured.keys()
+    if missing:
+        raise RuntimeError(
+            f"widget page at {widget_url} did not yield {', '.join(sorted(missing))} "
+            f"response(s) within {timeout_ms}ms"
+        )
+    return captured
+
 def ascii_rule(title: str, width: int = 40) -> List[str]:
     line = "-" * width
     return [line, title, line]
@@ -150,7 +218,9 @@ class Game:
 
     @property
     def is_final(self) -> bool:
-        return (self.status or "").lower() == "final" and self.has_result
+        # startswith (not ==) so providers that append detail, e.g. TimeToScore's
+        # "Final/SO", still count as final.
+        return (self.status or "").lower().startswith("final") and self.has_result
 
 
 def parse_games(raw_games: List[Dict[str, Any]]) -> List[Game]:
@@ -180,6 +250,53 @@ def parse_games(raw_games: List[Dict[str, Any]]) -> List[Game]:
                     score=g["awayTeam"].get("score"),
                 ),
                 space=SpaceRef(name=(g.get("space") or {}).get("name")),
+            )
+        )
+    return games
+
+
+def parse_games_timetoscore(raw_games: List[Dict[str, Any]], game_length_minutes: int = 80) -> List[Game]:
+    """
+    Parse Black Bear / TimeToScore `get_schedule` game rows into the shared Game model.
+
+    Notable API quirks handled here:
+      - `gmt_time` ("YYYY-MM-DD HH:MM:SS.ffffff") is already UTC; used directly for `start`.
+      - No end time is provided, so `end` = start + game_length_minutes.
+      - home_id/away_id/home_goals/away_goals arrive as strings (or null pre-game).
+      - Team names have trailing whitespace (e.g. "Brewzers ").
+      - `result_string` is "Final" / "Final/SO" / "" ; `game_status` is e.g. "NOT STARTED" / "CLOSED".
+    """
+    games: List[Game] = []
+    for g in raw_games:
+        start = datetime.strptime(g["gmt_time"], "%Y-%m-%d %H:%M:%S.%f").replace(tzinfo=timezone.utc)
+        end = start + timedelta(minutes=game_length_minutes)
+
+        status = (g.get("result_string") or "").strip() or (g.get("game_status") or "scheduled")
+
+        home_goals = g.get("home_goals")
+        away_goals = g.get("away_goals")
+
+        games.append(
+            Game(
+                event_id=g.get("game_id"),
+                game_id=g.get("game_id"),
+                # gtype_name ("Regular"/"Playoffs") rather than level_name (division),
+                # since the division is already shown via league_name in the description.
+                stage_name=(g.get("gtype_name") or "").strip() or None,
+                status=status,
+                start=start,
+                end=end,
+                home=TeamRef(
+                    id=int(g["home_id"]),
+                    name=str(g["home_team"]).strip(),
+                    score=(int(home_goals) if home_goals is not None else None),
+                ),
+                away=TeamRef(
+                    id=int(g["away_id"]),
+                    name=str(g["away_team"]).strip(),
+                    score=(int(away_goals) if away_goals is not None else None),
+                ),
+                space=SpaceRef(name=(g.get("location") or None)),
             )
         )
     return games
@@ -322,6 +439,45 @@ def pick_division_standings(raw: Any, my_team_id: int) -> List[Dict[str, Any]]:
     for div in raw:
         if isinstance(div, dict) and isinstance(div.get("standings"), list):
             return div["standings"]
+
+    return []
+
+def pick_division_standings_timetoscore(raw: Any, my_team_id: int) -> List[Dict[str, Any]]:
+    """
+    Raw shape: {"standings": {"leagues": [ {levels: [ {conferences: [ {teams: [...]} ] } ] } ]}}
+
+    TimeToScore returns every level (division) in one call. We find the level
+    containing my_team_id and normalize its teams into the same row shape
+    Bond Sports standings use ({"team": {"id","name"}, "rank","wins","losses","points"})
+    so the shared format_standings_lines() works for both providers unchanged.
+    """
+    try:
+        leagues = raw["standings"]["leagues"]
+    except Exception:
+        return []
+    if not isinstance(leagues, list):
+        return []
+
+    for lg in leagues:
+        for lvl in (lg.get("levels") or []):
+            for conf in (lvl.get("conferences") or []):
+                for t in (conf.get("teams") or []):
+                    try:
+                        if int(t.get("id", -1)) == my_team_id:
+                            rows: List[Dict[str, Any]] = []
+                            for conf2 in (lvl.get("conferences") or []):
+                                for t2 in (conf2.get("teams") or []):
+                                    name = str(t2.get("name") or t2.get("team_name") or "").strip()
+                                    rows.append({
+                                        "team": {"id": t2.get("id"), "name": name},
+                                        "rank": t2.get("place"),
+                                        "wins": t2.get("wins"),
+                                        "losses": t2.get("losses"),
+                                        "points": t2.get("pts"),
+                                    })
+                            return rows
+                    except (TypeError, ValueError):
+                        continue
 
     return []
 
@@ -484,13 +640,31 @@ def main() -> None:
     now = utc_now()
     run_asof = now.strftime("%Y-%m-%d %H:%M UTC")
 
+    # Some team entries (e.g. multiple Bond Sports/TimeToScore teams in the same
+    # league) share the same URL; cache fetches within this run to avoid repeating them.
+    url_cache: Dict[str, Any] = {}
+    widget_cache: Dict[str, Any] = {}
+
+    def cached_fetch(url: str) -> Any:
+        if url not in url_cache:
+            url_cache[url] = fetch_json(url)
+        return url_cache[url]
+
+    def cached_widget_fetch(url: str) -> Dict[str, Any]:
+        if url not in widget_cache:
+            widget_cache[url] = fetch_timetoscore_via_widget(url)
+        return widget_cache[url]
+
+    updated = 0
+    failed = 0
+
     for team_entry in teams:
         league_name = str(team_entry.get("league_name", team_entry.get("name", "League")))
         slug = str(team_entry.get("slug", slugify(team_entry.get("name", league_name))))
-        games_url = str(team_entry["api_url"])
-        standings_url = team_entry.get("standings_api_url")
         max_recent = int(team_entry.get("opponent_recent_max", 20))
         h2h_max = int(team_entry.get("head_to_head_max", 20))
+        provider = str(team_entry.get("provider", "bondsports")).lower()
+        game_length_minutes = int(team_entry.get("game_length_minutes", 80))
 
         my_ids: List[int] = [int(x) for x in (team_entry.get("my_team_ids") or [])]
         my_names: List[str] = [str(x) for x in (team_entry.get("my_team_names") or [])]
@@ -498,8 +672,29 @@ def main() -> None:
         if len(my_ids) != len(my_names) or not my_ids:
             raise SystemExit(f"Config error for {slug}: my_team_ids and my_team_names must exist and be same length.")
 
-        raw_games = fetch_json(games_url)
-        all_games = parse_games(raw_games)
+        # A fetch failure (network error, or a TimeToScore widget page that changed
+        # shape) shouldn't crash the whole run. Log clearly and leave prior .ics
+        # file(s) for this team untouched.
+        standings_raw: Any = None
+        try:
+            if provider == "timetoscore":
+                widget_url = str(team_entry["widget_url"])
+                widget_data = cached_widget_fetch(widget_url)
+                all_games = parse_games_timetoscore(widget_data["schedule"].get("games", []), game_length_minutes=game_length_minutes)
+                standings_raw = widget_data["standings"]
+            elif provider == "bondsports":
+                raw_games = cached_fetch(str(team_entry["api_url"]))
+                all_games = parse_games(raw_games)
+                standings_url = team_entry.get("standings_api_url")
+                standings_raw = cached_fetch(str(standings_url)) if standings_url else None
+            else:
+                raise SystemExit(f"Config error for {slug}: unknown provider '{provider}' (expected 'bondsports' or 'timetoscore').")
+        except SystemExit:
+            raise
+        except Exception as exc:
+            print(f"ERROR: {slug}: failed to fetch/parse schedule ({exc}). Skipping this team this run; previously-generated .ics file(s) left untouched.")
+            failed += 1
+            continue
 
         for my_team_id, my_team_name in zip(my_ids, my_names):
             cal_name = f"{my_team_name} — {league_name}"
@@ -511,10 +706,15 @@ def main() -> None:
             state_events: Dict[str, Any] = state.setdefault("events", {})
 
             standings_lines_current: List[str] = []
-            if standings_url:
-                standings_raw = fetch_json(str(standings_url))
-                rows = pick_division_standings(standings_raw, my_team_id=my_team_id)
-                standings_lines_current = format_standings_lines(rows)
+            if standings_raw is not None:
+                try:
+                    if provider == "timetoscore":
+                        rows = pick_division_standings_timetoscore(standings_raw, my_team_id=my_team_id)
+                    else:
+                        rows = pick_division_standings(standings_raw, my_team_id=my_team_id)
+                    standings_lines_current = format_standings_lines(rows)
+                except Exception as exc:
+                    print(f"WARNING: {out_file}: failed to parse standings ({exc}). Continuing without standings this run.")
 
             my_games = [g for g in all_games if g.involves_team_id(my_team_id)]
             my_games.sort(key=lambda g: g.start)
@@ -596,8 +796,12 @@ def main() -> None:
             ics_text = build_ics_calendar(cal_name=cal_name, events=vevents)
             (output_dir / out_file).write_text(ics_text, encoding="utf-8")
             save_state(state_path, state)
+            updated += 1
 
-    print("Done. Calendars updated.")
+    if failed:
+        print(f"Done. {updated} calendar(s) updated, {failed} team(s) failed (see ERROR lines above) — their prior .ics files were left as-is.")
+    else:
+        print(f"Done. {updated} calendar(s) updated.")
 
 
 if __name__ == "__main__":

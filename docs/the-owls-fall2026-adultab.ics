@@ -1,0 +1,137 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hockey-ics//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Owls — Foundry Ice Land — Adult A/B
+BEGIN:VEVENT
+UID:91105cc0b6b88abdc020a945@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20260915T014500Z
+DTEND:20260915T030500Z
+SUMMARY:The Owls @ Spiders (T 0-0)
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: Final\nStart (America/New_York): 2026-09-14 21:45 EDT\nRink: Ice Land Phantoms Rink\nResult: T 0-0\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:41 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:bfbff51e630970b3394201da@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20260923T015000Z
+DTEND:20260923T031000Z
+SUMMARY:The Owls vs Toros
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-09-22 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nTOROS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Motorboaters (L 1-6)\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:7daeda412335a46da10a7992@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20260930T015000Z
+DTEND:20260930T031000Z
+SUMMARY:The Owls @ Mohawks
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-09-29 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nMOHAWKS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Lightning (L 2-4)\n    Sep 22nd @ Spiders\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:d10f40535a772de1a60e0fe0@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261007T013500Z
+DTEND:20261007T025500Z
+SUMMARY:The Owls @ Lightning
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-06 21:35 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nLIGHTNING GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs Mohawks (W 4-2)\n    Sep 21st vs Motorboaters\n    Sep 28th @ Toros\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:aeba42872cf5845fda0ba73a@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261014T013500Z
+DTEND:20261014T025500Z
+SUMMARY:The Owls vs Motorboaters
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-13 21:35 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nMOTORBOATERS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs Toros (W 6-1)\n    Sep 21st @ Lightning\n    Sep 29th vs Spiders\n    Oct 5th vs Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:f6e0dc581ac3653d5af82b8f@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261021T015000Z
+DTEND:20261021T031000Z
+SUMMARY:The Owls @ Toros
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-20 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Toros\n----------------------------------------\n    Sep 22nd vs Toros\n\n----------------------------------------\nTOROS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Motorboaters (L 1-6)\n    Sep 22nd @ The Owls\n    Sep 28th vs Lightning\n    Oct 6th vs Spiders\n    Oct 12th @ Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:cbbd992cec41c65f451160fe@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261028T013500Z
+DTEND:20261028T025500Z
+SUMMARY:The Owls vs Spiders
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-27 21:35 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Spiders\n----------------------------------------\n    Sep 14th @ Spiders (T 0-0)\n\n----------------------------------------\nSPIDERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs The Owls (T 0-0)\n    Sep 22nd vs Mohawks\n    Sep 29th @ Motorboaters\n    Oct 6th @ Toros\n    Oct 13th vs Lightning\n    Oct 19th @ Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:18e57a7fbe78939dfe83461f@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261103T020000Z
+DTEND:20261103T032000Z
+SUMMARY:The Owls @ Mohawks
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-02 21:00 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Mohawks\n----------------------------------------\n    Sep 29th @ Mohawks\n\n----------------------------------------\nMOHAWKS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Lightning (L 2-4)\n    Sep 22nd @ Spiders\n    Sep 29th vs The Owls\n    Oct 5th @ Motorboaters\n    Oct 12th vs Toros\n    Oct 19th vs Spiders\n    Oct 27th vs Lightning\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:72db4fcb5cc45e41ccc47b82@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261111T023500Z
+DTEND:20261111T035500Z
+SUMMARY:The Owls @ Lightning
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-10 21:35 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Lightning\n----------------------------------------\n    Oct 6th @ Lightning\n\n----------------------------------------\nLIGHTNING GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs Mohawks (W 4-2)\n    Sep 21st vs Motorboaters\n    Sep 28th @ Toros\n    Oct 6th vs The Owls\n    Oct 13th @ Spiders\n    Oct 20th @ Motorboaters\n    Oct 27th @ Mohawks\n    Nov 3rd @ Toros\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:3707cf30595dd8a2b694a831@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261118T030000Z
+DTEND:20261118T042000Z
+SUMMARY:The Owls vs Motorboaters
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-17 22:00 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Motorboaters\n----------------------------------------\n    Oct 13th vs Motorboaters\n\n----------------------------------------\nMOTORBOATERS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs Toros (W 6-1)\n    Sep 21st @ Lightning\n    Sep 29th vs Spiders\n    Oct 5th vs Mohawks\n    Oct 13th @ The Owls\n    Oct 20th vs Lightning\n    Oct 26th @ Toros\n    Nov 3rd vs Spiders\n    Nov 9th vs Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:de7d9494e100cebf181152e2@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261125T030000Z
+DTEND:20261125T042000Z
+SUMMARY:The Owls vs Toros
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-24 22:00 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Toros\n----------------------------------------\n    Sep 22nd vs Toros\n    Oct 20th @ Toros\n\n----------------------------------------\nTOROS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Motorboaters (L 1-6)\n    Sep 22nd @ The Owls\n    Sep 28th vs Lightning\n    Oct 6th vs Spiders\n    Oct 12th @ Mohawks\n    Oct 20th vs The Owls\n    Oct 26th vs Motorboaters\n    Nov 3rd vs Lightning\n    Nov 10th @ Spiders\n    Nov 17th @ Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:84d4691259e0be1a970e4577@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261201T020000Z
+DTEND:20261201T032000Z
+SUMMARY:The Owls vs Spiders
+LOCATION:Ice Land Phantoms Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-30 21:00 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Spiders\n----------------------------------------\n    Sep 14th @ Spiders (T 0-0)\n    Oct 27th vs Spiders\n\n----------------------------------------\nSPIDERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs The Owls (T 0-0)\n    Sep 22nd vs Mohawks\n    Sep 29th @ Motorboaters\n    Oct 6th @ Toros\n    Oct 13th vs Lightning\n    Oct 19th @ Mohawks\n    Oct 27th @ The Owls\n    Nov 3rd @ Motorboaters\n    Nov 10th vs Toros\n    Nov 16th vs Lightning\n    Nov 24th @ Mohawks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+BEGIN:VEVENT
+UID:dbc34807fbb2f1f6dde4f208@hockey-ics
+DTSTAMP:20260919T035408Z
+LAST-MODIFIED:20260919T035351Z
+DTSTART:20261209T030000Z
+DTEND:20261209T042000Z
+SUMMARY:The Owls vs Mohawks
+LOCATION:Ice Land Black Bear Rink
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Foundry Ice Land — Adult A/B\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-12-08 22:00 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Mohawks\n----------------------------------------\n    Sep 29th @ Mohawks\n    Nov 2nd @ Mohawks\n\n----------------------------------------\nMOHAWKS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Lightning (L 2-4)\n    Sep 22nd @ Spiders\n    Sep 29th vs The Owls\n    Oct 5th @ Motorboaters\n    Oct 12th vs Toros\n    Oct 19th vs Spiders\n    Oct 27th vs Lightning\n    Nov 2nd vs The Owls\n    Nov 9th @ Motorboaters\n    Nov 17th vs Toros\n    Nov 24th vs Spiders\n    Dec 1st @ Lightning\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 03:53 UTC)\n----------------------------------------\n1. Motorboaters (1-0\, 3 pts)\n2. Lightning (1-0\, 3 pts)\n3. Mohawks (0-1\, 0 pts)\n4. Spiders (0-0\, 0 pts)\n5. The Owls (0-0\, 0 pts)\n6. Toros (0-1\, 0 pts)
+END:VEVENT
+END:VCALENDAR

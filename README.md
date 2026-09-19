@@ -2,8 +2,12 @@
 
 <!-- last heartbeat: 2026-08-16 -->
 
-This project converts online hockey league schedules (via the **Bond Sports API**) into
-auto-updating `.ics` calendar feeds that you can subscribe to in **Google Calendar**.
+This project converts online hockey league schedules into auto-updating `.ics` calendar
+feeds that you can subscribe to in **Google Calendar**. Two league data providers are
+supported:
+
+- **Bond Sports API** (`provider: bondsports`)
+- **TimeToScore / Black Bear API** (`provider: timetoscore`)
 
 Once set up, your calendar will automatically stay up to date with:
 - Upcoming games
@@ -22,19 +26,25 @@ All using **free GitHub tooling** (GitHub Actions + GitHub Pages).
 - Auto-updates via GitHub Actions
 - Hosted `.ics` feeds via GitHub Pages
 - Stable event IDs (no duplicate calendar entries)
-- Handles Bond Sports API quirks (null `gameId`, bad end times, etc.)
+- Handles Bond Sports API quirks (null `gameId`, bad end times, etc.) and TimeToScore
+  quirks (string-typed IDs/scores, no explicit end time, trailing whitespace in names)
+- Mix teams from both providers in one `config.yaml` — each team entry is independent
 
 ---
 
 ## How It Works
 
 1. GitHub Action runs on a schedule (default: every 6 hours)
-2. The script fetches Bond Sports `game-scores` JSON
+2. The script fetches each team's schedule JSON from its configured `provider`
 3. Games are filtered to only your team
 4. `.ics` calendar files are generated
 5. Files are committed to `docs/`
 6. GitHub Pages serves the `.ics` files
 7. Google Calendar refreshes automatically
+
+If a team's fetch fails, that team is skipped for the run with a clear `ERROR:` line
+in the Action log — its previously-generated `.ics` file is left untouched rather
+than the whole run failing.
 
 ---
 
@@ -63,11 +73,44 @@ default_timezone: "America/New_York"
 
 teams:
   - name: "Alligator Skinners"
+    provider: "bondsports"          # optional, defaults to "bondsports"
     slug: "alligator-skinners-winter-2026-d3"
     league_name: "Winter 2026 Division 3"
     api_url: "https://api.bondsports.co/v4/competitions/.../stages/.../game-scores"
+    standings_api_url: "https://api.bondsports.co/v4/competitions/.../stages/.../standings"
     my_team_ids: [1254]
     my_team_names: ["Alligator Skinners"]
+
+  - name: "Brewzers"
+    provider: "timetoscore"
+    slug: "brewzers-fall2026-adultc"
+    league_name: "Foundry Ice Land — Adult C"
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
+    my_team_ids: [11911]
+    my_team_names: ["Brewzers"]
+```
+
+### How TimeToScore auth works (no manual URL refreshing)
+
+TimeToScore's API is HMAC-signed (`auth_timestamp` + `auth_signature`) by
+client-side code on the league's own site, and this script doesn't replicate that
+signing itself. Instead, `widget_url` points at the league's **public**
+schedule-widget page — the same one any visitor sees. At each run, a real headless
+browser (Playwright/Chromium) loads that page, and the script captures the
+`get_schedule`/`get_standings` responses the page's own official widget code
+fetches. That gives a freshly, validly signed response on every run, with nothing
+to copy/paste or refresh by hand.
+
+One `widget_url` covers a whole league/season/stat_class, so multiple teams in the
+same league (e.g. Brewzers and The Owls) share one browser page load per run.
+
+Requires the `playwright` Python package plus `playwright install --with-deps
+chromium` (already wired into `.github/workflows/build_ics.yml`); for local runs,
+install both once:
+
+```bash
+pip install playwright
+playwright install chromium
 ```
 
 ---

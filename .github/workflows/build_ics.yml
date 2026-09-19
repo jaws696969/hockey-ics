@@ -30,7 +30,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests pyyaml
+          pip install requests pyyaml playwright
+
+      - name: Install Playwright Chromium
+        run: playwright install --with-deps chromium
 
       - name: Generate ICS files
         run: |

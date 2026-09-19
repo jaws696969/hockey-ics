@@ -2,15 +2,18 @@ output_dir: "docs"
 default_timezone: "America/New_York"
 
 teams:
+  # --- Bond Sports (old league) — kept running for friends still playing there ---
   - name: "Orcas"
-    slug: "orcas-winter2026-6a"              
+    provider: "bondsports"
+    slug: "orcas-winter2026-6a"
     league_name: "Winter 2026 Division 6A"
     api_url: "https://api.bondsports.co/v4/competitions/4fd5e832-5d86-400a-af3f-7a01c20d1e4e/stages/160/game-scores"
     standings_api_url: "https://api.bondsports.co/v4/competitions/4fd5e832-5d86-400a-af3f-7a01c20d1e4e/stages/160/standings"
-    my_team_ids: [1314]           
-    my_team_names: ["Orcas"]  
+    my_team_ids: [1314]
+    my_team_names: ["Orcas"]
 
   - name: "Alligator Skinners"
+    provider: "bondsports"
     slug: "alligator-skinners-winter-2026-d3"
     league_name: "Winter 2026 Division 3"
     api_url: "https://api.bondsports.co/v4/competitions/180251ce-9fbc-4153-b7f6-ce3530a2c7f9/stages/153/game-scores"
@@ -20,9 +23,31 @@ teams:
 
 
   - name: "Grocery Sticks"
+    provider: "bondsports"
     slug: "grocery-sticks-winter-2026-d5a"
     league_name: "Winter 2026 Division 5A"
     api_url: "https://api.bondsports.co/v4/competitions/00d2c916-8370-463c-8d83-01c9ce2de443/stages/158/game-scores"
     standings_api_url: "https://api.bondsports.co/v4/competitions/00d2c916-8370-463c-8d83-01c9ce2de443/stages/158/standings"
     my_team_ids: [1295]
     my_team_names: ["Grocery Sticks"]
+
+  # --- TimeToScore / Black Bear (new league: Foundry Ice Land) ---
+  # widget_url is the league's PUBLIC schedule-widget page (shared by any team in
+  # the same league/season/stat_class). generate_ics.py loads it in a real headless
+  # browser and captures the get_schedule/get_standings responses the page's own
+  # official widget code fetches -- no signed URL to paste in or refresh by hand.
+  - name: "Brewzers"
+    provider: "timetoscore"
+    slug: "brewzers-fall2026-adultc"
+    league_name: "Foundry Ice Land — Adult C"
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
+    my_team_ids: [11911]
+    my_team_names: ["Brewzers"]
+
+  - name: "The Owls"
+    provider: "timetoscore"
+    slug: "the-owls-fall2026-adultab"
+    league_name: "Foundry Ice Land — Adult A/B"
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
+    my_team_ids: [11922]
+    my_team_names: ["The Owls"]
