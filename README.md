@@ -74,11 +74,11 @@ default_timezone: "America/New_York"
 teams:
   - name: "Alligator Skinners"
     provider: "bondsports"          # optional, defaults to "bondsports"
-    slug: "alligator-skinners-winter-2026-d3"
-    league_name: "Winter 2026 Division 3"
+    slug: "alligator-skinners-fall2026-d3"
+    league_name: "Fall 2026 Division 3"
     api_url: "https://api.bondsports.co/v4/competitions/.../stages/.../game-scores"
     standings_api_url: "https://api.bondsports.co/v4/competitions/.../stages/.../standings"
-    my_team_ids: [1254]
+    my_team_ids: [7345]
     my_team_names: ["Alligator Skinners"]
 
   - name: "Brewzers"
@@ -112,6 +112,23 @@ install both once:
 pip install playwright
 playwright install chromium
 ```
+
+### Moving a team to a new season
+
+When a season ends and a new one starts (new Bond Sports competition/stage,
+new TimeToScore season, or team IDs that got reassigned), **don't edit the old
+team entry in place** — that reuses its `slug`, so the next run overwrites the
+completed season's `.ics` file with new-season data and the old record is lost.
+Instead:
+
+1. Delete (or comment out) the old team's entry from `teams:`, leaving its
+   `docs/<slug>.ics` (and `docs/_state/<slug>.json`) file in place untouched —
+   removing it from `teams:` is enough to stop it from ever being regenerated.
+2. Add a **new** entry with a **new** `slug` (e.g. append the new season name)
+   pointing at the new season's URLs/IDs.
+
+Bond Sports team IDs are commonly reassigned each season — re-pull them from
+the new season's `game-scores` response rather than reusing the old ones.
 
 ---
 
