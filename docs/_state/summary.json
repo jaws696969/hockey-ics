@@ -1,0 +1,48 @@
+{
+  "alligator-skinners": {
+    "first_game_start": "20260120T013000Z",
+    "games": 29,
+    "last_game_start": "20261215T043000Z",
+    "seasons": [
+      "Winter 2026 Division 3",
+      "Winter 2026 Division 3 Playoffs",
+      "Fall 2026 Division 3"
+    ]
+  },
+  "brewzers-fall2026-adultc": {
+    "first_game_start": "20260910T021000Z",
+    "games": 13,
+    "last_game_start": "20261210T031000Z",
+    "seasons": [
+      "Foundry Ice Land \u2014 Adult C"
+    ]
+  },
+  "grocery-sticks": {
+    "first_game_start": "20260212T030000Z",
+    "games": 32,
+    "last_game_start": "20270104T000000Z",
+    "seasons": [
+      "Winter 2026 Division 5A",
+      "Winter 2026 Division 5a Playoffs",
+      "Fall 2026 Division 5a"
+    ]
+  },
+  "orcas": {
+    "first_game_start": "20260130T013000Z",
+    "games": 29,
+    "last_game_start": "20270102T013000Z",
+    "seasons": [
+      "Winter 2026 Division 6A",
+      "Winter 2026 Division 6a Playoffs",
+      "Fall 2026 Division 6a"
+    ]
+  },
+  "the-owls-fall2026-adultab": {
+    "first_game_start": "20260915T014500Z",
+    "games": 13,
+    "last_game_start": "20261209T030000Z",
+    "seasons": [
+      "Foundry Ice Land \u2014 Adult A/B"
+    ]
+  }
+}

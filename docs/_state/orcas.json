@@ -1,0 +1,697 @@
+{
+  "discovery": {
+    "seasons": {
+      "104295": {
+        "name": "Winter 2026: Division 7",
+        "stages": [
+          {
+            "id": 226,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 865,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "2e771543-c23f-4b91-af54-ea4ae017881c"
+      },
+      "104303": {
+        "name": "Winter 2026: Over 40",
+        "stages": [
+          {
+            "id": 198,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 473,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "d4d11f60-35f6-4d8a-b582-33373d5c5db1"
+      },
+      "107666": {
+        "name": "Winter 2026: Division 8a",
+        "stages": [
+          {
+            "id": 227,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 888,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "3fb7a41f-edf6-4d12-b864-b08cb6467f1c"
+      },
+      "107673": {
+        "name": "Winter 2026: Division 8b",
+        "stages": [
+          {
+            "id": 228,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 913,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "752f4a94-03d4-4081-b398-dcbb04b99c89"
+      },
+      "139960": {
+        "name": "Fall 2026",
+        "stages": [
+          {
+            "id": 1156,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 1157,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "67561257-dca0-4770-b298-559f07ea02ed"
+      },
+      "96999": {
+        "name": "Winter 2026: Division 1",
+        "stages": [
+          {
+            "id": 154,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 435,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "176e2e2e-6a29-41f7-8c31-eef77521fbb4"
+      },
+      "97190": {
+        "name": "Winter 2026: Division 2",
+        "stages": [
+          {
+            "id": 156,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 436,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "5e062127-cccc-4ae5-a51d-5079ab375737"
+      },
+      "97211": {
+        "name": "Winter 2026: Division 3",
+        "stages": [
+          {
+            "id": 153,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 444,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "180251ce-9fbc-4153-b7f6-ce3530a2c7f9"
+      },
+      "97489": {
+        "name": "Winter 2026: Division 4",
+        "stages": [
+          {
+            "id": 157,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 495,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "65d3cffb-cd2b-4be3-bf3a-d226ac629aba"
+      },
+      "97490": {
+        "name": "Winter 2026: Division 5a",
+        "stages": [
+          {
+            "id": 158,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 482,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "00d2c916-8370-463c-8d83-01c9ce2de443"
+      },
+      "97491": {
+        "name": "Winter 2026: Division 5b",
+        "stages": [
+          {
+            "id": 159,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 496,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "1c6fb981-3f1e-4e32-9a0f-3b022206c50f"
+      },
+      "97494": {
+        "name": "Winter 2026: Division 6a",
+        "stages": [
+          {
+            "id": 160,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 437,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "4fd5e832-5d86-400a-af3f-7a01c20d1e4e"
+      },
+      "97495": {
+        "name": "Winter 2026: Division 6b",
+        "stages": [
+          {
+            "id": 161,
+            "name": "Regular Season",
+            "type": "regular_season"
+          },
+          {
+            "id": 438,
+            "name": "Playoffs",
+            "type": "playoffs"
+          }
+        ],
+        "uuid": "3e09cfb1-7405-4979-a107-f2178e396344"
+      }
+    },
+    "stages": {
+      "00d2c916-8370-463c-8d83-01c9ce2de443:158": {
+        "season_name": "Winter 2026: Division 5a",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "00d2c916-8370-463c-8d83-01c9ce2de443:482": {
+        "season_name": "Winter 2026: Division 5a",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "176e2e2e-6a29-41f7-8c31-eef77521fbb4:154": {
+        "season_name": "Winter 2026: Division 1",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "176e2e2e-6a29-41f7-8c31-eef77521fbb4:435": {
+        "season_name": "Winter 2026: Division 1",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "180251ce-9fbc-4153-b7f6-ce3530a2c7f9:153": {
+        "season_name": "Winter 2026: Division 3",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "180251ce-9fbc-4153-b7f6-ce3530a2c7f9:444": {
+        "season_name": "Winter 2026: Division 3",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "1c6fb981-3f1e-4e32-9a0f-3b022206c50f:159": {
+        "season_name": "Winter 2026: Division 5b",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "1c6fb981-3f1e-4e32-9a0f-3b022206c50f:496": {
+        "season_name": "Winter 2026: Division 5b",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "2e771543-c23f-4b91-af54-ea4ae017881c:226": {
+        "season_name": "Winter 2026: Division 7",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "2e771543-c23f-4b91-af54-ea4ae017881c:865": {
+        "season_name": "Winter 2026: Division 7",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "3e09cfb1-7405-4979-a107-f2178e396344:161": {
+        "season_name": "Winter 2026: Division 6b",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "3e09cfb1-7405-4979-a107-f2178e396344:438": {
+        "season_name": "Winter 2026: Division 6b",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "3fb7a41f-edf6-4d12-b864-b08cb6467f1c:227": {
+        "season_name": "Winter 2026: Division 8a",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "3fb7a41f-edf6-4d12-b864-b08cb6467f1c:888": {
+        "season_name": "Winter 2026: Division 8a",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "4fd5e832-5d86-400a-af3f-7a01c20d1e4e:160": {
+        "division_name": "Winter 2026: Division 6a",
+        "league_name": "Winter 2026 Division 6a",
+        "season_name": "Winter 2026: Division 6a",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": true
+      },
+      "4fd5e832-5d86-400a-af3f-7a01c20d1e4e:437": {
+        "division_name": "Winter 2026: Division 6a",
+        "league_name": "Winter 2026 Division 6a Playoffs",
+        "season_name": "Winter 2026: Division 6a",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": true
+      },
+      "5e062127-cccc-4ae5-a51d-5079ab375737:156": {
+        "season_name": "Winter 2026: Division 2",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "5e062127-cccc-4ae5-a51d-5079ab375737:436": {
+        "season_name": "Winter 2026: Division 2",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "65d3cffb-cd2b-4be3-bf3a-d226ac629aba:157": {
+        "season_name": "Winter 2026: Division 4",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "65d3cffb-cd2b-4be3-bf3a-d226ac629aba:495": {
+        "season_name": "Winter 2026: Division 4",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "67561257-dca0-4770-b298-559f07ea02ed:1156": {
+        "division_name": "Division 6a",
+        "league_name": "Fall 2026 Division 6a",
+        "season_name": "Fall 2026",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": true
+      },
+      "67561257-dca0-4770-b298-559f07ea02ed:1157": {
+        "season_name": "Fall 2026",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "752f4a94-03d4-4081-b398-dcbb04b99c89:228": {
+        "season_name": "Winter 2026: Division 8b",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "752f4a94-03d4-4081-b398-dcbb04b99c89:913": {
+        "season_name": "Winter 2026: Division 8b",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      },
+      "d4d11f60-35f6-4d8a-b582-33373d5c5db1:198": {
+        "season_name": "Winter 2026: Over 40",
+        "stage_name": "Regular Season",
+        "stage_type": "regular_season",
+        "team": false
+      },
+      "d4d11f60-35f6-4d8a-b582-33373d5c5db1:473": {
+        "season_name": "Winter 2026: Over 40",
+        "stage_name": "Playoffs",
+        "stage_type": "playoffs",
+        "team": false
+      }
+    }
+  },
+  "events": {
+    "4417895": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417896": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417901": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417902": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417906": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417908": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417911": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417915": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417919": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417921": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417925": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417927": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417931": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "4417933": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Orcas (12-2, 26 pts)",
+        "2. Michigan (11-3, 22 pts)",
+        "3. Instinct Bombers (10-4, 21 pts)",
+        "4. Blizzard (6-8, 14 pts)",
+        "5. BNP (3-11, 8 pts)",
+        "6. Slainte Ice Dragons (0-14, 1 pts)"
+      ]
+    },
+    "5170740": {
+      "as_of": "2026-09-19 16:51 UTC",
+      "lines": [
+        "1. Instinct Bombers (3-0, 6 pts)",
+        "2. Blizzard (1-2, 2 pts)",
+        "3. Orcas (0-1, 0 pts)",
+        "4. Michigan (0-1, 0 pts)"
+      ]
+    },
+    "6465880": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465882": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465885": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465887": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465892": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465893": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465898": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465899": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465902": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465905": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465908": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465913": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465915": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    },
+    "6465918": {
+      "as_of": "2026-09-19 16:54 UTC",
+      "lines": [
+        "0. BNP (0-0, 0 pts)",
+        "0. Blizzard (0-0, 0 pts)",
+        "0. Instinct Bombers (0-0, 0 pts)",
+        "0. Michigan Alumni Hockey Club (0-0, 0 pts)",
+        "0. Orcas (0-0, 0 pts)",
+        "0. Queens Spartans (0-0, 0 pts)"
+      ]
+    }
+  }
+}

@@ -2,49 +2,53 @@ output_dir: "docs"
 default_timezone: "America/New_York"
 
 teams:
-  # --- Bond Sports (old league) — Winter 2026 season is OVER (completed June 2026).
-  # These entries are intentionally removed from active generation so the final
-  # .ics files below are preserved as a permanent record of that season and never
-  # get overwritten. Re-add an entry here (with these exact slugs) if you ever
-  # need to regenerate them.
+  # --- Bond Sports (old league) — historical record. docs/orcas-winter2026-6a.ics
+  # etc. were the frozen final Winter 2026 feeds; they are NOT touched by these
+  # entries (no slug/alias below matches them) and never will be again.
   #
   # - name: "Orcas"                        | slug: "orcas-winter2026-6a"
   # - name: "Alligator Skinners"           | slug: "alligator-skinners-winter-2026-d3"
   # - name: "Grocery Sticks"               | slug: "grocery-sticks-winter-2026-d5a"
 
-  # --- Bond Sports (old league), Fall 2026 season — kept running for friends
-  # still on the old league. Fall 2026 restructured to ONE shared stage covering
-  # every division (unlike Winter, which had a separate stage per division), so
-  # all three teams below share the same api_url/standings_api_url; the script
-  # already dedupes identical URLs within a run. Team IDs also changed from
-  # Winter (re-registered per season) -- pulled fresh from the Fall game-scores
-  # response, not reused from the old config.
+  # --- Bond Sports (old league) — season-agnostic feeds. Each team below merges
+  # EVERY season+stage (regular season AND playoffs) it plays in program 12070
+  # into ONE feed, so the subscription URL never changes again. `program_id`
+  # auto-discovers new seasons/stages each run (cached in docs/_state/<slug>.json);
+  # `seasons:` lists Winter 2026 explicitly too, as a fallback in case discovery
+  # ever breaks (Winter's Playoffs stage is discovered automatically, not listed
+  # here). Team ids are resolved by matching `name` against each stage's
+  # schedule, so they no longer need to be tracked/updated by hand each season.
+  # The old fall2026-slug feeds are kept as `aliases` (live copies of this same
+  # merged feed) so anyone who already subscribed to them keeps getting updates.
   - name: "Orcas"
     provider: "bondsports"
-    slug: "orcas-fall2026-6a"
-    league_name: "Fall 2026 Division 6A"
-    api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/game-scores"
-    standings_api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/standings"
-    my_team_ids: [7384]
-    my_team_names: ["Orcas"]
+    slug: "orcas"
+    aliases: ["orcas-fall2026-6a"]
+    program_id: 12070
+    seasons:
+      - league_name: "Winter 2026 Division 6A"
+        competition_id: "4fd5e832-5d86-400a-af3f-7a01c20d1e4e"
+        stage_id: 160
 
   - name: "Alligator Skinners"
     provider: "bondsports"
-    slug: "alligator-skinners-fall2026-d3"
-    league_name: "Fall 2026 Division 3"
-    api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/game-scores"
-    standings_api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/standings"
-    my_team_ids: [7345]
-    my_team_names: ["Alligator Skinners"]
+    slug: "alligator-skinners"
+    aliases: ["alligator-skinners-fall2026-d3"]
+    program_id: 12070
+    seasons:
+      - league_name: "Winter 2026 Division 3"
+        competition_id: "180251ce-9fbc-4153-b7f6-ce3530a2c7f9"
+        stage_id: 153
 
   - name: "Grocery Sticks"
     provider: "bondsports"
-    slug: "grocery-sticks-fall2026-d5a"
-    league_name: "Fall 2026 Division 5A"
-    api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/game-scores"
-    standings_api_url: "https://api.bondsports.co/v4/competitions/67561257-dca0-4770-b298-559f07ea02ed/stages/1156/standings"
-    my_team_ids: [7364]
-    my_team_names: ["Grocery Sticks"]
+    slug: "grocery-sticks"
+    aliases: ["grocery-sticks-fall2026-d5a"]
+    program_id: 12070
+    seasons:
+      - league_name: "Winter 2026 Division 5A"
+        competition_id: "00d2c916-8370-463c-8d83-01c9ce2de443"
+        stage_id: 158
 
   # --- TimeToScore / Black Bear (new league: Foundry Ice Land) ---
   # widget_url is the league's PUBLIC schedule-widget page (shared by any team in
