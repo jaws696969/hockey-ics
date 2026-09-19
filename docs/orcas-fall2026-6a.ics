@@ -6,142 +6,142 @@ METHOD:PUBLISH
 X-WR-CALNAME:Orcas — Fall 2026 Division 6A
 BEGIN:VEVENT
 UID:2d756fc314c25166fe1c7772@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20260919T003000Z
 DTEND:20260919T015000Z
 SUMMARY:Orcas @ BNP
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-18 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-18 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:8442ef5e36de54bef3ca4463@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20260926T003000Z
 DTEND:20260926T015000Z
 SUMMARY:Orcas vs Queens Spartans
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-25 20:30 EDT\nRink: East Rink\n\n----------------------------------------\nQUEENS SPARTANS GAMES-TO-DATE\n----------------------------------------\n    Sep 18th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-25 20:30 EDT\nRink: East Rink\n\n----------------------------------------\nQUEENS SPARTANS GAMES-TO-DATE\n----------------------------------------\n    Sep 18th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:49412e379885cf6f9cc6cee9@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261003T020000Z
 DTEND:20261003T032000Z
 SUMMARY:Orcas @ Michigan Alumni Hockey Club
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-02 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-02 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:c17a0a75b31dbb3e3f5b1bb3@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261009T020000Z
 DTEND:20261009T032000Z
 SUMMARY:Orcas vs Queens Spartans
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-08 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Queens Spartans\n----------------------------------------\n    Sep 25th vs Queens Spartans\n\n----------------------------------------\nQUEENS SPARTANS GAMES-TO-DATE\n----------------------------------------\n    Sep 18th @ Blizzard\n    Sep 25th @ Orcas\n    Oct 1st vs Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-08 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Queens Spartans\n----------------------------------------\n    Sep 25th vs Queens Spartans\n\n----------------------------------------\nQUEENS SPARTANS GAMES-TO-DATE\n----------------------------------------\n    Sep 18th @ Blizzard\n    Sep 25th @ Orcas\n    Oct 1st vs Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:ac8f328b0fe323cef5b59b8a@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261017T003000Z
 DTEND:20261017T015000Z
 SUMMARY:Orcas vs Instinct Bombers
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-16 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-16 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:f0213cafcb91911288344a73@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261023T020000Z
 DTEND:20261023T032000Z
 SUMMARY:Orcas @ Blizzard
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-22 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-22 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:e164cdee340b0249457fd168@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261031T033000Z
 DTEND:20261031T045000Z
 SUMMARY:Orcas @ BNP
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-30 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs BNP\n----------------------------------------\n    Sep 18th @ BNP\n\n----------------------------------------\nBNP GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Orcas\n    Sep 25th vs Blizzard\n    Oct 2nd @ Instinct Bombers\n    Oct 9th @ Michigan Alumni Hockey Club\n    Oct 15th @ Queens Spartans\n    Oct 23rd vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-30 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs BNP\n----------------------------------------\n    Sep 18th @ BNP\n\n----------------------------------------\nBNP GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Orcas\n    Sep 25th vs Blizzard\n    Oct 2nd @ Instinct Bombers\n    Oct 9th @ Michigan Alumni Hockey Club\n    Oct 15th @ Queens Spartans\n    Oct 23rd vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:c6c36f898df28c8e3903bea4@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261106T030000Z
 DTEND:20261106T042000Z
 SUMMARY:Orcas vs Blizzard
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-05 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Blizzard\n----------------------------------------\n    Oct 22nd @ Blizzard\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n    Oct 22nd vs Orcas\n    Oct 30th @ Instinct Bombers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-05 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Blizzard\n----------------------------------------\n    Oct 22nd @ Blizzard\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n    Oct 22nd vs Orcas\n    Oct 30th @ Instinct Bombers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:404e2de515d1f24a1e008335@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261113T043000Z
 DTEND:20261113T055000Z
 SUMMARY:Orcas @ Michigan Alumni Hockey Club
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-12 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Michigan Alumni Hockey Club\n----------------------------------------\n    Oct 2nd @ Michigan Alumni Hockey Club\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n    Oct 2nd vs Orcas\n    Oct 9th vs BNP\n    Oct 16th @ Blizzard\n    Oct 23rd @ Instinct Bombers\n    Oct 29th @ Queens Spartans\n    Nov 6th vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-12 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Michigan Alumni Hockey Club\n----------------------------------------\n    Oct 2nd @ Michigan Alumni Hockey Club\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n    Oct 2nd vs Orcas\n    Oct 9th vs BNP\n    Oct 16th @ Blizzard\n    Oct 23rd @ Instinct Bombers\n    Oct 29th @ Queens Spartans\n    Nov 6th vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:497f2a99083fd523144662e7@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261120T030000Z
 DTEND:20261120T042000Z
 SUMMARY:Orcas vs BNP
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-19 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs BNP\n----------------------------------------\n    Sep 18th @ BNP\n    Oct 30th @ BNP\n\n----------------------------------------\nBNP GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Orcas\n    Sep 25th vs Blizzard\n    Oct 2nd @ Instinct Bombers\n    Oct 9th @ Michigan Alumni Hockey Club\n    Oct 15th @ Queens Spartans\n    Oct 23rd vs Queens Spartans\n    Oct 30th vs Orcas\n    Nov 5th vs Instinct Bombers\n    Nov 13th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-19 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs BNP\n----------------------------------------\n    Sep 18th @ BNP\n    Oct 30th @ BNP\n\n----------------------------------------\nBNP GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Orcas\n    Sep 25th vs Blizzard\n    Oct 2nd @ Instinct Bombers\n    Oct 9th @ Michigan Alumni Hockey Club\n    Oct 15th @ Queens Spartans\n    Oct 23rd vs Queens Spartans\n    Oct 30th vs Orcas\n    Nov 5th vs Instinct Bombers\n    Nov 13th @ Blizzard\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:4b49903a70017ea4279e88c7@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261204T043000Z
 DTEND:20261204T055000Z
 SUMMARY:Orcas @ Instinct Bombers
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-03 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Instinct Bombers\n----------------------------------------\n    Oct 16th vs Instinct Bombers\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n    Oct 16th @ Orcas\n    Oct 23rd vs Michigan Alumni Hockey Club\n    Oct 30th vs Blizzard\n    Nov 5th @ BNP\n    Nov 13th @ Queens Spartans\n    Nov 20th @ Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-03 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Instinct Bombers\n----------------------------------------\n    Oct 16th vs Instinct Bombers\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n    Oct 16th @ Orcas\n    Oct 23rd vs Michigan Alumni Hockey Club\n    Oct 30th vs Blizzard\n    Nov 5th @ BNP\n    Nov 13th @ Queens Spartans\n    Nov 20th @ Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:b84c9b218b90faed9c7327ee@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261212T030000Z
 DTEND:20261212T042000Z
 SUMMARY:Orcas vs Michigan Alumni Hockey Club
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-11 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Michigan Alumni Hockey Club\n----------------------------------------\n    Oct 2nd @ Michigan Alumni Hockey Club\n    Nov 12th @ Michigan Alumni Hockey Club\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n    Oct 2nd vs Orcas\n    Oct 9th vs BNP\n    Oct 16th @ Blizzard\n    Oct 23rd @ Instinct Bombers\n    Oct 29th @ Queens Spartans\n    Nov 6th vs Queens Spartans\n    Nov 12th vs Orcas\n    Nov 20th vs Blizzard\n    Dec 4th @ Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-11 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Michigan Alumni Hockey Club\n----------------------------------------\n    Oct 2nd @ Michigan Alumni Hockey Club\n    Nov 12th @ Michigan Alumni Hockey Club\n\n----------------------------------------\nMICHIGAN ALUMNI HOCKEY CLUB GAMES-TO-DATE\n----------------------------------------\n    Sep 24th @ Instinct Bombers\n    Oct 2nd vs Orcas\n    Oct 9th vs BNP\n    Oct 16th @ Blizzard\n    Oct 23rd @ Instinct Bombers\n    Oct 29th @ Queens Spartans\n    Nov 6th vs Queens Spartans\n    Nov 12th vs Orcas\n    Nov 20th vs Blizzard\n    Dec 4th @ Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:0c9e7232674cbd5bd3c41d14@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20261219T043000Z
 DTEND:20261219T055000Z
 SUMMARY:Orcas @ Blizzard
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-18 23:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Blizzard\n----------------------------------------\n    Oct 22nd @ Blizzard\n    Nov 5th vs Blizzard\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n    Oct 22nd vs Orcas\n    Oct 30th @ Instinct Bombers\n    Nov 5th @ Orcas\n    Nov 13th vs BNP\n    Nov 20th @ Michigan Alumni Hockey Club\n    Dec 4th @ BNP\n    Dec 11th vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-18 23:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Blizzard\n----------------------------------------\n    Oct 22nd @ Blizzard\n    Nov 5th vs Blizzard\n\n----------------------------------------\nBLIZZARD GAMES-TO-DATE\n----------------------------------------\n    Sep 18th vs Queens Spartans\n    Sep 25th @ BNP\n    Oct 1st @ Queens Spartans\n    Oct 9th vs Instinct Bombers\n    Oct 16th vs Michigan Alumni Hockey Club\n    Oct 22nd vs Orcas\n    Oct 30th @ Instinct Bombers\n    Nov 5th @ Orcas\n    Nov 13th vs BNP\n    Nov 20th @ Michigan Alumni Hockey Club\n    Dec 4th @ BNP\n    Dec 11th vs Queens Spartans\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:cf536d0452ea2ad32b7b3c7b@hockey-ics
-DTSTAMP:20260919T160844Z
-LAST-MODIFIED:20260919T160843Z
+DTSTAMP:20260919T161254Z
+LAST-MODIFIED:20260919T161253Z
 DTSTART:20270102T013000Z
 DTEND:20270102T025000Z
 SUMMARY:Orcas vs Instinct Bombers
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2027-01-01 20:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Instinct Bombers\n----------------------------------------\n    Oct 16th vs Instinct Bombers\n    Dec 3rd @ Instinct Bombers\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n    Oct 16th @ Orcas\n    Oct 23rd vs Michigan Alumni Hockey Club\n    Oct 30th vs Blizzard\n    Nov 5th @ BNP\n    Nov 13th @ Queens Spartans\n    Nov 20th @ Queens Spartans\n    Dec 3rd vs Orcas\n    Dec 10th vs BNP\n    Dec 17th @ Michigan Alumni Hockey Club\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:08 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 6A\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2027-01-01 20:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Instinct Bombers\n----------------------------------------\n    Oct 16th vs Instinct Bombers\n    Dec 3rd @ Instinct Bombers\n\n----------------------------------------\nINSTINCT BOMBERS GAMES-TO-DATE\n----------------------------------------\n    Sep 24th vs Michigan Alumni Hockey Club\n    Oct 2nd vs BNP\n    Oct 9th @ Blizzard\n    Oct 16th @ Orcas\n    Oct 23rd vs Michigan Alumni Hockey Club\n    Oct 30th vs Blizzard\n    Nov 5th @ BNP\n    Nov 13th @ Queens Spartans\n    Nov 20th @ Queens Spartans\n    Dec 3rd vs Orcas\n    Dec 10th vs BNP\n    Dec 17th @ Michigan Alumni Hockey Club\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 16:12 UTC)\n----------------------------------------\n0. BNP (0-0\, 0 pts)\n0. Blizzard (0-0\, 0 pts)\n0. Instinct Bombers (0-0\, 0 pts)\n0. Michigan Alumni Hockey Club (0-0\, 0 pts)\n0. Orcas (0-0\, 0 pts)\n0. Queens Spartans (0-0\, 0 pts)
 END:VEVENT
 END:VCALENDAR
