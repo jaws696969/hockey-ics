@@ -9,12 +9,12 @@
       "Fall 2026 Division 3"
     ]
   },
-  "brewzers-fall2026-adultc": {
+  "brewzers": {
     "first_game_start": "20260910T021000Z",
     "games": 13,
     "last_game_start": "20261210T031000Z",
     "seasons": [
-      "Foundry Ice Land \u2014 Adult C"
+      "Adult Fall 2026 \u2014 Adult C"
     ]
   },
   "grocery-sticks": {
@@ -37,12 +37,12 @@
       "Fall 2026 Division 6a"
     ]
   },
-  "the-owls-fall2026-adultab": {
+  "the-owls": {
     "first_game_start": "20260915T014500Z",
     "games": 13,
     "last_game_start": "20261209T030000Z",
     "seasons": [
-      "Foundry Ice Land \u2014 Adult A/B"
+      "Adult Fall 2026 \u2014 Adult A/B"
     ]
   }
 }

@@ -26,9 +26,10 @@ All using **free GitHub tooling** (GitHub Actions + GitHub Pages).
 - Auto-updates via GitHub Actions
 - Hosted `.ics` feeds via GitHub Pages
 - Stable event IDs (no duplicate calendar entries)
-- **Bond Sports feeds are season-agnostic**: one team's feed merges every season
-  it plays (regular season *and* playoffs) into a single subscription URL that
-  never needs to change; new seasons are auto-discovered, no config edit needed
+- **Feeds are season-agnostic for both providers**: one team's feed merges
+  every season it plays (regular season *and* playoffs) into a single
+  subscription URL that never needs to change; new seasons are auto-discovered,
+  no config edit needed
 - Handles Bond Sports API quirks (null `gameId`, bad end times, team ids that get
   reassigned each season, etc.) and TimeToScore quirks (string-typed IDs/scores,
   no explicit end time, trailing whitespace in names)
@@ -91,13 +92,11 @@ teams:
         competition_id: "180251ce-9fbc-4153-b7f6-ce3530a2c7f9"
         stage_id: 153
 
-  - name: "Brewzers"
+  - name: "Brewzers"                  # team name exactly as TimeToScore shows it
     provider: "timetoscore"
-    slug: "brewzers-fall2026-adultc"
-    league_name: "Foundry Ice Land — Adult C"
-    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
-    my_team_ids: [11911]
-    my_team_names: ["Brewzers"]
+    slug: "brewzers"                  # -> docs/brewzers.ics (season-agnostic)
+    aliases: ["brewzers-fall2026-adultc"]  # optional: extra copies (legacy URLs)
+    league_widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
 ```
 
 ### How Bond Sports season-agnostic feeds work
@@ -136,15 +135,12 @@ sense) — only the final list of events is merged into one calendar.
 
 TimeToScore's API is HMAC-signed (`auth_timestamp` + `auth_signature`) by
 client-side code on the league's own site, and this script doesn't replicate that
-signing itself. Instead, `widget_url` points at the league's **public**
+signing itself. Instead, `league_widget_url` points at the league's **public**
 schedule-widget page — the same one any visitor sees. At each run, a real headless
 browser (Playwright/Chromium) loads that page, and the script captures the
-`get_schedule`/`get_standings` responses the page's own official widget code
-fetches. That gives a freshly, validly signed response on every run, with nothing
-to copy/paste or refresh by hand.
-
-One `widget_url` covers a whole league/season/stat_class, so multiple teams in the
-same league (e.g. Brewzers and The Owls) share one browser page load per run.
+`get_schedule`/`get_standings`/`get_leagues` responses the page's own official
+widget code fetches. That gives a freshly, validly signed response on every run,
+with nothing to copy/paste or refresh by hand.
 
 Requires the `playwright` Python package plus `playwright install --with-deps
 chromium` (already wired into `.github/workflows/build_ics.yml`); for local runs,
@@ -155,26 +151,48 @@ pip install playwright
 playwright install chromium
 ```
 
-### Moving a TimeToScore team to a new season
+### How TimeToScore season-agnostic feeds work
 
-TimeToScore teams don't have season auto-discovery (see above) — each team
-entry's `widget_url` points at one specific league/season/stat_class. When a
-TimeToScore team moves to a new season, **don't edit the old team entry in
-place** — that reuses its `slug`, so the next run overwrites the completed
-season's `.ics` file with new-season data and the old record is lost. Instead:
+Same idea as Bond Sports, adapted to TimeToScore's shape. A `league_id` (visible
+in the widget URL's query string, though you don't need to read it — just reuse
+any existing widget URL for the league) keeps a persistent list of every
+`season_id` it's ever run, via `get_leagues` — the same "one program, many
+seasons" concept Bond Sports has. Unlike Bond, there's no separate stage to walk:
+fetching a season at `stat_class=7` ("Adult Total") already returns regular
+season + playoffs merged in one call.
 
-1. Delete (or comment out) the old team's entry from `teams:`, leaving its
-   `docs/<slug>.ics` (and `docs/_state/<slug>.json`) file in place untouched —
-   removing it from `teams:` is enough to stop it from ever being regenerated.
-2. Add a **new** entry with a **new** `slug` pointing at the new season's
-   `widget_url`.
+On each run, the script loads `league_widget_url` (one browser page — teams
+sharing a league, like Brewzers and The Owls, share this fetch), reads the
+season list from the `get_leagues` response that comes back, and for each season
+not yet ruled out, re-fetches that season at `stat_class=7` and checks whether a
+team named `name` (or `team_names:`) appears. Matching seasons merge into the
+one feed at `slug`, sorted chronologically, exactly like Bond Sports.
 
-If you ever want the same season-agnostic, auto-discovered behavior for
-TimeToScore, `get_leagues` returns every `season_id` a `league_id` has ever
-had (the same "program with many seasons" shape Bond Sports has), and
-`stat_class=7` ("Adult Total") already returns regular season + playoffs
-combined in one call — nobody's built that discovery loop for TimeToScore yet,
-but the pieces are there.
+**Unlike Bond Sports team ids** (reassigned every season), a TimeToScore team id
+stayed identical for the same team across seasons in testing — but a league can
+reuse a generic team *name* for a completely different roster in an older
+season: confirmed here, where a different "Brewzers" (same team id!) existed in
+this league a full year before the configured team joined it. To avoid silently
+folding in a stranger team's history, **only the current season is auto-included
+on first discovery** — seasons that already existed at that point are left
+alone. Every season from that point forward is picked up automatically with no
+config change. `seasons:` can list a specific older season explicitly (same
+fallback pattern as Bond Sports) if you've confirmed it's really the same team
+and want it included anyway.
+
+Discovered seasons are cached in `docs/_state/<slug>.json` under a `discovery`
+key the same way Bond Sports stages are: once positive, remembered forever;
+while negative, re-checked every run only for the current season (schedules
+are sometimes published late).
+
+### Moving a legacy single-season TimeToScore team
+
+The old style — `widget_url` + `my_team_ids`/`my_team_names`, one fixed
+league/season/stat_class — still works for a team entry that doesn't set
+`league_widget_url`. For that style only, **don't edit the entry in place**
+when the season ends (it reuses `slug`, overwriting the prior season's `.ics`).
+Delete/comment out the old entry (its `docs/<slug>.ics` stays untouched) and
+add a new entry with a new `slug`. Prefer `league_widget_url` for anything new.
 
 ---
 

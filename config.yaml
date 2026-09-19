@@ -50,23 +50,30 @@ teams:
         competition_id: "00d2c916-8370-463c-8d83-01c9ce2de443"
         stage_id: 158
 
-  # --- TimeToScore / Black Bear (new league: Foundry Ice Land) ---
-  # widget_url is the league's PUBLIC schedule-widget page (shared by any team in
-  # the same league/season/stat_class). generate_ics.py loads it in a real headless
-  # browser and captures the get_schedule/get_standings responses the page's own
-  # official widget code fetches -- no signed URL to paste in or refresh by hand.
+  # --- TimeToScore / Black Bear (new league: Foundry Ice Land) — season-agnostic
+  # feeds. `league_widget_url` is any PUBLIC schedule-widget page for this league
+  # (season/stat_class in its query string don't matter -- they get swapped per
+  # discovered season, always at stat_class=7 "Adult Total", which already merges
+  # regular season + playoffs in one call). generate_ics.py loads it in a real
+  # headless browser and captures the get_schedule/get_standings/get_leagues
+  # responses the page's own official widget code fetches -- no signed URL to
+  # paste in or refresh by hand, ever.
+  #
+  # Only the CURRENT season is auto-included on first discovery; seasons before
+  # that are deliberately NOT backfilled (a differently-rostered team can share
+  # the exact same name in an older season here -- confirmed for "Brewzers": same
+  # team_id, Fall 2025, a full year before this team joined). Every season from
+  # here forward is picked up automatically with no config change. To include a
+  # specific older season anyway, add it explicitly under `seasons:` (same
+  # fallback pattern Bond Sports uses).
   - name: "Brewzers"
     provider: "timetoscore"
-    slug: "brewzers-fall2026-adultc"
-    league_name: "Foundry Ice Land — Adult C"
-    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
-    my_team_ids: [11911]
-    my_team_names: ["Brewzers"]
+    slug: "brewzers"
+    aliases: ["brewzers-fall2026-adultc"]
+    league_widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
 
   - name: "The Owls"
     provider: "timetoscore"
-    slug: "the-owls-fall2026-adultab"
-    league_name: "Foundry Ice Land — Adult A/B"
-    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
-    my_team_ids: [11922]
-    my_team_names: ["The Owls"]
+    slug: "the-owls"
+    aliases: ["the-owls-fall2026-adultab"]
+    league_widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
