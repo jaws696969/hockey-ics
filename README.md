@@ -42,9 +42,9 @@ All using **free GitHub tooling** (GitHub Actions + GitHub Pages).
 6. GitHub Pages serves the `.ics` files
 7. Google Calendar refreshes automatically
 
-If a team's fetch fails (see **TimeToScore signed URLs**, below), that team is skipped
-for the run with a clear `ERROR:` line in the Action log — its previously-generated
-`.ics` file is left untouched rather than the whole run failing.
+If a team's fetch fails, that team is skipped for the run with a clear `ERROR:` line
+in the Action log — its previously-generated `.ics` file is left untouched rather
+than the whole run failing.
 
 ---
 
@@ -85,31 +85,33 @@ teams:
     provider: "timetoscore"
     slug: "brewzers-fall2026-adultc"
     league_name: "Foundry Ice Land — Adult C"
-    api_url: "https://api.blackbear.timetoscore.com/get_schedule?...&auth_signature=..."
-    standings_api_url: "https://api.blackbear.timetoscore.com/get_standings?...&auth_signature=..."
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
     my_team_ids: [11911]
     my_team_names: ["Brewzers"]
 ```
 
-### TimeToScore signed URLs
+### How TimeToScore auth works (no manual URL refreshing)
 
-TimeToScore's API is HMAC-signed (`auth_timestamp` + `auth_signature`); this script
-cannot generate its own signatures, so `api_url`/`standings_api_url` for a
-`timetoscore` team are exact URLs copied from the league site, and they **will
-eventually stop working** (the signature covers the timestamp, so it's not just a
-matter of the request being old — any change to the URL invalidates it too).
+TimeToScore's API is HMAC-signed (`auth_timestamp` + `auth_signature`) by
+client-side code on the league's own site, and this script doesn't replicate that
+signing itself. Instead, `widget_url` points at the league's **public**
+schedule-widget page — the same one any visitor sees. At each run, a real headless
+browser (Playwright/Chromium) loads that page, and the script captures the
+`get_schedule`/`get_standings` responses the page's own official widget code
+fetches. That gives a freshly, validly signed response on every run, with nothing
+to copy/paste or refresh by hand.
 
-Two things to know:
+One `widget_url` covers a whole league/season/stat_class, so multiple teams in the
+same league (e.g. Brewzers and The Owls) share one browser page load per run.
 
-- **`api_url` must be the full, un-scoped schedule request (no `team_id` param)**,
-  not a single team's schedule. Opponent-games-to-date and head-to-head need to see
-  every team's games, and team-scoped signatures can't be edited to remove `team_id`.
-- **When a run logs `ERROR: <team>: failed to fetch/parse schedule`**, the signed URL
-  has expired. To refresh: open the league's public schedule page (e.g.
-  `https://foundryadulthockey.com/iceland-schedule-widget/?season=<id>&stat_class=<id>`),
-  open your browser's devtools → Network tab, reload, and copy a fresh `get_schedule`
-  (no `team_id`) and `get_standings` request URL. Paste them into `config.yaml` for
-  every `timetoscore` team that shares that league/season.
+Requires the `playwright` Python package plus `playwright install --with-deps
+chromium` (already wired into `.github/workflows/build_ics.yml`); for local runs,
+install both once:
+
+```bash
+pip install playwright
+playwright install chromium
+```
 
 ---
 

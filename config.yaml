@@ -32,19 +32,15 @@ teams:
     my_team_names: ["Grocery Sticks"]
 
   # --- TimeToScore / Black Bear (new league: Foundry Ice Land) ---
-  # api_url/standings_api_url are shared, UN-SCOPED (no team_id) full-league requests —
-  # required so opponent-games-to-date and head-to-head can see every team's games.
-  # These URLs are HMAC-signed (auth_timestamp/auth_signature) by the league's site and
-  # will eventually expire; when a run logs an ERROR for these teams, grab fresh URLs
-  # from https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5
-  # (browser devtools -> Network tab -> a get_schedule/get_standings request with NO
-  # team_id param) and paste the new ones in below.
+  # widget_url is the league's PUBLIC schedule-widget page (shared by any team in
+  # the same league/season/stat_class). generate_ics.py loads it in a real headless
+  # browser and captures the get_schedule/get_standings responses the page's own
+  # official widget code fetches -- no signed URL to paste in or refresh by hand.
   - name: "Brewzers"
     provider: "timetoscore"
     slug: "brewzers-fall2026-adultc"
     league_name: "Foundry Ice Land — Adult C"
-    api_url: "https://api.blackbear.timetoscore.com/get_schedule?auth_key=bbleaguesites&auth_timestamp=1789787563&body_md5=d41d8cd98f00b204e9800998ecf8427e&league_id=14&stat_class=5&season_id=177&auth_signature=331d5b6e957ae5d011690f7c5f0be07fff6d7933ac833d8144d46d308b3c4294"
-    standings_api_url: "https://api.blackbear.timetoscore.com/get_standings?auth_key=bbleaguesites&auth_timestamp=1789788187&body_md5=d41d8cd98f00b204e9800998ecf8427e&league_id=14&season_id=177&auth_signature=513a26525560b4ec50207600748c2684fc147dad020d1899514e20f7b7dd7e21"
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
     my_team_ids: [11911]
     my_team_names: ["Brewzers"]
 
@@ -52,7 +48,6 @@ teams:
     provider: "timetoscore"
     slug: "the-owls-fall2026-adultab"
     league_name: "Foundry Ice Land — Adult A/B"
-    api_url: "https://api.blackbear.timetoscore.com/get_schedule?auth_key=bbleaguesites&auth_timestamp=1789787563&body_md5=d41d8cd98f00b204e9800998ecf8427e&league_id=14&stat_class=5&season_id=177&auth_signature=331d5b6e957ae5d011690f7c5f0be07fff6d7933ac833d8144d46d308b3c4294"
-    standings_api_url: "https://api.blackbear.timetoscore.com/get_standings?auth_key=bbleaguesites&auth_timestamp=1789788187&body_md5=d41d8cd98f00b204e9800998ecf8427e&league_id=14&season_id=177&auth_signature=513a26525560b4ec50207600748c2684fc147dad020d1899514e20f7b7dd7e21"
+    widget_url: "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=5"
     my_team_ids: [11922]
     my_team_names: ["The Owls"]
