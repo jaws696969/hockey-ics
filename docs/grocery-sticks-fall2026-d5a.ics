@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Grocery Sticks — Hockey
 BEGIN:VEVENT
 UID:0bdb3df48b1d3109e553ed99@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260212T030000Z
 DTEND:20260212T042000Z
 SUMMARY:Grocery Sticks @ Homer's Heroes (W 4-2)
@@ -16,8 +16,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:42f51fbdd6144d420dc8c839@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260226T030000Z
 DTEND:20260226T042000Z
 SUMMARY:Grocery Sticks @ Molar Bears (L 4-5)
@@ -26,8 +26,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:311b579c0742b0ddb691d533@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260305T030000Z
 DTEND:20260305T042000Z
 SUMMARY:Grocery Sticks @ Rhinos (L 2-3)
@@ -36,8 +36,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:2cd25b0a2b400c79871ac1ae@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260316T033000Z
 DTEND:20260316T045000Z
 SUMMARY:Grocery Sticks vs The Hanson Brothers (L 0-1)
@@ -46,8 +46,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:02baa75b79fc46997ce15b9c@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260326T020000Z
 DTEND:20260326T032000Z
 SUMMARY:Grocery Sticks vs Les Boys (W 8-2)
@@ -56,8 +56,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:29511a9d3bf2c794829397ca@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260329T200000Z
 DTEND:20260329T212000Z
 SUMMARY:Grocery Sticks vs Ice Dogs (W 5-2)
@@ -66,8 +66,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:94cb51783d77dcdfefecba1f@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260407T033000Z
 DTEND:20260407T045000Z
 SUMMARY:Grocery Sticks vs Cougars (W 8-1)
@@ -76,8 +76,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:cc9730349f19dfe064325472@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260412T230000Z
 DTEND:20260413T002000Z
 SUMMARY:Grocery Sticks @ Peter McManus (W 4-3)
@@ -86,8 +86,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:966e4e12cf8d95d25eea472a@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260419T213000Z
 DTEND:20260419T225000Z
 SUMMARY:Grocery Sticks @ Homer's Heroes (W 5-4)
@@ -96,8 +96,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:c0a28a2a3227a7645bde1e4e@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260423T033000Z
 DTEND:20260423T045000Z
 SUMMARY:Grocery Sticks @ Peter McManus (W 7-6)
@@ -106,8 +106,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:aebeafe5bb3a50cc33d14d71@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260427T020000Z
 DTEND:20260427T032000Z
 SUMMARY:Grocery Sticks @ Molar Bears (L 1-4)
@@ -116,8 +116,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:b05ca22d1bd242797b1fd1f0@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260504T033000Z
 DTEND:20260504T045000Z
 SUMMARY:Grocery Sticks @ Cobra Kai (W 8-0)
@@ -126,8 +126,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:7a4b4d160f083231adb80608@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260507T003000Z
 DTEND:20260507T015000Z
 SUMMARY:Grocery Sticks @ Rhinos (W 7-2)
@@ -136,8 +136,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:3dd1d0c6b6bc6e431c728c2e@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260511T003000Z
 DTEND:20260511T015000Z
 SUMMARY:Grocery Sticks vs Cougars (W 8-0)
@@ -146,8 +146,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:92e72d487ada48043298c504@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260518T020000Z
 DTEND:20260518T032000Z
 SUMMARY:Grocery Sticks vs The Hanson Brothers (W 6-3)
@@ -156,8 +156,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:da360a93489b40c6e9818a47@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260521T020000Z
 DTEND:20260521T032000Z
 SUMMARY:Grocery Sticks @ Molar Bears (L 3-5)
@@ -166,8 +166,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:23ab9c127f24274f85c347fe@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260601T003000Z
 DTEND:20260601T015000Z
 SUMMARY:Grocery Sticks vs Molar Bears (W 2-1)
@@ -176,8 +176,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:b898f0925af0c5bea2889a86@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260607T230000Z
 DTEND:20260608T002000Z
 SUMMARY:Grocery Sticks @ Molar Bears (W 3-2)
@@ -186,142 +186,142 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:a5140a784c3ebb16c9041521@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260917T033000Z
 DTEND:20260917T045000Z
 SUMMARY:Grocery Sticks vs Homer's Heroes
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-16 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-16 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:2a89935ef64e9af3d3035117@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20260921T020000Z
 DTEND:20260921T032000Z
 SUMMARY:Grocery Sticks @ Peter McManus
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-20 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Cougars\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-20 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nPETER MCMANUS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Cougars\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:469c755b442409094722f36f@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261005T003000Z
 DTEND:20261005T015000Z
 SUMMARY:Grocery Sticks @ Molar Bears
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-04 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Ice Dogs\n    Sep 23rd @ Homer's Heroes\n    Sep 30th vs Les Boys\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-04 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Ice Dogs\n    Sep 23rd @ Homer's Heroes\n    Sep 30th vs Les Boys\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:b1f1fa144a98c4dc5c06a30e@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261015T033000Z
 DTEND:20261015T045000Z
 SUMMARY:Grocery Sticks vs Ice Dogs
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-14 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Molar Bears\n    Sep 20th @ The Hanson Brothers\n    Sep 30th @ Cougars\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-14 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Molar Bears\n    Sep 20th @ The Hanson Brothers\n    Sep 30th @ Cougars\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:8b17d25ce570de8470622d92@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261019T033000Z
 DTEND:20261019T045000Z
 SUMMARY:Grocery Sticks vs Les Boys
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-18 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Rhinos\n    Sep 30th @ Molar Bears\n    Oct 4th vs Peter McManus\n    Oct 11th @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-18 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Rhinos\n    Sep 30th @ Molar Bears\n    Oct 4th vs Peter McManus\n    Oct 11th @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:aceeb4c604a9c52d51911681@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261026T003000Z
 DTEND:20261026T015000Z
 SUMMARY:Grocery Sticks @ Cougars
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-25 20:30 EDT\nRink: East Rink\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Peter McManus\n    Sep 20th @ Rhinos\n    Sep 30th vs Ice Dogs\n    Oct 7th vs Homer's Heroes\n    Oct 21st @ The Hanson Brothers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-25 20:30 EDT\nRink: East Rink\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Peter McManus\n    Sep 20th @ Rhinos\n    Sep 30th vs Ice Dogs\n    Oct 7th vs Homer's Heroes\n    Oct 21st @ The Hanson Brothers\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:e0eb471f0d6863c1431c6033@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261102T030000Z
 DTEND:20261102T042000Z
 SUMMARY:Grocery Sticks @ Rhinos
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-01 22:00 EST\nRink: West Rink\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Les Boys\n    Sep 20th vs Cougars\n    Sep 27th @ Peter McManus\n    Oct 4th vs The Hanson Brothers\n    Oct 14th @ Molar Bears\n    Oct 18th vs Peter McManus\n    Oct 28th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-01 22:00 EST\nRink: West Rink\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Les Boys\n    Sep 20th vs Cougars\n    Sep 27th @ Peter McManus\n    Oct 4th vs The Hanson Brothers\n    Oct 14th @ Molar Bears\n    Oct 18th vs Peter McManus\n    Oct 28th @ Ice Dogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:d64dc43fbad479c6ad3434ea@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261112T043000Z
 DTEND:20261112T055000Z
 SUMMARY:Grocery Sticks vs Molar Bears
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-11 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Molar Bears\n----------------------------------------\n    Oct 4th @ Molar Bears\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Ice Dogs\n    Sep 23rd @ Homer's Heroes\n    Sep 30th vs Les Boys\n    Oct 4th vs Grocery Sticks\n    Oct 14th vs Rhinos\n    Oct 21st @ Peter McManus\n    Oct 25th @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-11 23:30 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Molar Bears\n----------------------------------------\n    Oct 4th @ Molar Bears\n\n----------------------------------------\nMOLAR BEARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Ice Dogs\n    Sep 23rd @ Homer's Heroes\n    Sep 30th vs Les Boys\n    Oct 4th vs Grocery Sticks\n    Oct 14th vs Rhinos\n    Oct 21st @ Peter McManus\n    Oct 25th @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:04bcf679f856106b957dd00c@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261116T000000Z
 DTEND:20261116T012000Z
 SUMMARY:Grocery Sticks @ The Hanson Brothers
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-15 19:00 EST\nRink: West Rink\n\n----------------------------------------\nTHE HANSON BROTHERS GAMES-TO-DATE\n----------------------------------------\n    Sep 20th vs Ice Dogs\n    Sep 27th @ Homer's Heroes\n    Oct 4th @ Rhinos\n    Oct 11th vs Peter McManus\n    Oct 21st vs Cougars\n    Oct 28th @ Les Boys\n    Nov 4th @ Peter McManus\n    Nov 8th @ Rhinos\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-15 19:00 EST\nRink: West Rink\n\n----------------------------------------\nTHE HANSON BROTHERS GAMES-TO-DATE\n----------------------------------------\n    Sep 20th vs Ice Dogs\n    Sep 27th @ Homer's Heroes\n    Oct 4th @ Rhinos\n    Oct 11th vs Peter McManus\n    Oct 21st vs Cougars\n    Oct 28th @ Les Boys\n    Nov 4th @ Peter McManus\n    Nov 8th @ Rhinos\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:ca4a5f12abf6fbb25f8ab388@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261123T030000Z
 DTEND:20261123T042000Z
 SUMMARY:Grocery Sticks vs Cougars
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-22 22:00 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Cougars\n----------------------------------------\n    Oct 25th @ Cougars\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Peter McManus\n    Sep 20th @ Rhinos\n    Sep 30th vs Ice Dogs\n    Oct 7th vs Homer's Heroes\n    Oct 21st @ The Hanson Brothers\n    Oct 25th vs Grocery Sticks\n    Nov 1st @ Homer's Heroes\n    Nov 8th @ Les Boys\n    Nov 15th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-22 22:00 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Cougars\n----------------------------------------\n    Oct 25th @ Cougars\n\n----------------------------------------\nCOUGARS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Peter McManus\n    Sep 20th @ Rhinos\n    Sep 30th vs Ice Dogs\n    Oct 7th vs Homer's Heroes\n    Oct 21st @ The Hanson Brothers\n    Oct 25th vs Grocery Sticks\n    Nov 1st @ Homer's Heroes\n    Nov 8th @ Les Boys\n    Nov 15th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:7a142e63e48540589515ea3b@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261207T000000Z
 DTEND:20261207T012000Z
 SUMMARY:Grocery Sticks vs Rhinos
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-06 19:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Rhinos\n----------------------------------------\n    Nov 1st @ Rhinos\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Les Boys\n    Sep 20th vs Cougars\n    Sep 27th @ Peter McManus\n    Oct 4th vs The Hanson Brothers\n    Oct 14th @ Molar Bears\n    Oct 18th vs Peter McManus\n    Oct 28th @ Ice Dogs\n    Nov 1st vs Grocery Sticks\n    Nov 8th vs The Hanson Brothers\n    Nov 15th vs Homer's Heroes\n    Dec 2nd @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-06 19:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Rhinos\n----------------------------------------\n    Nov 1st @ Rhinos\n\n----------------------------------------\nRHINOS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th @ Les Boys\n    Sep 20th vs Cougars\n    Sep 27th @ Peter McManus\n    Oct 4th vs The Hanson Brothers\n    Oct 14th @ Molar Bears\n    Oct 18th vs Peter McManus\n    Oct 28th @ Ice Dogs\n    Nov 1st vs Grocery Sticks\n    Nov 8th vs The Hanson Brothers\n    Nov 15th vs Homer's Heroes\n    Dec 2nd @ Homer's Heroes\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:838e12e24b8d472a43e0a7d8@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261214T013000Z
 DTEND:20261214T025000Z
 SUMMARY:Grocery Sticks @ Ice Dogs
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-13 20:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Ice Dogs\n----------------------------------------\n    Oct 14th vs Ice Dogs\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Molar Bears\n    Sep 20th @ The Hanson Brothers\n    Sep 30th @ Cougars\n    Oct 14th @ Grocery Sticks\n    Oct 18th vs Homer's Heroes\n    Oct 28th vs Rhinos\n    Nov 1st vs Les Boys\n    Nov 18th @ Les Boys\n    Nov 22nd vs Peter McManus\n    Dec 6th @ Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-13 20:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Ice Dogs\n----------------------------------------\n    Oct 14th vs Ice Dogs\n\n----------------------------------------\nICE DOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Molar Bears\n    Sep 20th @ The Hanson Brothers\n    Sep 30th @ Cougars\n    Oct 14th @ Grocery Sticks\n    Oct 18th vs Homer's Heroes\n    Oct 28th vs Rhinos\n    Nov 1st vs Les Boys\n    Nov 18th @ Les Boys\n    Nov 22nd vs Peter McManus\n    Dec 6th @ Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:caee5a866c4808f5b6dbcff8@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20261221T030000Z
 DTEND:20261221T042000Z
 SUMMARY:Grocery Sticks vs Les Boys
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-20 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Les Boys\n----------------------------------------\n    Oct 18th vs Les Boys\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Rhinos\n    Sep 30th @ Molar Bears\n    Oct 4th vs Peter McManus\n    Oct 11th @ Homer's Heroes\n    Oct 18th @ Grocery Sticks\n    Oct 28th vs The Hanson Brothers\n    Nov 1st @ Ice Dogs\n    Nov 8th vs Cougars\n    Nov 18th vs Ice Dogs\n    Dec 6th @ Molar Bears\n    Dec 13th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-20 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Les Boys\n----------------------------------------\n    Oct 18th vs Les Boys\n\n----------------------------------------\nLES BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 13th vs Rhinos\n    Sep 30th @ Molar Bears\n    Oct 4th vs Peter McManus\n    Oct 11th @ Homer's Heroes\n    Oct 18th @ Grocery Sticks\n    Oct 28th vs The Hanson Brothers\n    Nov 1st @ Ice Dogs\n    Nov 8th vs Cougars\n    Nov 18th vs Ice Dogs\n    Dec 6th @ Molar Bears\n    Dec 13th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:763e1308e7b0a194e0bc4e0e@hockey-ics
-DTSTAMP:20260919T171943Z
-LAST-MODIFIED:20260919T171937Z
+DTSTAMP:20260920T191625Z
+LAST-MODIFIED:20260920T191616Z
 DTSTART:20270104T000000Z
 DTEND:20270104T012000Z
 SUMMARY:Grocery Sticks vs Homer's Heroes
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2027-01-03 19:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Homer's Heroes\n----------------------------------------\n    Sep 16th vs Homer's Heroes\n\n----------------------------------------\nHOMER'S HEROES GAMES-TO-DATE\n----------------------------------------\n    Sep 16th @ Grocery Sticks\n    Sep 23rd vs Molar Bears\n    Sep 27th vs The Hanson Brothers\n    Oct 7th @ Cougars\n    Oct 11th vs Les Boys\n    Oct 18th @ Ice Dogs\n    Oct 25th vs Molar Bears\n    Nov 1st vs Cougars\n    Nov 8th @ Peter McManus\n    Nov 15th @ Rhinos\n    Dec 2nd vs Rhinos\n    Dec 13th @ The Hanson Brothers\n    Dec 20th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-19 17:19 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 5a\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2027-01-03 19:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Homer's Heroes\n----------------------------------------\n    Sep 16th vs Homer's Heroes\n\n----------------------------------------\nHOMER'S HEROES GAMES-TO-DATE\n----------------------------------------\n    Sep 16th @ Grocery Sticks\n    Sep 23rd vs Molar Bears\n    Sep 27th vs The Hanson Brothers\n    Oct 7th @ Cougars\n    Oct 11th vs Les Boys\n    Oct 18th @ Ice Dogs\n    Oct 25th vs Molar Bears\n    Nov 1st vs Cougars\n    Nov 8th @ Peter McManus\n    Nov 15th @ Rhinos\n    Dec 2nd vs Rhinos\n    Dec 13th @ The Hanson Brothers\n    Dec 20th vs Peter McManus\n\n----------------------------------------\nSTANDINGS (as of 2026-09-20 19:16 UTC)\n----------------------------------------\n0. Cougars (0-0\, 0 pts)\n0. Grocery Sticks (0-0\, 0 pts)\n0. Homer's Heroes (0-0\, 0 pts)\n0. Ice Dogs (0-0\, 0 pts)\n0. Les Boys (0-0\, 0 pts)\n0. Molar Bears (0-0\, 0 pts)\n0. Peter McManus (0-0\, 0 pts)\n0. Rhinos (0-0\, 0 pts)\n0. The Hanson Brothers (0-0\, 0 pts)
 END:VEVENT
 END:VCALENDAR
