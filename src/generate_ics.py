@@ -138,6 +138,14 @@ def fetch_timetoscore_via_widget(widget_url: str, timeout_ms: int = 30000) -> Di
                 captured["standings"] = response.json()
             except Exception:
                 pass
+        elif "/get_leagues" in url and "leagues" not in captured:
+            # Bonus, best-effort: every widget page load also fires this, and it
+            # lists every season_id this league has ever had -- used for season
+            # auto-discovery (see discover_timetoscore_team_seasons). Not required.
+            try:
+                captured["leagues"] = response.json()
+            except Exception:
+                pass
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -158,6 +166,16 @@ def fetch_timetoscore_via_widget(widget_url: str, timeout_ms: int = 30000) -> Di
             f"response(s) within {timeout_ms}ms"
         )
     return captured
+
+
+def timetoscore_season_widget_url(base_widget_url: str, season_id: str, stat_class: str = "7") -> str:
+    """Swap the `season`/`stat_class` query params of a TimeToScore widget URL."""
+    import urllib.parse as _url
+    parts = _url.urlsplit(base_widget_url)
+    params = dict(_url.parse_qsl(parts.query))
+    params["season"] = str(season_id)
+    params["stat_class"] = str(stat_class)
+    return _url.urlunsplit(parts._replace(query=_url.urlencode(params)))
 
 def ascii_rule(title: str, width: int = 40) -> List[str]:
     line = "-" * width
@@ -192,6 +210,7 @@ class TeamRef:
     id: int
     name: str
     score: Optional[int]
+    division_name: Optional[str] = None
 
 @dataclass
 class SpaceRef:
@@ -223,7 +242,11 @@ class Game:
         return (self.status or "").lower().startswith("final") and self.has_result
 
 
-def parse_games(raw_games: List[Dict[str, Any]]) -> List[Game]:
+def parse_games(raw_games: Any) -> List[Game]:
+    # Bond Sports returns a bare list from the consumer endpoint, but some
+    # variants wrap it as {"data": [...], "meta": {...}}.
+    if isinstance(raw_games, dict):
+        raw_games = raw_games.get("data") or []
     games: List[Game] = []
     for g in raw_games:
         start = parse_iso_z(g["startDateTime"])
@@ -243,11 +266,13 @@ def parse_games(raw_games: List[Dict[str, Any]]) -> List[Game]:
                     id=int(g["homeTeam"]["id"]),
                     name=str(g["homeTeam"]["name"]),
                     score=g["homeTeam"].get("score"),
+                    division_name=g["homeTeam"].get("divisionName"),
                 ),
                 away=TeamRef(
                     id=int(g["awayTeam"]["id"]),
                     name=str(g["awayTeam"]["name"]),
                     score=g["awayTeam"].get("score"),
+                    division_name=g["awayTeam"].get("divisionName"),
                 ),
                 space=SpaceRef(name=(g.get("space") or {}).get("name")),
             )
@@ -275,6 +300,7 @@ def parse_games_timetoscore(raw_games: List[Dict[str, Any]], game_length_minutes
 
         home_goals = g.get("home_goals")
         away_goals = g.get("away_goals")
+        level_name = (g.get("level_name") or "").strip() or None
 
         games.append(
             Game(
@@ -290,11 +316,13 @@ def parse_games_timetoscore(raw_games: List[Dict[str, Any]], game_length_minutes
                     id=int(g["home_id"]),
                     name=str(g["home_team"]).strip(),
                     score=(int(home_goals) if home_goals is not None else None),
+                    division_name=level_name,
                 ),
                 away=TeamRef(
                     id=int(g["away_id"]),
                     name=str(g["away_team"]).strip(),
                     score=(int(away_goals) if away_goals is not None else None),
+                    division_name=level_name,
                 ),
                 space=SpaceRef(name=(g.get("location") or None)),
             )
@@ -607,6 +635,632 @@ def freeze_for_game(game: Game, now: datetime) -> bool:
 
 
 # -------------------------
+# Bond Sports: season auto-discovery (program -> seasons -> competition -> stages)
+# -------------------------
+#
+# A Bond Sports "program" (the number in a league's URL, e.g.
+# bondsports.co/activity/programs/adult-hockey/12070/...) has many "seasons"
+# over time (Winter 2026, Fall 2026, ...). Each season has one "competition"
+# (a UUID), which has one or more "stages" -- typically "Regular Season" and
+# "Playoffs" -- each with its own numeric id used in the game-scores/standings
+# URLs. Walking program -> seasons -> competition -> stages and keeping every
+# stage a team plays in (by NAME, since numeric team ids get reassigned each
+# season) lets one team produce ONE merged, season-agnostic feed that already
+# includes playoffs, with no config change needed when a new season starts.
+
+BOND_API = "https://api.bondsports.co/v4"
+
+
+def season_urls(season: Dict[str, Any]) -> Tuple[str, Optional[str]]:
+    """Return (game_scores_url, standings_url) for a season config entry."""
+    if season.get("api_url"):
+        return str(season["api_url"]), (str(season["standings_api_url"]) if season.get("standings_api_url") else None)
+    comp = season.get("competition_id")
+    stage = season.get("stage_id")
+    if not comp or stage is None:
+        raise SystemExit(f"Season {season.get('league_name')!r}: need competition_id + stage_id (or api_url).")
+    base = f"{BOND_API}/competitions/{comp}/stages/{int(stage)}"
+    return f"{base}/game-scores", f"{base}/standings"
+
+
+def resolve_team_id(all_games: List[Game], names: List[str]) -> Optional[int]:
+    """Find the numeric team id whose name matches one of `names` (case/space-insensitive)."""
+    wanted = {re.sub(r"\s+", " ", n).strip().lower() for n in names if n}
+    for g in all_games:
+        for t in (g.home, g.away):
+            if re.sub(r"\s+", " ", t.name).strip().lower() in wanted:
+                return t.id
+    return None
+
+
+def team_names_in(all_games: List[Game]) -> List[str]:
+    return sorted({t.name for g in all_games for t in (g.home, g.away)})
+
+
+def most_common_division(all_games: List[Game], team_id: int) -> str:
+    """
+    The division/level a team belongs to, per its own games -- as the MODE across
+    all of them, not just the first match, since a single early game (a preseason
+    exhibition, a cross-division friendly) can carry a blank/different division
+    than the team's real one.
+    """
+    from collections import Counter
+    names = [
+        t.division_name
+        for g in all_games for t in (g.home, g.away)
+        if t.id == team_id and t.division_name
+    ]
+    if not names:
+        return ""
+    return Counter(names).most_common(1)[0][0]
+
+
+def _list_items(raw: Any) -> List[Dict[str, Any]]:
+    """Accept a bare list or a paginated {data: [...]} envelope."""
+    if isinstance(raw, dict):
+        raw = raw.get("data") or raw.get("items") or []
+    return [x for x in (raw or []) if isinstance(x, dict)]
+
+
+def _parse_bond_date(value: Any) -> Optional[datetime]:
+    if not value or not isinstance(value, str):
+        return None
+    try:
+        dt = parse_iso_z(value[:19] + ("Z" if len(value) <= 19 else value[19:]))
+    except Exception:
+        try:
+            dt = datetime.fromisoformat(value[:10])
+        except Exception:
+            return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
+
+
+def fetch_program_seasons(program_id: int) -> List[Dict[str, Any]]:
+    """Seasons of a Bond Sports program: [{id, name, start, end}, ...]."""
+    raw = fetch_json(f"{BOND_API}/programs-seasons/program/{int(program_id)}")
+    out: List[Dict[str, Any]] = []
+    for s in _list_items(raw):
+        if s.get("id") is None:
+            continue
+        out.append({
+            "id": int(s["id"]),
+            "name": str(s.get("name") or s["id"]),
+            "start": _parse_bond_date(s.get("startDate")),
+            "end": _parse_bond_date(s.get("endDate")),
+        })
+    return out
+
+
+def fetch_season_competition(season_id: int) -> Optional[Dict[str, Any]]:
+    """Competition attached to a program season (None if it has none)."""
+    try:
+        raw = fetch_json(f"{BOND_API}/program_seasons/{int(season_id)}/competition")
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code in (400, 404):
+            return None
+        raise
+    if not isinstance(raw, dict) or not raw.get("uuid"):
+        return None
+    stages = []
+    for st in raw.get("stages") or []:
+        if isinstance(st, dict) and st.get("id") is not None:
+            stages.append({"id": int(st["id"]), "name": st.get("name"), "type": st.get("stageType")})
+    stages.sort(key=lambda s: s["id"])
+    return {"uuid": str(raw["uuid"]), "name": raw.get("name"), "stages": stages}
+
+
+def league_label(season_name: str, division_name: Optional[str], stage_name: Optional[str], stage_type: Optional[str]) -> str:
+    """'Fall 2026' + 'Division 3' -> 'Fall 2026 Division 3'; 'Winter 2026: Division 3' -> 'Winter 2026 Division 3'."""
+    division = (division_name or "").replace(":", "").strip()
+    season = (season_name or "").replace(":", "").strip()
+    if not division:
+        label = season or "League"
+    elif season and season.lower() not in division.lower():
+        label = f"{season} {division}"
+    else:
+        label = division
+    if (stage_type or "").lower() == "playoffs" or (stage_name or "").lower() == "playoffs":
+        label = f"{label} Playoffs"
+    return label
+
+
+def discover_team_seasons(
+    program_id: int,
+    match_names: List[str],
+    cache: Dict[str, Any],
+    now: datetime,
+) -> Tuple[List[Dict[str, Any]], Dict[str, List[Game]]]:
+    """
+    Walk every season of the program and return the (competition, stage) pairs in
+    which a team matching `match_names` plays, plus the games already fetched.
+
+    `cache` (persisted in the state file) remembers stages already checked:
+      cache["stages"][f"{uuid}:{stage_id}"] = {"team": bool, "league_name": str, "season_name": str}
+    Positive entries are kept forever (old seasons stay in the feed even if the
+    program stops listing them). Negative entries are re-checked while the
+    season is still running, since schedules/playoffs can be published late.
+    """
+    stage_cache: Dict[str, Any] = cache.setdefault("stages", {})
+    season_cache: Dict[str, Any] = cache.setdefault("seasons", {})
+    seasons_out: List[Dict[str, Any]] = []
+    prefetched: Dict[str, List[Game]] = {}
+
+    def entry_label(entry: Dict[str, Any]) -> str:
+        if "division_name" in entry or "season_name" in entry:
+            return league_label(entry.get("season_name") or "", entry.get("division_name"),
+                                entry.get("stage_name"), entry.get("stage_type"))
+        return entry.get("league_name") or "League"
+
+    def add_from_cache(key: str, entry: Dict[str, Any]) -> None:
+        uuid, stage_id = key.split(":")
+        seasons_out.append({
+            "league_name": entry_label(entry),
+            "competition_id": uuid,
+            "stage_id": int(stage_id),
+            "discovered": True,
+        })
+
+    seen_keys = set()
+    for season in fetch_program_seasons(program_id):
+        season_over = season["end"] is not None and season["end"] < now - timedelta(days=7)
+        skey = str(season["id"])
+        # Finished seasons can't grow new stages: reuse the cached competition.
+        if season_over and skey in season_cache:
+            comp = season_cache[skey]
+        else:
+            comp = fetch_season_competition(season["id"])
+            season_cache[skey] = comp
+        if not comp:
+            continue
+        for st in comp["stages"]:
+            key = f"{comp['uuid']}:{st['id']}"
+            seen_keys.add(key)
+            cached = stage_cache.get(key)
+            if cached and cached.get("team"):
+                add_from_cache(key, cached)
+                continue
+            if cached and not cached.get("team") and season_over:
+                continue
+
+            games = parse_games(fetch_json(f"{BOND_API}/competitions/{comp['uuid']}/stages/{st['id']}/game-scores"))
+            team_id = resolve_team_id(games, match_names)
+            entry = {"team": team_id is not None, "season_name": season["name"],
+                     "stage_name": st.get("name"), "stage_type": st.get("type")}
+            if team_id is not None:
+                entry["division_name"] = most_common_division(games, team_id)
+                entry["league_name"] = entry_label(entry)
+                prefetched[key] = games
+                print(f"  discovered: {entry['league_name']} (competition {comp['uuid']}, stage {st['id']}, team id {team_id})")
+            stage_cache[key] = entry
+            if entry["team"]:
+                add_from_cache(key, entry)
+
+    # Seasons the program no longer lists but that we know the team played in.
+    for key, entry in stage_cache.items():
+        if entry.get("team") and key not in seen_keys:
+            add_from_cache(key, entry)
+
+    return seasons_out, prefetched
+
+
+# -------------------------
+# TimeToScore: season auto-discovery (league -> seasons, via get_leagues)
+# -------------------------
+#
+# A TimeToScore `league_id` keeps a persistent list of every `season_id` it has
+# ever run (get_leagues), the same "program with many seasons" shape Bond Sports
+# has. Unlike Bond, one schedule/standings fetch at stat_class=7 ("Adult Total")
+# already merges regular season + playoffs, so there's no separate stage walk.
+#
+# Unlike Bond team ids (reassigned every season), a TimeToScore team id we
+# checked stayed IDENTICAL across seasons -- but a league can reuse a generic
+# team NAME for an unrelated roster in an older season (confirmed: a different
+# "Brewzers" existed in this same league a full year before the configured team
+# joined it). To avoid silently pulling in a stranger team's history, discovery
+# only auto-walks the CURRENT season and any NEW season_id that appears after
+# that (i.e. seasons going forward); older seasons that already existed the
+# first time a team's discovery ran are left alone unless explicitly listed
+# under `seasons:`.
+
+def discover_timetoscore_team_seasons(
+    league_widget_url: str,
+    match_names: List[str],
+    cache: Dict[str, Any],
+    game_length_minutes: int,
+    fetch_widget: Any,
+) -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, Any]]]:
+    """
+    Returns (seasons_out, prefetched) where prefetched maps widget_url -> the
+    {"schedule":..., "standings":...} dict already fetched for it (so the
+    caller doesn't re-fetch a season/stat_class combo it just checked).
+
+    `cache` (persisted in the state file) holds:
+      cache["baseline_season_ids"]: season ids known to exist BEFORE the first
+        discovery run -- never auto-walked (see module note above).
+      cache["seasons"][season_id] = {"team": bool, "season_name":.., "division_name":.., "widget_url":..}
+
+    `fetch_widget(url)` is the caller's cached widget-fetch function, so two
+    teams sharing the same league (and so the same anchor URL) only launch one
+    browser for it.
+    """
+    season_cache: Dict[str, Any] = cache.setdefault("seasons", {})
+    prefetched: Dict[str, Dict[str, Any]] = {}
+
+    anchor = fetch_widget(league_widget_url)
+    prefetched[league_widget_url] = anchor
+
+    leagues_payload = ((anchor.get("leagues") or {}).get("leagues")) or []
+    league_info = leagues_payload[0] if leagues_payload else {}
+    all_seasons = league_info.get("seasons") or []
+    all_season_ids = [str(s["season_id"]) for s in all_seasons if s.get("season_id")]
+    current_season_id = str(league_info.get("current_season") or "") or None
+
+    if "baseline_season_ids" not in cache:
+        cache["baseline_season_ids"] = [sid for sid in all_season_ids if sid != current_season_id]
+    baseline = set(cache["baseline_season_ids"])
+
+    def season_name_for(season_id: str) -> str:
+        return next((str(s.get("season_name") or season_id) for s in all_seasons if str(s.get("season_id")) == season_id), season_id)
+
+    def entry_to_season(season_id: str, entry: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "league_name": f"{entry.get('season_name') or season_id}" + (f" — {entry['division_name']}" if entry.get("division_name") else ""),
+            "widget_url": entry["widget_url"],
+            "discovered": True,
+        }
+
+    seasons_out: List[Dict[str, Any]] = []
+    to_check = [sid for sid in all_season_ids if sid == current_season_id or sid not in baseline]
+
+    for season_id in to_check:
+        cached = season_cache.get(season_id)
+        is_current = (season_id == current_season_id)
+        if cached and cached.get("team"):
+            seasons_out.append(entry_to_season(season_id, cached))
+            continue
+        if cached and not cached.get("team") and not is_current:
+            continue  # checked before, negative, not the active season -> stop rechecking
+
+        try:
+            wurl = timetoscore_season_widget_url(league_widget_url, season_id, stat_class="7")
+            data = anchor if wurl == league_widget_url else fetch_widget(wurl)
+            prefetched[wurl] = data
+            games = parse_games_timetoscore(data["schedule"].get("games", []), game_length_minutes=game_length_minutes)
+            team_id = resolve_team_id(games, match_names)
+        except Exception as e:
+            print(f"  WARNING: season {season_id} ({season_name_for(season_id)}) fetch failed ({e}); will retry next run.")
+            continue
+
+        entry: Dict[str, Any] = {"team": team_id is not None, "season_name": season_name_for(season_id), "widget_url": wurl}
+        if team_id is not None:
+            entry["division_name"] = most_common_division(games, team_id)
+            print(f"  discovered: {entry['season_name']} ({entry['division_name']}) (season_id {season_id}, team id {team_id})")
+            seasons_out.append(entry_to_season(season_id, entry))
+        season_cache[season_id] = entry
+
+    # Seasons the league no longer lists but that we know the team played in.
+    for season_id, entry in season_cache.items():
+        if entry.get("team") and season_id not in {s for s in all_season_ids}:
+            seasons_out.append(entry_to_season(season_id, entry))
+
+    return seasons_out, prefetched
+
+
+def process_timetoscore_team(
+    team_entry: Dict[str, Any],
+    state_dir: Path,
+    local_tz: Any,
+    tz_name: str,
+    now: datetime,
+    run_asof: str,
+    widget_cache: Dict[str, Any],
+) -> Tuple[str, List[str], str, Dict[str, Any]]:
+    """
+    Build ONE merged, season-agnostic .ics for a TimeToScore team entry (the
+    `league_widget_url` config style): mirrors process_bondsports_team, but
+    each "season" is a (season_id, stat_class=7) widget fetch instead of a
+    Bond competition/stage. See discover_timetoscore_team_seasons for how
+    seasons are found and why history isn't auto-backfilled by default.
+    """
+    team_name = str(team_entry["name"])
+    slug = slugify(str(team_entry.get("slug") or team_name))
+    aliases = [slugify(str(a)) for a in (team_entry.get("aliases") or [])]
+    match_names = [team_name] + [str(x) for x in (team_entry.get("team_names") or [])]
+    cal_name = str(team_entry.get("calendar_name") or f"{team_name} — Hockey")
+    max_recent = int(team_entry.get("opponent_recent_max", 20))
+    h2h_max = int(team_entry.get("head_to_head_max", 20))
+    game_length_minutes = int(team_entry.get("game_length_minutes", 80))
+
+    seasons: List[Dict[str, Any]] = list(team_entry.get("seasons") or [])
+    if team_entry.get("widget_url") and not team_entry.get("league_widget_url"):  # legacy single-season shorthand
+        seasons.append({"league_name": team_entry.get("league_name", team_name), "widget_url": team_entry["widget_url"]})
+
+    namespace = slug
+    state_path = state_dir / f"{namespace}.json"
+    state = load_state(state_path)
+
+    def cached_widget_fetch(url: str) -> Dict[str, Any]:
+        if url not in widget_cache:
+            widget_cache[url] = fetch_timetoscore_via_widget(url)
+        return widget_cache[url]
+
+    prefetched: Dict[str, Dict[str, Any]] = {}
+    league_widget_url = team_entry.get("league_widget_url")
+    if league_widget_url:
+        discovery_cache: Dict[str, Any] = state.setdefault("discovery", {})
+        try:
+            discovered, prefetched = discover_timetoscore_team_seasons(
+                str(league_widget_url), match_names, discovery_cache, game_length_minutes, cached_widget_fetch,
+            )
+        except Exception as e:
+            print(f"WARNING: {slug}: season discovery failed ({e}); using cached seasons.")
+            discovered = []
+            for season_id, entry in (discovery_cache.get("seasons") or {}).items():
+                if entry.get("team"):
+                    label = f"{entry.get('season_name') or season_id}" + (f" — {entry['division_name']}" if entry.get("division_name") else "")
+                    discovered.append({"league_name": label, "widget_url": entry["widget_url"], "discovered": True})
+        known = {s.get("widget_url") for s in seasons if s.get("widget_url")}
+        for d in discovered:
+            if d["widget_url"] not in known:
+                seasons.append(d)
+                known.add(d["widget_url"])
+
+    if not seasons:
+        raise SystemExit(f"Config error for {slug}: no seasons configured or discovered (set league_widget_url and/or seasons:).")
+
+    loaded: List[Tuple[Dict[str, Any], int, List[Game], List[Game], List[str]]] = []
+    for season in seasons:
+        league_name = str(season.get("league_name") or team_name)
+        try:
+            wurl = str(season["widget_url"])
+            data = prefetched.get(wurl) or cached_widget_fetch(wurl)
+            all_games = parse_games_timetoscore(data["schedule"].get("games", []), game_length_minutes=game_length_minutes)
+
+            my_team_id: Optional[int] = int(season["team_id"]) if season.get("team_id") is not None else None
+            if my_team_id is None:
+                my_team_id = resolve_team_id(all_games, match_names)
+            if my_team_id is None:
+                print(f"WARNING: {slug} / {league_name}: team not found in this season's schedule yet; skipping it for this run.")
+                continue
+
+            standings_lines_current: List[str] = []
+            if data.get("standings"):
+                try:
+                    rows = pick_division_standings_timetoscore(data["standings"], my_team_id=my_team_id)
+                    standings_lines_current = format_standings_lines(rows)
+                except Exception as e:
+                    print(f"WARNING: {slug} / {league_name}: standings unavailable ({e}); continuing without.")
+
+            my_games = [g for g in all_games if g.involves_team_id(my_team_id)]
+            my_games.sort(key=lambda g: g.start)
+            loaded.append(({**season, "league_name": league_name}, my_team_id, my_games, all_games, standings_lines_current))
+        except Exception as e:
+            print(f"WARNING: {slug} / {league_name}: failed to fetch this season ({e}); skipping it for this run.")
+
+    if not loaded:
+        raise RuntimeError("no season could be fetched this run")
+
+    ics_text, summary_entry = build_merged_ics(
+        namespace, team_name, cal_name, loaded, state, tz_name, local_tz, now, run_asof, h2h_max, max_recent,
+    )
+    save_state(state_path, state)
+    return slug, [slug] + aliases, ics_text, summary_entry
+
+
+def build_merged_ics(
+    namespace: str,
+    team_name: str,
+    cal_name: str,
+    loaded: List[Tuple[Dict[str, Any], int, List[Game], List[Game], List[str]]],
+    state: Dict[str, Any],
+    tz_name: str,
+    local_tz: Any,
+    now: datetime,
+    run_asof: str,
+    h2h_max: int,
+    max_recent: int,
+) -> Tuple[str, Dict[str, Any]]:
+    """
+    Shared by both providers: concatenate each loaded (season, my_team_id,
+    my_games, all_games, standings_lines) tuple's events into one calendar,
+    sorted so the oldest season reads first. Each season's head-to-head /
+    opponent-history / standings are computed from that season's OWN
+    `all_games` (mixing divisions/seasons wouldn't make sense); only the
+    final event list is merged. Standings snapshots are frozen per global
+    event id in `state["events"]`, which stays correct across merged seasons
+    as long as event ids are unique per provider (true for both Bond Sports
+    and TimeToScore game/event ids).
+
+    Returns (ics_text, summary_entry). Does not write any files.
+    """
+    state_events: Dict[str, Any] = state.setdefault("events", {})
+
+    loaded = sorted(loaded, key=lambda item: item[2][0].start if item[2] else now)
+
+    vevents: List[str] = []
+    for season, my_team_id, my_games, all_games, standings_lines_current in loaded:
+        league_name = str(season["league_name"])
+        for g in my_games:
+            title, my_res, opp_id, opp_name = my_title(my_team_id, team_name, g)
+            uid = stable_uid(namespace, g.event_id)
+
+            desc: List[str] = []
+            desc.extend(ascii_rule("GAME INFO"))
+            desc.append(f"League: {league_name}")
+            if g.stage_name:
+                desc.append(f"Stage: {g.stage_name}")
+            desc.append(f"Status: {g.status}")
+            desc.append(f"Start ({tz_name}): {fmt_start_local(g.start, local_tz)}")
+            if g.space.name:
+                desc.append(f"Rink: {g.space.name}")
+            if my_res:
+                desc.append(f"Result: {my_res}")
+
+            # Head-to-head (prior matchups vs opponent, this season)
+            h2h_lines = head_to_head_lines(
+                all_games=all_games, my_team_id=my_team_id, opponent_id=opp_id,
+                cutoff_start=g.start, tz=local_tz, max_lines=h2h_max,
+            )
+            if h2h_lines:
+                desc.append("")
+                desc.extend(ascii_rule(f"HEAD-TO-HEAD vs {opp_name}"))
+                desc.extend(h2h_lines)
+
+            # Opponent games before this matchup (compact), this season
+            opp_lines = opponent_games_lines_compact(
+                all_games=all_games, opponent_id=opp_id,
+                cutoff_start=g.start, tz=local_tz, max_lines=max_recent,
+            )
+            if opp_lines:
+                desc.append("")
+                desc.extend(ascii_rule(f"{opp_name.upper()} GAMES-TO-DATE"))
+                desc.extend(opp_lines)
+
+            # Standings snapshot (frozen for completed games).
+            key = str(g.event_id)
+            if standings_lines_current:
+                if freeze_for_game(g, now):
+                    if key not in state_events:
+                        state_events[key] = {"as_of": run_asof, "lines": standings_lines_current}
+                else:
+                    state_events[key] = {"as_of": run_asof, "lines": standings_lines_current}
+            snap = state_events.get(key) or {}
+            snap_lines = snap.get("lines", [])
+            if snap_lines:
+                desc.append("")
+                desc.extend(ascii_rule(f"STANDINGS (as of {snap.get('as_of', run_asof)})"))
+                desc.extend([str(x) for x in snap_lines])
+
+            vevents.append(
+                build_vevent(
+                    uid=uid, summary=title, dtstart=g.start, dtend=g.end,
+                    description="\n".join(desc), location=(g.space.name or ""), last_modified=now,
+                )
+            )
+
+    ics_text = build_ics_calendar(cal_name=cal_name, events=vevents)
+
+    all_my_games = [g for _, _, my_games, _, _ in loaded for g in my_games]
+    summary_entry = {
+        "seasons": [str(s["league_name"]) for s, *_ in loaded],
+        "games": len(all_my_games),
+        "first_game_start": fmt_dt_utc_for_ics(min(g.start for g in all_my_games)) if all_my_games else None,
+        "last_game_start": fmt_dt_utc_for_ics(max(g.start for g in all_my_games)) if all_my_games else None,
+    }
+    return ics_text, summary_entry
+
+
+def process_bondsports_team(
+    team_entry: Dict[str, Any],
+    state_dir: Path,
+    local_tz: Any,
+    tz_name: str,
+    now: datetime,
+    run_asof: str,
+) -> Tuple[str, List[str], str, Dict[str, Any]]:
+    """
+    Build ONE merged, season-agnostic .ics for a Bond Sports team entry: every
+    season of `program_id` (plus any explicit `seasons:`) that a team matching
+    `name`/`team_names` plays in -- regular season AND playoffs, since both are
+    just stages under the same competition -- concatenated into one feed keyed
+    by a stable slug, so the subscription URL never has to change.
+
+    A single season/stage's fetch failure is logged and skipped rather than
+    failing the whole team.
+
+    Returns (slug, [slug]+aliases, ics_text, summary_entry). Raises if nothing
+    could be loaded at all, so the caller can skip this team for the run.
+    """
+    team_name = str(team_entry["name"])
+    slug = slugify(str(team_entry.get("slug") or team_name))
+    aliases = [slugify(str(a)) for a in (team_entry.get("aliases") or [])]
+    match_names = [team_name] + [str(x) for x in (team_entry.get("team_names") or [])]
+    cal_name = str(team_entry.get("calendar_name") or f"{team_name} — Hockey")
+    max_recent = int(team_entry.get("opponent_recent_max", 20))
+    h2h_max = int(team_entry.get("head_to_head_max", 20))
+
+    seasons: List[Dict[str, Any]] = list(team_entry.get("seasons") or [])
+    if team_entry.get("api_url"):  # legacy single-season shorthand
+        seasons.append({
+            "league_name": team_entry.get("league_name", team_name),
+            "api_url": team_entry["api_url"],
+            "standings_api_url": team_entry.get("standings_api_url"),
+            "team_id": (team_entry.get("my_team_ids") or [None])[0],
+        })
+
+    namespace = slug
+    state_path = state_dir / f"{namespace}.json"
+    state = load_state(state_path)
+
+    prefetched: Dict[str, List[Game]] = {}
+    program_id = team_entry.get("program_id")
+    if program_id:
+        discovery_cache: Dict[str, Any] = state.setdefault("discovery", {})
+        try:
+            discovered, prefetched = discover_team_seasons(int(program_id), match_names, discovery_cache, now)
+        except Exception as e:
+            print(f"WARNING: {slug}: season discovery failed ({e}); using cached seasons.")
+            discovered = []
+            for key, entry in (discovery_cache.get("stages") or {}).items():
+                if entry.get("team"):
+                    uuid, stage_id = key.split(":")
+                    label = (league_label(entry.get("season_name") or "", entry.get("division_name"),
+                                           entry.get("stage_name"), entry.get("stage_type"))
+                             if ("division_name" in entry or "season_name" in entry)
+                             else (entry.get("league_name") or "League"))
+                    discovered.append({"league_name": label, "competition_id": uuid, "stage_id": int(stage_id), "discovered": True})
+        known = {(str(s.get("competition_id")), int(s["stage_id"])) for s in seasons if s.get("competition_id")}
+        for d in discovered:
+            if (d["competition_id"], d["stage_id"]) not in known:
+                seasons.append(d)
+                known.add((d["competition_id"], d["stage_id"]))
+
+    if not seasons:
+        raise SystemExit(f"Config error for {slug}: no seasons configured or discovered (set program_id and/or seasons:).")
+
+    loaded: List[Tuple[Dict[str, Any], int, List[Game], List[Game], List[str]]] = []
+    for season in seasons:
+        league_name = str(season.get("league_name") or team_name)
+        try:
+            games_url, standings_url = season_urls(season)
+            key = f"{season.get('competition_id')}:{season.get('stage_id')}"
+            all_games = prefetched.get(key) or parse_games(fetch_json(games_url))
+
+            my_team_id: Optional[int] = int(season["team_id"]) if season.get("team_id") is not None else None
+            if my_team_id is None:
+                my_team_id = resolve_team_id(all_games, match_names)
+            if my_team_id is None:
+                print(f"WARNING: {slug} / {league_name}: team not found in this stage's schedule yet; skipping it for this run.")
+                continue
+
+            standings_lines_current: List[str] = []
+            if standings_url:
+                try:
+                    standings_raw = fetch_json(standings_url)
+                    rows = pick_division_standings(standings_raw, my_team_id=my_team_id)
+                    standings_lines_current = format_standings_lines(rows)
+                except Exception as e:
+                    print(f"WARNING: {slug} / {league_name}: standings unavailable ({e}); continuing without.")
+
+            my_games = [g for g in all_games if g.involves_team_id(my_team_id)]
+            my_games.sort(key=lambda g: g.start)
+            loaded.append(({**season, "league_name": league_name}, my_team_id, my_games, all_games, standings_lines_current))
+        except Exception as e:
+            print(f"WARNING: {slug} / {league_name}: failed to fetch this season/stage ({e}); skipping it for this run.")
+
+    if not loaded:
+        raise RuntimeError("no season/stage could be fetched this run")
+
+    ics_text, summary_entry = build_merged_ics(
+        namespace, team_name, cal_name, loaded, state, tz_name, local_tz, now, run_asof, h2h_max, max_recent,
+    )
+    save_state(state_path, state)
+    return slug, [slug] + aliases, ics_text, summary_entry
+
+
+# -------------------------
 # Main
 # -------------------------
 
@@ -658,12 +1312,65 @@ def main() -> None:
     updated = 0
     failed = 0
 
+    summary: Dict[str, Any] = {}
+
     for team_entry in teams:
+        provider = str(team_entry.get("provider", "bondsports")).lower()
+
+        # --- Bond Sports: one merged, season-agnostic feed per team (regular
+        # season + playoffs, every season of program_id, auto-discovered). ---
+        if provider == "bondsports":
+            fallback_slug = str(team_entry.get("slug") or team_entry.get("name") or "team")
+            try:
+                slug, out_names, ics_text, summary_entry = process_bondsports_team(
+                    team_entry, state_dir, local_tz, tz_name, now, run_asof,
+                )
+            except SystemExit:
+                raise
+            except Exception as exc:
+                print(f"ERROR: {fallback_slug}: {exc}. Skipping this team this run; previously-generated .ics file(s) left untouched.")
+                failed += 1
+                continue
+
+            for out_name in out_names:
+                (output_dir / f"{out_name}.ics").write_text(ics_text, encoding="utf-8")
+                updated += 1
+            summary[slug] = summary_entry
+            extra = f" (+ aliases: {', '.join(out_names[1:])})" if len(out_names) > 1 else ""
+            print(f"{slug}: {summary_entry['games']} games across {len(summary_entry['seasons'])} season(s) -> {slug}.ics{extra}")
+            continue
+
+        if provider != "timetoscore":
+            raise SystemExit(f"Config error: unknown provider '{provider}' (expected 'bondsports' or 'timetoscore').")
+
+        # --- TimeToScore, season-agnostic (league_widget_url style): mirrors
+        # the Bond Sports merged-feed path above. ---
+        if team_entry.get("league_widget_url"):
+            fallback_slug = str(team_entry.get("slug") or team_entry.get("name") or "team")
+            try:
+                slug, out_names, ics_text, summary_entry = process_timetoscore_team(
+                    team_entry, state_dir, local_tz, tz_name, now, run_asof, widget_cache,
+                )
+            except SystemExit:
+                raise
+            except Exception as exc:
+                print(f"ERROR: {fallback_slug}: {exc}. Skipping this team this run; previously-generated .ics file(s) left untouched.")
+                failed += 1
+                continue
+
+            for out_name in out_names:
+                (output_dir / f"{out_name}.ics").write_text(ics_text, encoding="utf-8")
+                updated += 1
+            summary[slug] = summary_entry
+            extra = f" (+ aliases: {', '.join(out_names[1:])})" if len(out_names) > 1 else ""
+            print(f"{slug}: {summary_entry['games']} games across {len(summary_entry['seasons'])} season(s) -> {slug}.ics{extra}")
+            continue
+
+        # --- TimeToScore, legacy single-season snapshot (widget_url + my_team_ids). ---
         league_name = str(team_entry.get("league_name", team_entry.get("name", "League")))
         slug = str(team_entry.get("slug", slugify(team_entry.get("name", league_name))))
         max_recent = int(team_entry.get("opponent_recent_max", 20))
         h2h_max = int(team_entry.get("head_to_head_max", 20))
-        provider = str(team_entry.get("provider", "bondsports")).lower()
         game_length_minutes = int(team_entry.get("game_length_minutes", 80))
 
         my_ids: List[int] = [int(x) for x in (team_entry.get("my_team_ids") or [])]
@@ -672,23 +1379,14 @@ def main() -> None:
         if len(my_ids) != len(my_names) or not my_ids:
             raise SystemExit(f"Config error for {slug}: my_team_ids and my_team_names must exist and be same length.")
 
-        # A fetch failure (network error, or a TimeToScore widget page that changed
-        # shape) shouldn't crash the whole run. Log clearly and leave prior .ics
+        # A fetch failure (a TimeToScore widget page that changed shape, etc.)
+        # shouldn't crash the whole run. Log clearly and leave prior .ics
         # file(s) for this team untouched.
-        standings_raw: Any = None
         try:
-            if provider == "timetoscore":
-                widget_url = str(team_entry["widget_url"])
-                widget_data = cached_widget_fetch(widget_url)
-                all_games = parse_games_timetoscore(widget_data["schedule"].get("games", []), game_length_minutes=game_length_minutes)
-                standings_raw = widget_data["standings"]
-            elif provider == "bondsports":
-                raw_games = cached_fetch(str(team_entry["api_url"]))
-                all_games = parse_games(raw_games)
-                standings_url = team_entry.get("standings_api_url")
-                standings_raw = cached_fetch(str(standings_url)) if standings_url else None
-            else:
-                raise SystemExit(f"Config error for {slug}: unknown provider '{provider}' (expected 'bondsports' or 'timetoscore').")
+            widget_url = str(team_entry["widget_url"])
+            widget_data = cached_widget_fetch(widget_url)
+            all_games = parse_games_timetoscore(widget_data["schedule"].get("games", []), game_length_minutes=game_length_minutes)
+            standings_raw = widget_data["standings"]
         except SystemExit:
             raise
         except Exception as exc:
@@ -706,15 +1404,11 @@ def main() -> None:
             state_events: Dict[str, Any] = state.setdefault("events", {})
 
             standings_lines_current: List[str] = []
-            if standings_raw is not None:
-                try:
-                    if provider == "timetoscore":
-                        rows = pick_division_standings_timetoscore(standings_raw, my_team_id=my_team_id)
-                    else:
-                        rows = pick_division_standings(standings_raw, my_team_id=my_team_id)
-                    standings_lines_current = format_standings_lines(rows)
-                except Exception as exc:
-                    print(f"WARNING: {out_file}: failed to parse standings ({exc}). Continuing without standings this run.")
+            try:
+                rows = pick_division_standings_timetoscore(standings_raw, my_team_id=my_team_id)
+                standings_lines_current = format_standings_lines(rows)
+            except Exception as exc:
+                print(f"WARNING: {out_file}: failed to parse standings ({exc}). Continuing without standings this run.")
 
             my_games = [g for g in all_games if g.involves_team_id(my_team_id)]
             my_games.sort(key=lambda g: g.start)
@@ -764,7 +1458,7 @@ def main() -> None:
                     desc.extend(opp_lines)
 
                 # Feature 2: standings snapshot (frozen for past games)
-                if standings_url and standings_lines_current:
+                if standings_lines_current:
                     key = str(g.event_id)
                     if freeze_for_game(g, now):
                         if key not in state_events:
@@ -797,6 +1491,15 @@ def main() -> None:
             (output_dir / out_file).write_text(ics_text, encoding="utf-8")
             save_state(state_path, state)
             updated += 1
+
+            summary[namespace] = {
+                "seasons": [league_name],
+                "games": len(my_games),
+                "first_game_start": fmt_dt_utc_for_ics(min(g.start for g in my_games)) if my_games else None,
+                "last_game_start": fmt_dt_utc_for_ics(max(g.start for g in my_games)) if my_games else None,
+            }
+
+    (state_dir / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     if failed:
         print(f"Done. {updated} calendar(s) updated, {failed} team(s) failed (see ERROR lines above) — their prior .ics files were left as-is.")

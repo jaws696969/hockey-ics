@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: build-ics
@@ -49,3 +50,33 @@ jobs:
 
           git diff --cached --quiet || git commit -m "Update ICS feeds"
           git push
+
+      # Safety net: if the newest game in a feed is more than 3 weeks old and no
+      # newer season has been picked up (discovery broke, or a team needs a new
+      # `seasons:`/`program_id` entry), open (once) an issue so it doesn't go
+      # stale silently.
+      - name: Flag feeds whose season has ended
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python - <<'PY' > stale.txt
+          import json, datetime as dt
+          s = json.load(open("docs/_state/summary.json"))
+          now = dt.datetime.now(dt.timezone.utc)
+          for slug, info in s.items():
+              last = info.get("last_game_start")
+              if not last:
+                  continue
+              last_dt = dt.datetime.strptime(last, "%Y%m%dT%H%M%SZ").replace(tzinfo=dt.timezone.utc)
+              if now - last_dt > dt.timedelta(days=21):
+                  print(f"{slug} {last_dt:%Y-%m-%d} {' / '.join(info.get('seasons', []))}")
+          PY
+          while read -r slug last seasons; do
+            title="Season ended: no upcoming games in ${slug}.ics"
+            if gh issue list --repo "$GH_REPO" --state open --search "\"$title\" in:title" --json title -q '.[].title' | grep -Fxq "$title"; then
+              echo "Issue already open for $slug"; continue
+            fi
+            gh issue create --repo "$GH_REPO" --title "$title" --body "$(printf 'The last game in `docs/%s.ics` was on %s (%s) and no newer season was found.\n\nFor a `bondsports` team, check that `program_id` auto-discovery is working, or add the next season under `seasons:`. For a `timetoscore` team, check the `widget_url` still resolves.' "$slug" "$last" "$seasons")" \
+              || echo "Could not open an issue (are Issues enabled?)"
+          done < stale.txt

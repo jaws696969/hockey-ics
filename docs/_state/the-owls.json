@@ -1,7 +1,22 @@
 {
+  "discovery": {
+    "baseline_season_ids": [
+      "132",
+      "158",
+      "175"
+    ],
+    "seasons": {
+      "177": {
+        "division_name": "Adult A/B",
+        "season_name": "Adult Fall 2026",
+        "team": true,
+        "widget_url": "https://foundryadulthockey.com/iceland-schedule-widget/?season=177&stat_class=7"
+      }
+    }
+  },
   "events": {
     "87079": {
-      "as_of": "2026-09-19 03:41 UTC",
+      "as_of": "2026-09-19 17:17 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -12,7 +27,7 @@
       ]
     },
     "87093": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -23,7 +38,7 @@
       ]
     },
     "87105": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -34,7 +49,7 @@
       ]
     },
     "87116": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -45,7 +60,7 @@
       ]
     },
     "87128": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -56,7 +71,7 @@
       ]
     },
     "87141": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -67,7 +82,7 @@
       ]
     },
     "87152": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -78,7 +93,7 @@
       ]
     },
     "87163": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -89,7 +104,7 @@
       ]
     },
     "87176": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -100,7 +115,7 @@
       ]
     },
     "87189": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -111,7 +126,7 @@
       ]
     },
     "87201": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -122,7 +137,7 @@
       ]
     },
     "87202": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
@@ -133,7 +148,7 @@
       ]
     },
     "87216": {
-      "as_of": "2026-09-20 16:18 UTC",
+      "as_of": "2026-09-20 19:19 UTC",
       "lines": [
         "1. Motorboaters (1-0, 3 pts)",
         "2. Lightning (1-0, 3 pts)",
