@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Alligator Skinners — Hockey
 BEGIN:VEVENT
 UID:0074e4fac17e3d66a267210a@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260120T013000Z
 DTEND:20260120T025000Z
 SUMMARY:Alligator Skinners vs Dirty Mike and the Boys (W 6-3)
@@ -16,8 +16,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:f267a573153b44f323abd1bc@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260127T043000Z
 DTEND:20260127T055000Z
 SUMMARY:Alligator Skinners @ Yeti (W 3-1)
@@ -26,8 +26,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:3e2bcd5bee40813d981dfbb2@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260204T030000Z
 DTEND:20260204T042000Z
 SUMMARY:Alligator Skinners @ Naughty Otters (L 2-9)
@@ -36,8 +36,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:cb6321b0e10d1ce579e1ad1f@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260210T043000Z
 DTEND:20260210T055000Z
 SUMMARY:Alligator Skinners @ Proberts Selects (L 5-9)
@@ -46,8 +46,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:5fedd0924201f1ed7cc2043b@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260304T030000Z
 DTEND:20260304T042000Z
 SUMMARY:Alligator Skinners @ Psycho Jackpot (W 6-3)
@@ -56,8 +56,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:a729502f6158d2f8f886d6e9@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260310T020000Z
 DTEND:20260310T032000Z
 SUMMARY:Alligator Skinners vs The Pigeons (L 1-4)
@@ -66,8 +66,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:54a149b3beee5920b4494158@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260317T033000Z
 DTEND:20260317T045000Z
 SUMMARY:Alligator Skinners vs Hellfish (W 6-3)
@@ -76,8 +76,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:e7fe2b284a9d0538397ea747@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260325T003000Z
 DTEND:20260325T015000Z
 SUMMARY:Alligator Skinners vs Backdoor Bandits (W 11-5)
@@ -86,8 +86,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:5109c96e434c6ed794f0160b@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260331T003000Z
 DTEND:20260331T015000Z
 SUMMARY:Alligator Skinners vs Bulldogs (W 3-2)
@@ -96,8 +96,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:3f11d75c706cb2595d5f30ec@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260407T020000Z
 DTEND:20260407T032000Z
 SUMMARY:Alligator Skinners vs Dirty Mike and the Boys (L 3-5)
@@ -106,8 +106,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:b6f6677decf5a86ebee49e00@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260414T020000Z
 DTEND:20260414T032000Z
 SUMMARY:Alligator Skinners @ Yeti (L 4-6)
@@ -116,8 +116,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:00a58087ee2724a1ed0f5ef9@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260421T033000Z
 DTEND:20260421T045000Z
 SUMMARY:Alligator Skinners @ Naughty Otters (W 8-6)
@@ -126,8 +126,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:567c9096ea320e5dfcd4f1b3@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260428T003000Z
 DTEND:20260428T015000Z
 SUMMARY:Alligator Skinners @ Mighty Bucks (L 5-9)
@@ -136,8 +136,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:e61b60ffd6144fa2a64cb45c@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260505T020000Z
 DTEND:20260505T032000Z
 SUMMARY:Alligator Skinners @ Crusaders (L 7-9)
@@ -146,8 +146,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:e3ce5741b0b7887fbe1be418@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260512T003000Z
 DTEND:20260512T015000Z
 SUMMARY:Alligator Skinners @ Psycho Jackpot (L 2-7)
@@ -156,142 +156,142 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:8e8b9e706201a6fa104d75f3@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260915T003000Z
 DTEND:20260915T015000Z
 SUMMARY:Alligator Skinners vs Yeti
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-14 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-14 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:7844a2d61972cc11a2c0f761@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260922T003000Z
 DTEND:20260922T015000Z
 SUMMARY:Alligator Skinners @ Psycho Jackpot
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-21 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nPSYCHO JACKPOT GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Hellfish\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-21 20:30 EDT\nRink: West Rink\n\n----------------------------------------\nPSYCHO JACKPOT GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Hellfish\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:91d138a70144cc854c40ef0c@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20260929T020000Z
 DTEND:20260929T032000Z
 SUMMARY:Alligator Skinners vs Mighty Bucks
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-28 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nMIGHTY BUCKS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Crusaders\n    Sep 21st vs The Pigeons\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-09-28 22:00 EDT\nRink: East Rink\n\n----------------------------------------\nMIGHTY BUCKS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Crusaders\n    Sep 21st vs The Pigeons\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:a34f9a2dc579a932e4102320@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261006T033000Z
 DTEND:20261006T045000Z
 SUMMARY:Alligator Skinners @ Naughty Otters
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-05 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nNAUGHTY OTTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs The Pigeons\n    Sep 21st @ Yeti\n    Sep 28th @ Backdoor Bandits\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-05 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nNAUGHTY OTTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th vs The Pigeons\n    Sep 21st @ Yeti\n    Sep 28th @ Backdoor Bandits\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:003049edc796cacce60ad72a@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261013T033000Z
 DTEND:20261013T045000Z
 SUMMARY:Alligator Skinners vs Backdoor Bandits
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-12 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nBACKDOOR BANDITS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Hockertunities\n    Sep 22nd @ Dirty Mike and the Boys\n    Sep 28th vs Naughty Otters\n    Oct 5th @ Mighty Bucks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-12 23:30 EDT\nRink: East Rink\n\n----------------------------------------\nBACKDOOR BANDITS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Hockertunities\n    Sep 22nd @ Dirty Mike and the Boys\n    Sep 28th vs Naughty Otters\n    Oct 5th @ Mighty Bucks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:0273aea800ea203a99578050@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261020T033000Z
 DTEND:20261020T045000Z
 SUMMARY:Alligator Skinners vs Hockertunities
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-19 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHOCKERTUNITIES GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Backdoor Bandits\n    Sep 21st vs Bulldogs\n    Sep 28th @ Hellfish\n    Oct 6th vs Crusaders\n    Oct 12th vs Naughty Otters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-19 23:30 EDT\nRink: West Rink\n\n----------------------------------------\nHOCKERTUNITIES GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Backdoor Bandits\n    Sep 21st vs Bulldogs\n    Sep 28th @ Hellfish\n    Oct 6th vs Crusaders\n    Oct 12th vs Naughty Otters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:14cbe71a514d45a07a587a82@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261028T020000Z
 DTEND:20261028T032000Z
 SUMMARY:Alligator Skinners @ The Pigeons
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-27 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nTHE PIGEONS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Naughty Otters\n    Sep 21st @ Mighty Bucks\n    Sep 28th vs Crusaders\n    Oct 5th vs Hellfish\n    Oct 13th @ Dirty Mike and the Boys\n    Oct 19th vs Bulldogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-10-27 22:00 EDT\nRink: West Rink\n\n----------------------------------------\nTHE PIGEONS GAMES-TO-DATE\n----------------------------------------\n    Sep 15th @ Naughty Otters\n    Sep 21st @ Mighty Bucks\n    Sep 28th vs Crusaders\n    Oct 5th vs Hellfish\n    Oct 13th @ Dirty Mike and the Boys\n    Oct 19th vs Bulldogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:6cde23a218f2f9b34d8a127d@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261104T030000Z
 DTEND:20261104T042000Z
 SUMMARY:Alligator Skinners vs Crusaders
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-03 22:00 EST\nRink: West Rink\n\n----------------------------------------\nCRUSADERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Mighty Bucks\n    Sep 21st vs Hellfish\n    Sep 28th @ The Pigeons\n    Oct 6th @ Hockertunities\n    Oct 12th @ Bulldogs\n    Oct 19th vs Naughty Otters\n    Oct 26th vs Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-03 22:00 EST\nRink: West Rink\n\n----------------------------------------\nCRUSADERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Mighty Bucks\n    Sep 21st vs Hellfish\n    Sep 28th @ The Pigeons\n    Oct 6th @ Hockertunities\n    Oct 12th @ Bulldogs\n    Oct 19th vs Naughty Otters\n    Oct 26th vs Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:c3d9920e62ae5b8d69762b3d@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261110T013000Z
 DTEND:20261110T025000Z
 SUMMARY:Alligator Skinners vs Dirty Mike and the Boys
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-09 20:30 EST\nRink: West Rink\n\n----------------------------------------\nDIRTY MIKE AND THE BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Bulldogs\n    Sep 22nd vs Backdoor Bandits\n    Sep 28th vs Psycho Jackpot\n    Oct 5th @ Yeti\n    Oct 13th vs The Pigeons\n    Oct 19th vs Mighty Bucks\n    Oct 26th @ Naughty Otters\n    Nov 2nd vs Hellfish\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-09 20:30 EST\nRink: West Rink\n\n----------------------------------------\nDIRTY MIKE AND THE BOYS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Bulldogs\n    Sep 22nd vs Backdoor Bandits\n    Sep 28th vs Psycho Jackpot\n    Oct 5th @ Yeti\n    Oct 13th vs The Pigeons\n    Oct 19th vs Mighty Bucks\n    Oct 26th @ Naughty Otters\n    Nov 2nd vs Hellfish\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:0acc787e420392578d96d486@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261117T030000Z
 DTEND:20261117T042000Z
 SUMMARY:Alligator Skinners @ Hellfish
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-16 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHELLFISH GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Psycho Jackpot\n    Sep 21st @ Crusaders\n    Sep 28th vs Hockertunities\n    Oct 5th @ The Pigeons\n    Oct 12th vs Yeti\n    Oct 19th @ Psycho Jackpot\n    Oct 26th vs Mighty Bucks\n    Nov 2nd @ Dirty Mike and the Boys\n    Nov 9th @ Bulldogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-16 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHELLFISH GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Psycho Jackpot\n    Sep 21st @ Crusaders\n    Sep 28th vs Hockertunities\n    Oct 5th @ The Pigeons\n    Oct 12th vs Yeti\n    Oct 19th @ Psycho Jackpot\n    Oct 26th vs Mighty Bucks\n    Nov 2nd @ Dirty Mike and the Boys\n    Nov 9th @ Bulldogs\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:9758996ec004c0f998ef0879@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261125T030000Z
 DTEND:20261125T042000Z
 SUMMARY:Alligator Skinners @ Psycho Jackpot
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-24 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Psycho Jackpot\n----------------------------------------\n    Sep 21st @ Psycho Jackpot\n\n----------------------------------------\nPSYCHO JACKPOT GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Hellfish\n    Sep 21st vs Alligator Skinners\n    Sep 28th @ Dirty Mike and the Boys\n    Oct 5th vs Bulldogs\n    Oct 12th @ Mighty Bucks\n    Oct 19th vs Hellfish\n    Oct 26th @ Crusaders\n    Nov 2nd vs The Pigeons\n    Nov 9th @ Hockertunities\n    Nov 16th @ Naughty Otters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-11-24 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Psycho Jackpot\n----------------------------------------\n    Sep 21st @ Psycho Jackpot\n\n----------------------------------------\nPSYCHO JACKPOT GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Hellfish\n    Sep 21st vs Alligator Skinners\n    Sep 28th @ Dirty Mike and the Boys\n    Oct 5th vs Bulldogs\n    Oct 12th @ Mighty Bucks\n    Oct 19th vs Hellfish\n    Oct 26th @ Crusaders\n    Nov 2nd vs The Pigeons\n    Nov 9th @ Hockertunities\n    Nov 16th @ Naughty Otters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:f23ce0655342f1f94fa53f24@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261202T030000Z
 DTEND:20261202T042000Z
 SUMMARY:Alligator Skinners vs Bulldogs
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-01 22:00 EST\nRink: West Rink\n\n----------------------------------------\nBULLDOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Dirty Mike and the Boys\n    Sep 21st @ Hockertunities\n    Sep 29th vs Yeti\n    Oct 5th @ Psycho Jackpot\n    Oct 12th vs Crusaders\n    Oct 19th @ The Pigeons\n    Oct 26th @ Backdoor Bandits\n    Nov 2nd vs Hockertunities\n    Nov 9th vs Hellfish\n    Nov 16th @ The Pigeons\n    Nov 23rd vs Mighty Bucks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-01 22:00 EST\nRink: West Rink\n\n----------------------------------------\nBULLDOGS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Dirty Mike and the Boys\n    Sep 21st @ Hockertunities\n    Sep 29th vs Yeti\n    Oct 5th @ Psycho Jackpot\n    Oct 12th vs Crusaders\n    Oct 19th @ The Pigeons\n    Oct 26th @ Backdoor Bandits\n    Nov 2nd vs Hockertunities\n    Nov 9th vs Hellfish\n    Nov 16th @ The Pigeons\n    Nov 23rd vs Mighty Bucks\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:713a33bfdb1e17dd382ac93b@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261209T030000Z
 DTEND:20261209T042000Z
 SUMMARY:Alligator Skinners @ Crusaders
 LOCATION:West Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-08 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Crusaders\n----------------------------------------\n    Nov 3rd vs Crusaders\n\n----------------------------------------\nCRUSADERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Mighty Bucks\n    Sep 21st vs Hellfish\n    Sep 28th @ The Pigeons\n    Oct 6th @ Hockertunities\n    Oct 12th @ Bulldogs\n    Oct 19th vs Naughty Otters\n    Oct 26th vs Psycho Jackpot\n    Nov 3rd @ Alligator Skinners\n    Nov 9th vs Yeti\n    Nov 16th @ Backdoor Bandits\n    Nov 23rd vs Dirty Mike and the Boys\n    Nov 30th @ Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-08 22:00 EST\nRink: West Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Crusaders\n----------------------------------------\n    Nov 3rd vs Crusaders\n\n----------------------------------------\nCRUSADERS GAMES-TO-DATE\n----------------------------------------\n    Sep 14th vs Mighty Bucks\n    Sep 21st vs Hellfish\n    Sep 28th @ The Pigeons\n    Oct 6th @ Hockertunities\n    Oct 12th @ Bulldogs\n    Oct 19th vs Naughty Otters\n    Oct 26th vs Psycho Jackpot\n    Nov 3rd @ Alligator Skinners\n    Nov 9th vs Yeti\n    Nov 16th @ Backdoor Bandits\n    Nov 23rd vs Dirty Mike and the Boys\n    Nov 30th @ Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:6556fde895a92bde7e0dceef@hockey-ics
-DTSTAMP:20260921T050922Z
-LAST-MODIFIED:20260921T050918Z
+DTSTAMP:20260921T130235Z
+LAST-MODIFIED:20260921T130232Z
 DTSTART:20261215T043000Z
 DTEND:20261215T055000Z
 SUMMARY:Alligator Skinners @ Yeti
 LOCATION:East Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-14 23:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Yeti\n----------------------------------------\n    Sep 14th vs Yeti\n\n----------------------------------------\nYETI GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Alligator Skinners\n    Sep 21st vs Naughty Otters\n    Sep 29th @ Bulldogs\n    Oct 5th vs Dirty Mike and the Boys\n    Oct 12th @ Hellfish\n    Oct 20th @ Backdoor Bandits\n    Oct 26th vs Hockertunities\n    Nov 2nd vs Backdoor Bandits\n    Nov 9th @ Crusaders\n    Nov 16th @ Mighty Bucks\n    Nov 23rd vs Naughty Otters\n    Nov 30th @ The Pigeons\n    Dec 7th vs Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 05:09 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Fall 2026 Division 3\nStage: Regular Season\nStatus: scheduled\nStart (America/New_York): 2026-12-14 23:30 EST\nRink: East Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Yeti\n----------------------------------------\n    Sep 14th vs Yeti\n\n----------------------------------------\nYETI GAMES-TO-DATE\n----------------------------------------\n    Sep 14th @ Alligator Skinners\n    Sep 21st vs Naughty Otters\n    Sep 29th @ Bulldogs\n    Oct 5th vs Dirty Mike and the Boys\n    Oct 12th @ Hellfish\n    Oct 20th @ Backdoor Bandits\n    Oct 26th vs Hockertunities\n    Nov 2nd vs Backdoor Bandits\n    Nov 9th @ Crusaders\n    Nov 16th @ Mighty Bucks\n    Nov 23rd vs Naughty Otters\n    Nov 30th @ The Pigeons\n    Dec 7th vs Psycho Jackpot\n\n----------------------------------------\nSTANDINGS (as of 2026-09-21 13:02 UTC)\n----------------------------------------\n0. Alligator Skinners (0-0\, 0 pts)\n0. Backdoor Bandits (0-0\, 0 pts)\n0. Bulldogs (0-0\, 0 pts)\n0. Crusaders (0-0\, 0 pts)\n0. Dirty Mike and the Boys (0-0\, 0 pts)\n0. Hellfish (0-0\, 0 pts)\n0. Hockertunities (0-0\, 0 pts)\n0. Mighty Bucks (0-0\, 0 pts)\n0. Naughty Otters (0-0\, 0 pts)\n0. Psycho Jackpot (0-0\, 0 pts)\n0. The Pigeons (0-0\, 0 pts)\n0. Yeti (0-0\, 0 pts)
 END:VEVENT
 END:VCALENDAR
