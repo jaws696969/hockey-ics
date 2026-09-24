@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Brewzers — Hockey
 BEGIN:VEVENT
 UID:2e662ab7f3796e4a281aeafc@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20260910T021000Z
 DTEND:20260910T033000Z
 SUMMARY:Brewzers vs Six0nine (W 2-0)
@@ -16,8 +16,8 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:3d49d44e341e58b7b7a61635@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20260917T010000Z
 DTEND:20260917T022000Z
 SUMMARY:Brewzers @ Ice Bats (W 3-0)
@@ -26,112 +26,112 @@ DESCRIPTION:----------------------------------------\nGAME INFO\n---------------
 END:VEVENT
 BEGIN:VEVENT
 UID:58250de44f2b77c92d2c1bbb@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20260925T012000Z
 DTEND:20260925T024000Z
 SUMMARY:Brewzers @ Shooters
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-09-24 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nSHOOTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Ice Bats (L 3-5)\n    Sep 17th vs Six0nine (L 2-4)\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-09-24 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nSHOOTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Ice Bats (L 3-5)\n    Sep 17th vs Six0nine (L 2-4)\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:ee5a4dfcf1234144830df55c@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261002T015000Z
 DTEND:20261002T031000Z
 SUMMARY:Brewzers vs The Emperors
 LOCATION:Ice Land Black Bear Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-01 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nTHE EMPERORS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs Continentals (W 7-3)\n    Sep 17th @ Geri-Hattricks C (L 1-7)\n    Sep 23rd vs High and Wide (L 3-5)\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-01 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nTHE EMPERORS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs Continentals (W 7-3)\n    Sep 17th @ Geri-Hattricks C (L 1-7)\n    Sep 23rd vs High and Wide (L 3-5)\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:e3a31726a65bb7035ed0c8dd@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261009T015000Z
 DTEND:20261009T031000Z
 SUMMARY:Brewzers @ Continentals
 LOCATION:Ice Land Black Bear Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-08 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nCONTINENTALS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ The Emperors (L 3-7)\n    Sep 16th @ High and Wide (L 3-6)\n    Sep 23rd @ Geri-Hattricks C (L 2-7)\n    Sep 30th @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-08 21:50 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nCONTINENTALS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ The Emperors (L 3-7)\n    Sep 16th @ High and Wide (L 3-6)\n    Sep 23rd @ Geri-Hattricks C (L 2-7)\n    Sep 30th @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:596c17fcaf07c7baac62ae10@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261016T012000Z
 DTEND:20261016T024000Z
 SUMMARY:Brewzers vs Geri-Hattricks C
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-15 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nGERI-HATTRICKS C GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs High and Wide (W 9-2)\n    Sep 17th vs The Emperors (W 7-1)\n    Sep 23rd vs Continentals (W 7-2)\n    Oct 1st @ Ice Bats\n    Oct 7th vs Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-15 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nGERI-HATTRICKS C GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs High and Wide (W 9-2)\n    Sep 17th vs The Emperors (W 7-1)\n    Sep 23rd vs Continentals (W 7-2)\n    Oct 1st @ Ice Bats\n    Oct 7th vs Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:18cd1cc1eaf3e39871bfce2b@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261022T021000Z
 DTEND:20261022T033000Z
 SUMMARY:Brewzers @ High and Wide
 LOCATION:Ice Land Black Bear Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-21 22:10 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHIGH AND WIDE GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ Geri-Hattricks C (L 2-9)\n    Sep 16th vs Continentals (W 6-3)\n    Sep 23rd @ The Emperors (W 5-3)\n    Sep 30th @ Shooters\n    Oct 8th vs Ice Bats\n    Oct 15th @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-21 22:10 EDT\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHIGH AND WIDE GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ Geri-Hattricks C (L 2-9)\n    Sep 16th vs Continentals (W 6-3)\n    Sep 23rd @ The Emperors (W 5-3)\n    Sep 30th @ Shooters\n    Oct 8th vs Ice Bats\n    Oct 15th @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:4a836a02aab9a4e31d9e5daa@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261030T012000Z
 DTEND:20261030T024000Z
 SUMMARY:Brewzers @ Six0nine
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-29 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Six0nine\n----------------------------------------\n    Sep 9th vs Six0nine (W 2-0)\n\n----------------------------------------\nSIX0NINE GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Brewzers (L 0-2)\n    Sep 17th @ Shooters (W 4-2)\n    Sep 24th vs Ice Bats\n    Sep 30th vs Continentals\n    Oct 7th @ The Emperors\n    Oct 15th vs High and Wide\n    Oct 21st vs Geri-Hattricks C\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-10-29 21:20 EDT\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Six0nine\n----------------------------------------\n    Sep 9th vs Six0nine (W 2-0)\n\n----------------------------------------\nSIX0NINE GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Brewzers (L 0-2)\n    Sep 17th @ Shooters (W 4-2)\n    Sep 24th vs Ice Bats\n    Sep 30th vs Continentals\n    Oct 7th @ The Emperors\n    Oct 15th vs High and Wide\n    Oct 21st vs Geri-Hattricks C\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:c880fb0e67e4f816713aad55@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261106T040000Z
 DTEND:20261106T052000Z
 SUMMARY:Brewzers vs Ice Bats
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-05 23:00 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Ice Bats\n----------------------------------------\n    Sep 16th @ Ice Bats (W 3-0)\n\n----------------------------------------\nICE BATS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th vs Shooters (W 5-3)\n    Sep 16th vs Brewzers (L 0-3)\n    Sep 24th @ Six0nine\n    Oct 1st vs Geri-Hattricks C\n    Oct 8th @ High and Wide\n    Oct 14th vs The Emperors\n    Oct 22nd vs Continentals\n    Oct 28th @ Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-05 23:00 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Ice Bats\n----------------------------------------\n    Sep 16th @ Ice Bats (W 3-0)\n\n----------------------------------------\nICE BATS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th vs Shooters (W 5-3)\n    Sep 16th vs Brewzers (L 0-3)\n    Sep 24th @ Six0nine\n    Oct 1st vs Geri-Hattricks C\n    Oct 8th @ High and Wide\n    Oct 14th vs The Emperors\n    Oct 22nd vs Continentals\n    Oct 28th @ Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:510d1b56a632525c96efa0ee@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261112T020000Z
 DTEND:20261112T032000Z
 SUMMARY:Brewzers vs Continentals
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-11 21:00 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Continentals\n----------------------------------------\n    Oct 8th @ Continentals\n\n----------------------------------------\nCONTINENTALS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ The Emperors (L 3-7)\n    Sep 16th @ High and Wide (L 3-6)\n    Sep 23rd @ Geri-Hattricks C (L 2-7)\n    Sep 30th @ Six0nine\n    Oct 8th vs Brewzers\n    Oct 14th vs Shooters\n    Oct 22nd @ Ice Bats\n    Oct 28th vs The Emperors\n    Nov 4th vs Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-11 21:00 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Continentals\n----------------------------------------\n    Oct 8th @ Continentals\n\n----------------------------------------\nCONTINENTALS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th @ The Emperors (L 3-7)\n    Sep 16th @ High and Wide (L 3-6)\n    Sep 23rd @ Geri-Hattricks C (L 2-7)\n    Sep 30th @ Six0nine\n    Oct 8th vs Brewzers\n    Oct 14th vs Shooters\n    Oct 22nd @ Ice Bats\n    Oct 28th vs The Emperors\n    Nov 4th vs Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:77f4fe80a55588a5febf7b56@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261120T025500Z
 DTEND:20261120T041500Z
 SUMMARY:Brewzers vs Six0nine
 LOCATION:Ice Land Black Bear Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-19 21:55 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Six0nine\n----------------------------------------\n    Sep 9th vs Six0nine (W 2-0)\n    Oct 29th @ Six0nine\n\n----------------------------------------\nSIX0NINE GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Brewzers (L 0-2)\n    Sep 17th @ Shooters (W 4-2)\n    Sep 24th vs Ice Bats\n    Sep 30th vs Continentals\n    Oct 7th @ The Emperors\n    Oct 15th vs High and Wide\n    Oct 21st vs Geri-Hattricks C\n    Oct 29th vs Brewzers\n    Nov 4th @ Continentals\n    Nov 12th @ Ice Bats\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-11-19 21:55 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Six0nine\n----------------------------------------\n    Sep 9th vs Six0nine (W 2-0)\n    Oct 29th @ Six0nine\n\n----------------------------------------\nSIX0NINE GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Brewzers (L 0-2)\n    Sep 17th @ Shooters (W 4-2)\n    Sep 24th vs Ice Bats\n    Sep 30th vs Continentals\n    Oct 7th @ The Emperors\n    Oct 15th vs High and Wide\n    Oct 21st vs Geri-Hattricks C\n    Oct 29th vs Brewzers\n    Nov 4th @ Continentals\n    Nov 12th @ Ice Bats\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:413f3b26ace0beef929b9715@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261204T035000Z
 DTEND:20261204T051000Z
 SUMMARY:Brewzers @ The Emperors
 LOCATION:Ice Land Phantoms Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-12-03 22:50 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs The Emperors\n----------------------------------------\n    Oct 1st vs The Emperors\n\n----------------------------------------\nTHE EMPERORS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs Continentals (W 7-3)\n    Sep 17th @ Geri-Hattricks C (L 1-7)\n    Sep 23rd vs High and Wide (L 3-5)\n    Oct 1st @ Brewzers\n    Oct 7th vs Six0nine\n    Oct 14th @ Ice Bats\n    Oct 22nd vs Shooters\n    Oct 28th @ Continentals\n    Nov 4th vs Geri-Hattricks C\n    Nov 11th @ High and Wide\n    Nov 19th @ Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-12-03 22:50 EST\nRink: Ice Land Phantoms Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs The Emperors\n----------------------------------------\n    Oct 1st vs The Emperors\n\n----------------------------------------\nTHE EMPERORS GAMES-TO-DATE\n----------------------------------------\n    Sep 10th vs Continentals (W 7-3)\n    Sep 17th @ Geri-Hattricks C (L 1-7)\n    Sep 23rd vs High and Wide (L 3-5)\n    Oct 1st @ Brewzers\n    Oct 7th vs Six0nine\n    Oct 14th @ Ice Bats\n    Oct 22nd vs Shooters\n    Oct 28th @ Continentals\n    Nov 4th vs Geri-Hattricks C\n    Nov 11th @ High and Wide\n    Nov 19th @ Shooters\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 BEGIN:VEVENT
 UID:1718ccdedd6f88e3f4cc3ddf@hockey-ics
-DTSTAMP:20260924T172213Z
-LAST-MODIFIED:20260924T172155Z
+DTSTAMP:20260924T213747Z
+LAST-MODIFIED:20260924T213727Z
 DTSTART:20261210T031000Z
 DTEND:20261210T043000Z
 SUMMARY:Brewzers vs Shooters
 LOCATION:Ice Land Black Bear Rink
-DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-12-09 22:10 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Shooters\n----------------------------------------\n    Sep 24th @ Shooters\n\n----------------------------------------\nSHOOTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Ice Bats (L 3-5)\n    Sep 17th vs Six0nine (L 2-4)\n    Sep 24th vs Brewzers\n    Sep 30th vs High and Wide\n    Oct 7th @ Geri-Hattricks C\n    Oct 14th @ Continentals\n    Oct 22nd @ The Emperors\n    Oct 28th vs Ice Bats\n    Nov 5th @ High and Wide\n    Nov 12th vs Geri-Hattricks C\n    Nov 19th vs The Emperors\n    Dec 2nd @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 17:21 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
+DESCRIPTION:----------------------------------------\nGAME INFO\n----------------------------------------\nLeague: Adult Fall 2026 — Adult C\nStage: Regular\nStatus: NOT STARTED\nStart (America/New_York): 2026-12-09 22:10 EST\nRink: Ice Land Black Bear Rink\n\n----------------------------------------\nHEAD-TO-HEAD vs Shooters\n----------------------------------------\n    Sep 24th @ Shooters\n\n----------------------------------------\nSHOOTERS GAMES-TO-DATE\n----------------------------------------\n    Sep 9th @ Ice Bats (L 3-5)\n    Sep 17th vs Six0nine (L 2-4)\n    Sep 24th vs Brewzers\n    Sep 30th vs High and Wide\n    Oct 7th @ Geri-Hattricks C\n    Oct 14th @ Continentals\n    Oct 22nd @ The Emperors\n    Oct 28th vs Ice Bats\n    Nov 5th @ High and Wide\n    Nov 12th vs Geri-Hattricks C\n    Nov 19th vs The Emperors\n    Dec 2nd @ Six0nine\n\n----------------------------------------\nSTANDINGS (as of 2026-09-24 21:37 UTC)\n----------------------------------------\n1. Geri-Hattricks C (3-0\, 9 pts)\n2. High and Wide (2-1\, 6 pts)\n3. Brewzers (2-0\, 6 pts)\n4. Ice Bats (1-1\, 3 pts)\n5. Six0nine (1-1\, 3 pts)\n6. The Emperors (1-2\, 3 pts)\n7. Shooters (0-2\, 0 pts)\n8. Continentals (0-3\, 0 pts)
 END:VEVENT
 END:VCALENDAR
