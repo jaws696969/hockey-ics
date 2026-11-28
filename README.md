@@ -1,6 +1,6 @@
 # Hockey Schedule → Google Calendar (.ics)
 
-<!-- last heartbeat: 2026-08-16 -->
+<!-- last heartbeat: 2026-11-27 -->
 
 This project converts online hockey league schedules into auto-updating `.ics` calendar
 feeds that you can subscribe to in **Google Calendar**. Two league data providers are
